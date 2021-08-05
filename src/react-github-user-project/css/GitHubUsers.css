@@ -1,0 +1,42 @@
+.githubUsers {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.Github-flex-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.Github-flex-row-item {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 20%;
+  background-color: rgb(226, 226, 204);
+}
+.Github-flex-row-item:hover {
+  background-color: rgb(128, 128, 114);
+}
+
+.Github-flex-row-item p {
+  margin: 0;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.Github-btn-container {
+  background-color: transparent;
+}
+.Github-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.Github-btn:hover {
+  text-decoration: underline;
+}

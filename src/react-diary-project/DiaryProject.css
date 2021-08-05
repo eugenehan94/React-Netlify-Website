@@ -1,0 +1,10 @@
+.Diary-title {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+.Diary-image {
+  max-width: 100%;
+  object-fit: scale-down;
+}

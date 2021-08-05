@@ -1,0 +1,10 @@
+.message-container {
+  font-size: 1.8rem;
+  /* margin: 3.5rem; */
+  padding: 3.5rem;
+  line-height: 1.5;
+  background-color: white;
+}
+.message-container p {
+  background-color: white;
+}

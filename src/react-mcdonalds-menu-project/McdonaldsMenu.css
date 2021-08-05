@@ -1,0 +1,17 @@
+.Mcdonalds-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  background-color: white;
+}
+.Mcdonalds-container-categories {
+  margin: 3rem;
+  padding: 0;
+  background-color: white;
+}
+
+.Mcdonalds-container-menu {
+  width: 75%;
+  background-color: white;
+}

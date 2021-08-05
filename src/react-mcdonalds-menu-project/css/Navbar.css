@@ -1,0 +1,44 @@
+.Navbar-container {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+.Navbar-container-inner {
+  display: flex;
+  margin: 0 3.2rem;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+}
+.Navbar-logo {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.Navbar-choices-container {
+  position: absolute;
+  bottom: 0px;
+  left: 7rem;
+  background-color: white;
+}
+
+.Mcdonalds-unordered-list {
+  list-style-type: none;
+  background-color: white;
+}
+.Mcdonalds-list-item {
+  display: inline;
+  background-color: white;
+}
+.Mcdonalds-list-item a {
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  background-color: white;
+}
+
+.active {
+  border-bottom: 5px solid rgb(202, 5, 5);
+  font-weight: bold;
+}

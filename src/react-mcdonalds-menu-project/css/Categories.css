@@ -1,0 +1,46 @@
+.Mcdonald-cat-button {
+  font-size: 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  overflow: hidden;
+}
+.Mcdonald-cat-button img {
+  float: left;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+.button-reset-container {
+  border: 1px solid grey;
+}
+.button-container {
+  border: 1px solid grey;
+  margin-top: 1rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.button-reset-container,
+.button-container {
+  border-radius: 5px;
+}
+
+.button-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 2.5rem;
+  background-color: white;
+}
+
+.active_choice {
+  border-left: 5px solid red;
+  background-color: white;
+}
+.active_bold {
+  font-weight: bolder;
+}

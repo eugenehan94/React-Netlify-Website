@@ -1,0 +1,39 @@
+.Contact_inner_container {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 450px;
+}
+.Contact_title {
+  color: rgb(255, 255, 255);
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 72px;
+}
+.Contact_desc {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 1rem;
+}
+.Contact-linkedin-link {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0.5rem;
+}
+.Contact-linkedin-link:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+.Contact_btn {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 4rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}

@@ -1,0 +1,65 @@
+.slideshowPictures {
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+}
+
+.slideshowtitle {
+  text-align: center;
+  color: white;
+}
+.slideshowUnderline {
+  height: 0.25rem;
+  width: 5rem;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+.slideshowContainer {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(247, 240, 240);
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  width: 80%;
+  text-align: center;
+
+  padding: 1.5rem;
+}
+.slideshowName,
+.slideshowQuote {
+  background-color: transparent;
+}
+.slideshowprevious-btn,
+.slideshownext-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 3rem;
+  margin: 0.25rem 0.5rem;
+  color: rgb(112, 197, 79);
+  transition: all 0.3s linear;
+}
+
+.slideshowprevious-btn:hover,
+.slideshownext-btn:hover {
+  color: rgb(41, 110, 13);
+}
+
+.slideshowrandom-btn {
+  margin-top: 0.5rem;
+  font-size: 3rem;
+  padding: 0.25rem 0.5rem;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: rgb(250, 68, 68);
+  background-color: transparent;
+}
+
+.slideshowrandom-btn:hover {
+  color: rgb(211, 9, 9);
+}
