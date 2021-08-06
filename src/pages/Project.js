@@ -17,7 +17,10 @@ const Project = () => {
       <div className="Project-container">
         <div className="Project-item">
           <h1>Resume Project</h1>
-          <p>A virtual resume showcasing my work and volunteer experience</p>
+          <p>
+            A virtual resume showcasing my previous work and volunteer
+            experiences.
+          </p>
 
           <div className="Project-btn-wrapper">
             <Link to="/ResumeProject">
@@ -41,12 +44,12 @@ const Project = () => {
           <h1>Diary Project</h1>
           <p>
             A project where users can enter, edit and delete entries. Entries
-            include title, date and entry and it is stored and read from a REST
-            API.
+            include title, date and entry. The information is stored and read
+            from a REST API.
           </p>
           <p>
-            Download the original code from my Github to run the JSON server to
-            interact with the API
+            Clone the original code from Github and run the JSON server to
+            interact with the API.
           </p>
           <div className="Project-btn-wrapper">
             <Link to="/DiaryProject">
@@ -86,8 +89,8 @@ const Project = () => {
         <div className="Project-item">
           <h1>Accordion Project</h1>
           <p>
-            An accordion program inspired by the one found on Simplii
-            Financial's website
+            An accordion inspired by the one found on Simplii Financial's
+            website
           </p>
           <p>The original program reads the data from the REST API</p>
           <Link to="/AccordionProject">
@@ -108,7 +111,7 @@ const Project = () => {
         </div>
         <div className="Project-item">
           <h1>Webpage Project</h1>
-          <p>A random webpage I created to practice React js</p>
+          <p>A webpage I created to practice React js</p>
           <Link to="/WebsiteProject">
             <button className="Project-to-project-btn">Website Project</button>
           </Link>
@@ -146,8 +149,8 @@ const Project = () => {
         <div className="Project-item">
           <h1>Github User Project</h1>
           <p>
-            A project showing multiple Github Users fetching for an API provided
-            by Github
+            A project showing multiple Github Users. The information is fetched
+            for an API provided by Github
           </p>
           <Link to="/GithubUserProject">
             <button className="Project-to-project-btn">
@@ -168,7 +171,7 @@ const Project = () => {
         <div className="Project-item">
           <h1>A Counter</h1>
           <p>
-            A counter with additional options, like add and subtract 100, random
+            A counter with different options, like add and subtract 100, random
             number, etc.
           </p>
           <Link to="/CounterProject">

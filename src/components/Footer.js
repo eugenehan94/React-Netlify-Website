@@ -9,10 +9,10 @@ const Footer = () => {
       <div className="Footer_first_subcontainer">
         <div className="Footer_about_container">
           <h1>About website</h1>
-          <p>A website to showcase projects I've done.</p>
+          <p>A website to show projects I've done.</p>
           <p className="Footer_para_disc">
             * Doesn't reflect all projects, some were discarded prior to opening
-            Github account. *
+            Github account.
           </p>
         </div>
         <div className="Footer_social_container">
