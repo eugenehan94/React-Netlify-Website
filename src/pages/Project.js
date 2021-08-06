@@ -18,8 +18,7 @@ const Project = () => {
         <div className="Project-item">
           <h1>Resume Project</h1>
           <p>
-            A virtual resume showcasing my previous work and volunteer
-            experiences.
+            A virtual resume showing my previous work and volunteer experiences.
           </p>
 
           <div className="Project-btn-wrapper">
@@ -44,8 +43,8 @@ const Project = () => {
           <h1>Diary Project</h1>
           <p>
             A project where users can enter, edit and delete entries. Entries
-            include title, date and entry. The information is stored and read
-            from a REST API.
+            include title, date and entry. The inputs are stored and read from a
+            REST API.
           </p>
           <p>
             Clone the original code from Github and run the JSON server to
