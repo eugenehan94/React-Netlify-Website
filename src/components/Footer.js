@@ -11,8 +11,8 @@ const Footer = () => {
           <h1>About website</h1>
           <p>A website to showcase projects I've done.</p>
           <p className="Footer_para_disc">
-            * Doesn't reflect all projects, because some were discarded prior to
-            opening Github account. *
+            * Doesn't reflect all projects, some were discarded prior to opening
+            Github account. *
           </p>
         </div>
         <div className="Footer_social_container">
