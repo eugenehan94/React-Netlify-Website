@@ -20,7 +20,7 @@ import Family from "./react-mcdonalds-menu-project/components/Family";
 import DiaryProject from "./react-diary-project/DiaryProject";
 import ResumeProject from "./react-resume-project/Resume";
 
-import ShootoutGame from "./javascript-shootout-game/shootoutGame";
+import ShootoutGame from "./javascript-shootout-game/ShootoutGame";
 function App() {
   return (
     <Router>
