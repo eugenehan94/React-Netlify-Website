@@ -1,28 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer";
 import "./shootoutGame.css";
 
 import ShootoutGameplayVideo from "./videos/Shootout Gameplay.mp4";
 import ShootoutInstructionVideo from "./videos/Shootout Instructions.mp4";
-const shootoutGame = () => {
+
+const ShootoutGame = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Navbar />
-      <h1>Shootout Prediction Game</h1>
-
-      <video autoPlay loop muted id="shootoutGameVideo">
-        <source src={ShootoutGameplayVideo} type="video/mp4" />
-      </video>
-
-      <br />
-
-      <video autoPlay loop muted id="shootoutGameVideo">
-        <source src={ShootoutInstructionVideo} type="video/mp4" />
-      </video>
+      <h1 className="shootout-title">Shootout Prediction Game</h1>
+      <div className="shootout-underline"></div>
+      <h2 className="shootout-header">Gameplay</h2>
+      <div className="shootout-video-container">
+        <video autoPlay loop muted id="shootoutGameVideo">
+          <source src={ShootoutGameplayVideo} type="video/mp4" />
+        </video>
+      </div>
+      <h2 className="shootout-header">Instructions</h2>
+      <div className="shootout-video-container">
+        <video autoPlay loop muted id="shootoutGameVideo">
+          <source src={ShootoutInstructionVideo} type="video/mp4" />
+        </video>
+      </div>
+      <div className="shootout-spacer"></div>
+      <Footer />
     </div>
   );
 };
 
-export default shootoutGame;
+export default ShootoutGame;

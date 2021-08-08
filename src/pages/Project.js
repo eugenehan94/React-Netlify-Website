@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
@@ -8,6 +8,9 @@ import "../css/Project.css";
 import Footer from "../components/Footer";
 
 const Project = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="Project-wrapper">
       <Navbar />
