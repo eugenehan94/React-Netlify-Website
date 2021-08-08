@@ -195,7 +195,11 @@ const Project = () => {
       <div className="Project-container">
         <div className="Project-item">
           <h1>Shootout Prediction Game</h1>
-          <p>Filler text for now</p>
+          <p>
+            A 2D soccer/football shootout game created with Vanilla Javascript,
+            CSS and HTML.
+          </p>
+
           <Link to="/ShootoutGame">
             <button className="Project-to-project-btn">
               Shootout Prediction Game
