@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import review from "../data/ReviewsData";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+// import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 const Review = () => {
   const [index, setIndex] = useState(0);
   const { name, image, text } = review[index];

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "./shootoutGame.css";
+import "./ShootoutGame.css";
 
 import ShootoutGameplayVideo from "./videos/Shootout Gameplay.mp4";
 import ShootoutInstructionVideo from "./videos/Shootout Instructions.mp4";

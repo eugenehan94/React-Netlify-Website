@@ -23,7 +23,7 @@ import "./WebsiteProject.css";
 function WebsiteProject() {
   const [modal, setModal] = useState(false);
   const [offerList, setOfferList] = useState(offerData);
-  const [offerItem, setOfferItem] = useState(offerData);
+  // const [offerItem, setOfferItem] = useState(offerData);
 
   const closeModal = () => {
     setModal(false);

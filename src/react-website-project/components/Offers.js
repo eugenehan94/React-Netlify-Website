@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Offer from "./Offer";
 
 const Offers = ({ offerList, removeOffer }) => {
