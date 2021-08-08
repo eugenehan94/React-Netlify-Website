@@ -7,6 +7,8 @@ import "./shootoutGame.css";
 import ShootoutGameplayVideo from "./videos/Shootout Gameplay.mp4";
 import ShootoutInstructionVideo from "./videos/Shootout Instructions.mp4";
 
+// Netlify can't find this? Why?
+
 const ShootoutGame = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
