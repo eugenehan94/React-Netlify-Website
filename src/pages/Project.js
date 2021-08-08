@@ -189,7 +189,28 @@ const Project = () => {
         </div>
       </div>
       <h2 className="Project-heading">Javascript</h2>
-      <p className="Project-heading">Projects coming soon ....</p>
+      <div className="Project-container">
+        <div className="Project-item">
+          <h1>Shootout Prediction Game</h1>
+          <p>Filler text for now</p>
+          <Link to="/ShootoutGame">
+            <button className="Project-to-project-btn">
+              Shootout Prediction Game
+            </button>
+          </Link>
+          <div style={{ textAlign: "center" }}>
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/Shootout-Prediction-Game"
+                target="_blank"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
       <h2 className="Project-heading">Java</h2>
       <p className="Project-heading">Projects coming soon ....</p>
       <div className="Project-footer-wrapper">

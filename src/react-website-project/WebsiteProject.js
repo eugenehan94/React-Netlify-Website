@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Navbar from "../components/Navbar";
 
@@ -33,6 +33,10 @@ function WebsiteProject() {
     const newOfferList = offerList.filter((offers) => offers.id !== id);
     setOfferList(newOfferList);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div style={{ backgroundColor: "white" }}>
