@@ -5,7 +5,7 @@ import "../css/Hero.css";
 const Hero = () => {
   return (
     <div className="Hero_Container">
-      <div style={{ padding: "0 3rem" }}>
+      <div className="Hero_Left_Container">
         <div className="Hero_Title_Container">
           <h1 className="Hero_Title">Hello I'm</h1>
           <h1 className="Hero_Title">Eugene Han</h1>
@@ -22,6 +22,13 @@ const Hero = () => {
           <Link to="/Project">
             <button className="Hero_button">Projects</button>
           </Link>
+        </div>
+      </div>
+
+      <div className="Hero_Right_Container">
+        <div className="Hero-square-animation">
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
