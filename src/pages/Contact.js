@@ -32,7 +32,7 @@ const Contact = () => {
             target="_blank"
             className="Contact-linkedin-link"
           >
-            <AiFillGithub color="white" /> Github
+            <AiFillGithub /> Github
           </a>
 
           <div>
