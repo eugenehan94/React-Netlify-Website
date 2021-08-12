@@ -5,7 +5,7 @@
   padding: 1rem;
 }
 .Nav_Icon {
-  color: rgb(238, 225, 225);
+  color: rgb(255, 255, 88);
 }
 .Nav_Icon:hover {
   color: rgb(255, 255, 255);
@@ -24,7 +24,7 @@
 }
 
 .Nav_List_Container li a {
-  color: rgb(238, 225, 225);
+  color: rgb(255, 255, 88);
   text-decoration: none;
 }
 .Nav_List_Container li a:hover {

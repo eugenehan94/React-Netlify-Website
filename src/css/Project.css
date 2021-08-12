@@ -1,5 +1,5 @@
 .Project-title {
-  color: white;
+  color: rgb(255, 255, 88);
   text-align: center;
   font-size: 48px;
 }
@@ -9,17 +9,17 @@
   margin-top: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
+  background-color: rgb(255, 255, 88);
 }
 .Project-heading {
-  color: white;
+  color: rgb(255, 255, 88);
   text-align: center;
   font-size: 40px;
   margin-top: 1.5rem;
 }
 
 .Project-container {
-  color: white;
+  color: rgb(255, 255, 88);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
@@ -39,13 +39,13 @@
   font-size: 18px;
 }
 .Project-to-project-btn {
-  background-color: aqua;
+  background-color: rgb(0, 128, 0);
   border: none;
   width: 100%;
   border-radius: 2px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: rgb(255, 255, 88);
   font-size: 18px;
   cursor: pointer;
 }
@@ -56,7 +56,7 @@
   border: none;
 }
 .Project-github-icon a {
-  color: white;
+  color: rgb(255, 255, 88);
   border: none;
   font-size: 18px;
   text-decoration: none;
