@@ -15,7 +15,7 @@ import Family from "./react-mcdonalds-menu-project/components/Family";
 import DiaryProject from "./react-diary-project/DiaryProject";
 import ResumeProject from "./react-resume-project/Resume";
 import ShootoutGame from "./js-shootout-game/ShootoutGame";
-
+import CardMatchGame from "./js-card-match-game/CardMatchGame";
 function App() {
   return (
     <Router>
@@ -67,6 +67,9 @@ function App() {
         </Route>
         <Route path="/ShootoutGame">
           <ShootoutGame />
+        </Route>
+        <Route path="/CardMatchGame">
+          <CardMatchGame />
         </Route>
       </Switch>
     </Router>

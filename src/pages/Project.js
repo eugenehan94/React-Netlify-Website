@@ -113,7 +113,7 @@ const Project = () => {
         </div>
         <div className="Project-item">
           <h1>Webpage Project</h1>
-          <p>A webpage I created to practice React js</p>
+          <p>A webpage I created using React js</p>
           <Link to="/WebsiteProject">
             <button className="Project-to-project-btn">Website Project</button>
           </Link>
@@ -209,6 +209,29 @@ const Project = () => {
             <button className="Project-github-icon">
               <a
                 href="https://github.com/eugenehan94/Shootout-Prediction-Game"
+                target="_blank"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="Project-item">
+          <h1>Card Matching Game</h1>
+          <p>
+            A 2D 2 player card matching game created with Vanilla Javascript,
+            CSS and HTML.
+          </p>
+
+          <Link to="/CardMatchGame">
+            <button className="Project-to-project-btn">
+              Card Matching Game
+            </button>
+          </Link>
+          <div style={{ textAlign: "center" }}>
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/Card-Matching-Game"
                 target="_blank"
               >
                 <FaGithub /> to Github
