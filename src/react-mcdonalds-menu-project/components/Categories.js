@@ -4,10 +4,7 @@ const Categories = ({ categories, filtering, fullMenu, selected }) => {
   console.log(categoryPics[0]);
   return (
     <div style={{ backgroundColor: "white" }}>
-      <div
-        className="button-reset-container"
-        style={{ backgroundColor: "white" }}
-      >
+      <div className="button-reset-container">
         <button
           className="Mcdonald-cat-button"
           type="button"
