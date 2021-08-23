@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
@@ -16,63 +17,73 @@ import DiaryProject from "./react-diary-project/DiaryProject";
 import ResumeProject from "./react-resume-project/Resume";
 import ShootoutGame from "./js-shootout-game/ShootoutGame";
 import CardMatchGame from "./js-card-match-game/CardMatchGame";
+
+export const NavbarMenuContext = React.createContext();
+
 function App() {
+  const [openMenu, setOpenMenu] = useState(false);
+  const toggle = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/About">
-          <About />
-        </Route>
-        <Route path="/Project">
-          <Project />
-        </Route>
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-        <Route path="/CounterProject">
-          <CounterProject />
-        </Route>
-        <Route path="/GithubUserProject">
-          <GithubUserProject />
-        </Route>
-        <Route path="/WebsiteProject">
-          <WebsiteProject />
-        </Route>
-        <Route path="/SlideshowProject">
-          <SlideshowProject />
-        </Route>
-        <Route path="/AccordionProject">
-          <AccordionProject />
-        </Route>
-        <Route path="/McdonaldsProject">
-          <McdonaldsProject />
-        </Route>
-        <Route path="/promotion">
-          <Promotions />
-        </Route>
-        <Route path="/family">
-          <Family />
-        </Route>
-        <Route path="/menu">
-          <McdonaldsProject />
-        </Route>
-        <Route path="/DiaryProject">
-          <DiaryProject />
-        </Route>
-        <Route path="/ResumeProject">
-          <ResumeProject />
-        </Route>
-        <Route path="/ShootoutGame">
-          <ShootoutGame />
-        </Route>
-        <Route path="/CardMatchGame">
-          <CardMatchGame />
-        </Route>
-      </Switch>
-    </Router>
+    <NavbarMenuContext.Provider value={{ openMenu, toggle }}>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/Project">
+            <Project />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
+          </Route>
+          <Route path="/CounterProject">
+            <CounterProject />
+          </Route>
+          <Route path="/GithubUserProject">
+            <GithubUserProject />
+          </Route>
+          <Route path="/WebsiteProject">
+            <WebsiteProject />
+          </Route>
+          <Route path="/SlideshowProject">
+            <SlideshowProject />
+          </Route>
+          <Route path="/AccordionProject">
+            <AccordionProject />
+          </Route>
+          <Route path="/McdonaldsProject">
+            <McdonaldsProject />
+          </Route>
+          <Route path="/promotion">
+            <Promotions />
+          </Route>
+          <Route path="/family">
+            <Family />
+          </Route>
+          <Route path="/menu">
+            <McdonaldsProject />
+          </Route>
+          <Route path="/DiaryProject">
+            <DiaryProject />
+          </Route>
+          <Route path="/ResumeProject">
+            <ResumeProject />
+          </Route>
+          <Route path="/ShootoutGame">
+            <ShootoutGame />
+          </Route>
+          <Route path="/CardMatchGame">
+            <CardMatchGame />
+          </Route>
+        </Switch>
+      </Router>
+    </NavbarMenuContext.Provider>
   );
 }
 
