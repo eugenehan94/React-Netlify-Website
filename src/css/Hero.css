@@ -1,6 +1,7 @@
 .Hero_Container {
-  height: 564px;
+  /* height: 564px; */
   display: flex;
+  margin-bottom: 5rem;
 }
 .Hero_Left_Container {
   padding: 0 3rem;
@@ -74,7 +75,14 @@
     transform: rotateX(0) rotateY(0);
   }
 }
+/* Ipads and tablets */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .Hero_Right_Container {
+    display: none;
+  }
+}
 
+/* Mobile Devices */
 @media screen and (max-width: 480px) {
   .Hero_Right_Container {
     display: none;

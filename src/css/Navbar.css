@@ -30,3 +30,16 @@
 .Nav_List_Container li a:hover {
   color: rgb(255, 255, 255);
 }
+/* Ipads and tablets */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .Nav_List_Container li {
+    display: none;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .Nav_List_Container li {
+    display: none;
+  }
+}
