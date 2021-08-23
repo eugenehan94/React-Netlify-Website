@@ -34,9 +34,7 @@
   cursor: pointer;
 }
 .Hero_Right_Container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  display: flex;
   flex: 1;
 }
 .Hero-square-animation {
@@ -74,5 +72,11 @@
   }
   100% {
     transform: rotateX(0) rotateY(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Hero_Right_Container {
+    display: none;
   }
 }
