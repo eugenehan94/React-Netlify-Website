@@ -1,5 +1,7 @@
 import React, { useEffect, useContext } from "react";
+
 import Navbar from "../components/Navbar";
+import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import "../css/Home.css";
@@ -10,6 +12,10 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  if (openMenu) {
+    return <NavDropDown />;
+  }
 
   return (
     <div>

@@ -18,6 +18,7 @@ import ResumeProject from "./react-resume-project/Resume";
 import ShootoutGame from "./js-shootout-game/ShootoutGame";
 import CardMatchGame from "./js-card-match-game/CardMatchGame";
 
+// useContext for the state and toggle function of the Navigation bar
 export const NavbarMenuContext = React.createContext();
 
 function App() {

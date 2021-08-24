@@ -1,4 +1,50 @@
 .NavDrop_container {
-  width: 100%;
   height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  box-sizing: border-box;
+}
+.NavDrop_icon_container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.NavDrop_close_icon {
+  color: rgb(255, 255, 88);
+  font-size: 2.5rem;
+}
+.NavDrop_close_icon:hover {
+  animation: NavDrop_close_icon 1s linear infinite;
+}
+
+@keyframes NavDrop_close_icon {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.NavDrop_list_container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.NavDrop_list_wrapper li {
+  list-style-type: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.NavDrop_list_wrapper li a {
+  text-decoration: none;
+  color: rgb(255, 255, 88);
+  font-size: 48px;
+}
+.NavDrop_list_wrapper li a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 49px;
 }

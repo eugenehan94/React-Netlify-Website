@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "../components/Navbar";
+import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
+//Imports the useContext provided in the App.js
+import { NavbarMenuContext } from "../App";
+
 import "../css/About.css";
 
 const About = () => {
+  const { openMenu } = useContext(NavbarMenuContext);
+
+  if (openMenu) {
+    return <NavDropDown />;
+  }
+
   return (
     <div>
       <Navbar />
