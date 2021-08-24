@@ -13,11 +13,13 @@ const Navbar = () => {
 
   return (
     <div className="Nav_Container">
-      <div>
-        <Link to="/" className="Nav_Icon">
-          <FaHome size="2.5rem" />
-        </Link>
-      </div>
+      <IconContext.Provider value={{ className: "Nav_Home_Icon" }}>
+        <div>
+          <Link to="/">
+            <FaHome />
+          </Link>
+        </div>
+      </IconContext.Provider>
       <div>
         <IconContext.Provider value={{ className: "Nav_Hamburger_Icon" }}>
           <div>
