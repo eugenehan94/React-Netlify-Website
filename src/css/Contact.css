@@ -121,3 +121,31 @@
     transform: rotate(-1deg);
   }
 }
+
+/* Ipads and tablets */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .Contact_phone_animation {
+    display: none;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .Contact_inner_container {
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .Contact_title {
+    text-align: center;
+  }
+  .Contact_right_container {
+    display: none;
+  }
+  .Contact_phone_animation {
+    display: none;
+  }
+}

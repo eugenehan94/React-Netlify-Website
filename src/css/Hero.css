@@ -77,6 +77,18 @@
 }
 /* Ipads and tablets */
 @media screen and (max-width: 768px) and (min-width: 481px) {
+  .Hero_Title_Container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .Hero_desc_container {
+    text-align: center;
+  }
+  .Hero_button_container {
+    display: flex;
+    justify-content: center;
+  }
   .Hero_Right_Container {
     display: none;
   }
@@ -84,6 +96,23 @@
 
 /* Mobile Devices */
 @media screen and (max-width: 480px) {
+  .Hero_Left_Container {
+    padding: 0;
+    margin: 0.5rem;
+  }
+
+  .Hero_Title_Container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .Hero_desc_container {
+    text-align: center;
+  }
+  .Hero_button_container {
+    display: flex;
+    justify-content: center;
+  }
   .Hero_Right_Container {
     display: none;
   }
