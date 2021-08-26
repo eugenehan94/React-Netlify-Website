@@ -1,10 +1,9 @@
 .Contact_inner_container {
   display: flex;
   margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  height: 450px;
 }
 .Contact_left_container {
   flex: 1;
@@ -124,6 +123,17 @@
 
 /* Ipads and tablets */
 @media screen and (max-width: 768px) and (min-width: 481px) {
+  .Contact_inner_container {
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .Contact_right_container {
+    display: none;
+  }
   .Contact_phone_animation {
     display: none;
   }
@@ -138,6 +148,9 @@
     margin-left: 0;
     margin-right: 0;
     text-align: center;
+  }
+  .Contact_left_container {
+    margin-bottom: 2rem;
   }
   .Contact_title {
     text-align: center;

@@ -67,3 +67,22 @@
 .Project-footer-wrapper {
   margin-top: 2rem;
 }
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .Project-container {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 1rem;
+    gap: 25px;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .Project-container {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0.5rem;
+    gap: 25px;
+  }
+}

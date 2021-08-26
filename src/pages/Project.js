@@ -24,6 +24,7 @@ const Project = () => {
       <h1 className="Project-title">Projects</h1>
       <div className="Project-underline"></div>
       <h2 className="Project-heading">React js</h2>
+      <div className="Project-underline"></div>
       <div className="Project-container">
         <div className="Project-item">
           <h1>Resume Project</h1>
@@ -199,6 +200,7 @@ const Project = () => {
         </div>
       </div>
       <h2 className="Project-heading">Javascript</h2>
+      <div className="Project-underline"></div>
       <div className="Project-container">
         <div className="Project-item">
           <h1>Shootout Prediction Game</h1>
@@ -249,6 +251,7 @@ const Project = () => {
       </div>
 
       <h2 className="Project-heading">Java</h2>
+      <div className="Project-underline"></div>
       <p className="Project-heading">Projects coming soon ....</p>
       <div className="Project-footer-wrapper">
         <Footer />

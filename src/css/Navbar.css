@@ -94,4 +94,7 @@
   .Nav_Hamburger_Icon {
     display: inline-block;
   }
+  .Nav_Home_Icon:hover {
+    animation: none;
+  }
 }

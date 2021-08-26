@@ -33,3 +33,9 @@
   text-align: center;
   margin: 1rem 0;
 }
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .Footer_copyright p {
+    font-size: 15px;
+  }
+}
