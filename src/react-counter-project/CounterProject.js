@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import NavDropDown from "../components/NavDropDown";
+import Footer from "../components/Footer";
 import "./CounterProject.css";
+
+import { NavbarMenuContext } from "../App";
+
 const CounterProject = () => {
   const [count, setCount] = useState(0);
+  const { openMenu } = useContext(NavbarMenuContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const increaseByOne = () => {
     setCount((prevState) => {
@@ -54,6 +64,10 @@ const CounterProject = () => {
     });
   };
 
+  if (openMenu) {
+    return <NavDropDown />;
+  }
+
   return (
     <div>
       <Navbar />
@@ -94,6 +108,7 @@ const CounterProject = () => {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

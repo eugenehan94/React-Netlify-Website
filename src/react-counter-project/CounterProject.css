@@ -32,3 +32,17 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .Counter-container {
+    align-items: center;
+    min-height: auto;
+    margin-bottom: 2rem;
+  }
+  .Counter-buttons {
+    border: none;
+
+    width: 100%;
+    display: flex;
+  }
+}

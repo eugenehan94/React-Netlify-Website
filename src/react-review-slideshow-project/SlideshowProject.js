@@ -1,14 +1,18 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import Navbar from "../components/Navbar";
-
+import NavDropDown from "../components/NavDropDown";
+import Footer from "../components/Footer";
 import data from "./data";
 import "./css/SlideshowProject.css";
+import { NavbarMenuContext } from "../App";
+
 import { FaArrowLeft, FaArrowRight, FaRandom } from "react-icons/fa";
 const SlideshowProject = () => {
   const [index, setIndex] = useState(0);
   const [people, setPeople] = useState(data);
+  const { openMenu } = useContext(NavbarMenuContext);
   //   useEffect(() => {
   //     const fetchTasks = async () => {
   //       const res = await fetch("http://localhost:5000/review");
@@ -18,7 +22,10 @@ const SlideshowProject = () => {
 
   //     fetchTasks();
   //   }, []);
-
+  useEffect(() => {
+    //When page loads, it goes back to the top
+    window.scrollTo(0, 0);
+  }, []);
   const previousPerson = () => {
     setIndex((current) => {
       return checkWithinIndex(current - 1);
@@ -47,7 +54,9 @@ const SlideshowProject = () => {
     }
     return value;
   };
-
+  if (openMenu) {
+    return <NavDropDown />;
+  }
   return (
     <div>
       <Navbar />
@@ -79,6 +88,7 @@ const SlideshowProject = () => {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
