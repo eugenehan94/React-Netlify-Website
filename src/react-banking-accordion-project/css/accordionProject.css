@@ -55,3 +55,18 @@
   padding: 0rem 2.5rem;
   color: #ffff00;
 }
+@media screen and (max-width: 480px) {
+  .Accordion-Container {
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    margin: 0.1rem;
+    margin-bottom: 2rem;
+  }
+  .Accordion-container-heading {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}

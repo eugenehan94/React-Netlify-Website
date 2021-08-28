@@ -1,12 +1,23 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import question from "./data";
 import Navbar from "../components/Navbar";
+import NavDropDown from "../components/NavDropDown";
+import Footer from "../components/Footer";
 import "./css/accordionProject.css";
-
+import { NavbarMenuContext } from "../App";
 const AccordionProject = () => {
   const [number, setNumber] = useState();
   const [data, setData] = useState(question);
+  const { openMenu } = useContext(NavbarMenuContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  if (openMenu) {
+    return <NavDropDown />;
+  }
 
   const toggleAccordion = (id) => {
     if (id === number) {
@@ -65,6 +76,7 @@ const AccordionProject = () => {
           );
         })}
       </div>
+      <Footer />
     </div>
   );
 };

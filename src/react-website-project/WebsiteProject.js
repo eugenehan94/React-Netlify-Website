@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
 import Navbar from "../components/Navbar";
-
+import NavDropDown from "../components/NavDropDown";
 import Feedback from "./components/Feedback";
 import NavBar from "./components/NavBar";
 import Head from "./components/Head";
@@ -20,9 +20,11 @@ import Footer from "./components/Footer";
 
 import "./WebsiteProject.css";
 
+import { NavbarMenuContext } from "../App";
 function WebsiteProject() {
   const [modal, setModal] = useState(false);
   const [offerList, setOfferList] = useState(offerData);
+  const { openMenu } = useContext(NavbarMenuContext);
   // const [offerItem, setOfferItem] = useState(offerData);
 
   const closeModal = () => {
@@ -37,7 +39,9 @@ function WebsiteProject() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  if (openMenu) {
+    return <NavDropDown />;
+  }
   return (
     <div style={{ backgroundColor: "white" }}>
       <Navbar />
