@@ -1,13 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import Navbar from "../components/Navbar";
+import NavDropDown from "../components/NavDropDown";
 import job from "./data/data";
-
+import { NavbarMenuContext } from "../App";
 import "./Resume.css";
+import { IconContext } from "react-icons";
+import Footer from "../components/Footer";
 function Resume() {
   const [arrayIndex, setArrayIndex] = useState(0);
   const [jobList, setJobList] = useState(job);
+  const { openMenu } = useContext(NavbarMenuContext);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  if (openMenu) {
+    return <NavDropDown />;
+  }
   return (
     <div>
       <Navbar />
@@ -37,14 +48,18 @@ function Resume() {
               );
             })}
           </div>
-
+          <hr></hr>
           <div className="Resume-job-container">
             <h1>{jobList[arrayIndex].title}</h1>
             <h2>{jobList[arrayIndex].date}</h2>
             {jobList[arrayIndex].description.map((points, id) => {
               return (
                 <div className="Resume-job-description" key={id}>
-                  <FaAngleRight color={"white"} />
+                  <IconContext.Provider
+                    value={{ className: "Resume_bullet-point" }}
+                  >
+                    <FaAngleRight />
+                  </IconContext.Provider>
                   <p>{points}</p>
                 </div>
               );
@@ -52,6 +67,7 @@ function Resume() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

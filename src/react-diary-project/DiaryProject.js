@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import Navbar from "../components/Navbar";
-
+import NavDropDown from "../components/NavDropDown";
 import addingEntries from "./screenShot/AddingEntries.jpg";
 import homePage from "./screenShot/HomePage.jpg";
-
+import { NavbarMenuContext } from "../App";
 import "./DiaryProject.css";
 
 const DiaryProject = () => {
+  const { openMenu } = useContext(NavbarMenuContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  if (openMenu) {
+    return <NavDropDown />;
+  }
   return (
     <div>
       <Navbar />

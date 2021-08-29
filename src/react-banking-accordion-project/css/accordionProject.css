@@ -69,4 +69,9 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+  .accordion-content p {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    color: #ffff00;
+  }
 }

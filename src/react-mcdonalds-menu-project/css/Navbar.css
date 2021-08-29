@@ -42,3 +42,12 @@
   border-bottom: 5px solid rgb(202, 5, 5);
   font-weight: bold;
 }
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .Navbar-container-inner {
+    margin: 0;
+  }
+  .Mcdonalds-unordered-list {
+    display: none;
+  }
+}

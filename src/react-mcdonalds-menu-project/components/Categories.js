@@ -3,7 +3,7 @@ import categoryPics from "./CategoryPics";
 const Categories = ({ categories, filtering, fullMenu, selected }) => {
   console.log(categoryPics[0]);
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div className="Mcdonald-cat-container">
       <div className="button-reset-container">
         <button
           className="Mcdonald-cat-button"

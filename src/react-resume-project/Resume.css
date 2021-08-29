@@ -72,3 +72,35 @@
   letter-spacing: 0.15rem;
   color: white;
 }
+.Resume_bullet-point {
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  .Resume-subContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .Resume-button-container {
+    margin: 0;
+  }
+
+  .Resume-job-container {
+    margin: 0;
+  }
+  .Resume-job-description p {
+    margin: 0;
+    letter-spacing: 0.2rem;
+  }
+  .Resume-job-description p {
+    margin: 0;
+    padding: 1rem 0.5rem;
+    letter-spacing: 0.15rem;
+    color: white;
+  }
+  .Resume_bullet-point {
+    display: none;
+  }
+}

@@ -3,7 +3,7 @@ import "../css/CovidMessage.css";
 
 const CovidMessage = () => {
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div>
       <div className="message-container">
         <p>
           The health and well-being of our crew and guests has always been
