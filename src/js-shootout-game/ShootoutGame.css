@@ -24,3 +24,9 @@
 #shootout-video {
   max-width: 80%;
 }
+
+@media screen and (max-width: 480px) {
+  #shootout-video {
+    max-width: 98%;
+  }
+}

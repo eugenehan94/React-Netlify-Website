@@ -1,15 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Navbar from "../components/Navbar";
+import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
 import "./ShootoutGame.css";
+import { NavbarMenuContext } from "../App";
 
 import GameplayVideo from "./video/ShootoutGameplay.mp4";
 import InstructionVideo from "./video/ShootoutInstructions.mp4";
 const ShootoutGame = () => {
+  const { openMenu } = useContext(NavbarMenuContext);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  if (openMenu) {
+    return <NavDropDown />;
+  }
   return (
     <div>
       <Navbar />

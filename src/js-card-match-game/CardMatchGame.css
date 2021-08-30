@@ -18,3 +18,8 @@
 #cardGame-video {
   max-width: 70%;
 }
+@media screen and (max-width: 480px) {
+  #cardGame-video {
+    max-width: 98%;
+  }
+}

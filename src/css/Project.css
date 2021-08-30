@@ -71,7 +71,7 @@
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .Project-container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
     gap: 25px;
   }
