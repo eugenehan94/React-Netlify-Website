@@ -17,7 +17,7 @@ import DiaryProject from "./react-diary-project/DiaryProject";
 import ResumeProject from "./react-resume-project/Resume";
 import ShootoutGame from "./js-shootout-game/ShootoutGame";
 import CardMatchGame from "./js-card-match-game/CardMatchGame";
-
+import JavaCustomerFileProject from "./java-customer-file-project/CustomerFileProject";
 // useContext for the state and toggle function of the Navigation bar
 export const NavbarMenuContext = React.createContext();
 
@@ -81,6 +81,9 @@ function App() {
           </Route>
           <Route path="/CardMatchGame">
             <CardMatchGame />
+          </Route>
+          <Route path="/JavaCustomerFileProject">
+            <JavaCustomerFileProject />
           </Route>
         </Switch>
       </Router>

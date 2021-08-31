@@ -252,7 +252,32 @@ const Project = () => {
 
       <h2 className="Project-heading">Java</h2>
       <div className="Project-underline"></div>
-      <p className="Project-heading">Projects coming soon ....</p>
+      <div className="Project-container">
+        <div className="Project-item">
+          <h1>Customer CRUD Project</h1>
+          <p>
+            A Java Spring project which emulates real-life CRUD operations in
+            handling new and existing customer/client files. Using mySQL as the
+            database
+          </p>
+
+          <Link to="/JavaCustomerFileProject">
+            <button className="Project-to-project-btn">
+              Customer CRUD Project
+            </button>
+          </Link>
+          <div style={{ textAlign: "center" }}>
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/CustomerFile"
+                target="_blank"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
       <div className="Project-footer-wrapper">
         <Footer />
       </div>
