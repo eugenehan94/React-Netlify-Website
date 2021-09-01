@@ -1,15 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import Navbar from "../components/Navbar";
+import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
 import ClientSearchVideo from "./video/JavaProjectClientSearch.mp4";
 import ClientNewVideo from "./video/JavaProjectNewClient.mp4";
-
+import { NavbarMenuContext } from "../App";
 import "./CustomerFileProjects.css";
 
 const CustomerFileProject = () => {
+  const { openMenu } = useContext(NavbarMenuContext);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  if (openMenu) {
+    return <NavDropDown />;
+  }
   return (
     <div>
       <Navbar />

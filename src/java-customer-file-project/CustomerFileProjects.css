@@ -24,3 +24,8 @@
 #customerFile-video {
   max-width: 80%;
 }
+@media screen and (max-width: 480px) {
+  #customerFile-video {
+    max-width: 98%;
+  }
+}
