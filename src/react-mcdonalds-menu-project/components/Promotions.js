@@ -3,8 +3,8 @@ import NavBar from "../../components/Navbar";
 import Navbar from "./Navbar";
 import Sundae from "../images/SundaeDrinkSummerTime.jpg";
 import RefreshingSip from "../images/RefreshingSipOfSummer.jpg";
-import McMuffin from "../images/YourFavouriteMcMuffin.jpg";
-import BicMac from "../images/BigMacJustGotBigger.jpg";
+// import McMuffin from "../images/YourFavouriteMcMuffin.jpg";
+// import BicMac from "../images/BigMacJustGotBigger.jpg";
 import "../css/Promotions.css";
 const Promotions = () => {
   return (

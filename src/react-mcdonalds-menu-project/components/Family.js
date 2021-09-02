@@ -12,7 +12,11 @@ const Family = () => {
       <h1 className="Family-title">Family</h1>
 
       <div style={{ backgroundColor: "white" }}>
-        <img src={familyImage} alt="Family Image" className="familyImage"></img>
+        <img
+          src={familyImage}
+          alt="Child holds meal"
+          className="familyImage"
+        ></img>
       </div>
       <div className="family-message-container">
         <div className="family-message-title">

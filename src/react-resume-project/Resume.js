@@ -9,7 +9,8 @@ import { IconContext } from "react-icons";
 import Footer from "../components/Footer";
 function Resume() {
   const [arrayIndex, setArrayIndex] = useState(0);
-  const [jobList, setJobList] = useState(job);
+  // const [jobList, setJobList] = useState(job);
+  const jobList = job;
   const { openMenu } = useContext(NavbarMenuContext);
 
   useEffect(() => {
@@ -29,7 +30,6 @@ function Resume() {
           <div className="Resume-button-container">
             <h1 className="Resume-button-heading">Jobs</h1>
             {jobList.map((job, id) => {
-              console.log(id);
               return (
                 <div key={id}>
                   <button

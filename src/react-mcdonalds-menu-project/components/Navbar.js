@@ -5,7 +5,7 @@ import McDLogo from "../images/McD-squareLogo.png";
 import "../css/Navbar.css";
 const Navbar = () => {
   let location = useLocation();
-  console.log(location.pathname === "/menu");
+
   return (
     <nav className="Navbar-container">
       <div className="Navbar-container-inner">

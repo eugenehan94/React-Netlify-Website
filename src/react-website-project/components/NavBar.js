@@ -21,17 +21,17 @@ function NavBar() {
 
         <ul className={"Website-navbar-item-container"}>
           <li className="Website-navbar-items">
-            <a href="#" className="Website-navbar-links">
+            <a href="/#" className="Website-navbar-links">
               Services
             </a>
           </li>
           <li className="Website-navbar-items">
-            <a href="#" className="Website-navbar-links">
+            <a href="/#" className="Website-navbar-links">
               Contact Us
             </a>
           </li>
           <li className="Website-navbar-items">
-            <a href="#" className="Website-navbar-links">
+            <a href="/#" className="Website-navbar-links">
               Sign-up
             </a>
           </li>

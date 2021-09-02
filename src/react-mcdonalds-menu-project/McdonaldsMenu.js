@@ -2,18 +2,16 @@ import { useState, useEffect, useContext } from "react";
 
 import NavBar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
-import Home from "../pages/Home";
+
 import Navbar from "./components/Navbar";
 import CovidMessage from "./components/CovidMessage";
 import Menu from "./components/Menu";
 import Categories from "./components/Categories";
 import MenuOptions from "./components/MenuOptions";
-import Promotions from "./components/Promotions";
-import Family from "./components/Family";
 
 import Footer from "../components/Footer";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./McdonaldsMenu.css";
 import { NavbarMenuContext } from "../App";
@@ -40,7 +38,8 @@ MenuOptions.sort(function (a, b) {
 
 const McdonaldsMenu = () => {
   const [menu, setMenu] = useState(MenuOptions);
-  const [categories, setCategories] = useState(allCategories);
+  // const [categories, setCategories] = useState(allCategories);
+  const categories = allCategories;
   const [selected, setSelected] = useState("Temporary Limited Menu");
   const { openMenu } = useContext(NavbarMenuContext);
   const fullMenu = () => {

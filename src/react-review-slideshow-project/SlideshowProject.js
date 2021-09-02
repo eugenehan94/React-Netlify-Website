@@ -8,10 +8,11 @@ import data from "./data";
 import "./css/SlideshowProject.css";
 import { NavbarMenuContext } from "../App";
 
-import { FaArrowLeft, FaArrowRight, FaRandom } from "react-icons/fa";
+// import { FaArrowLeft, FaArrowRight, FaRandom } from "react-icons/fa";
 const SlideshowProject = () => {
   const [index, setIndex] = useState(0);
-  const [people, setPeople] = useState(data);
+  // const [people, setPeople] = useState(data);
+  const people = data;
   const { openMenu } = useContext(NavbarMenuContext);
   //   useEffect(() => {
   //     const fetchTasks = async () => {

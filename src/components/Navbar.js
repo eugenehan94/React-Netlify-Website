@@ -9,7 +9,7 @@ import "../css/Navbar.css";
 import { NavbarMenuContext } from "../App";
 
 const Navbar = () => {
-  const { openMenu, toggle } = useContext(NavbarMenuContext);
+  const { toggle } = useContext(NavbarMenuContext);
 
   return (
     <div className="Nav_Container">

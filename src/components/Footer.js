@@ -20,6 +20,7 @@ const Footer = () => {
           <a
             href="https://github.com/eugenehan94"
             target="_blank"
+            rel="noreferrer"
             className="Footer_social_link"
           >
             <AiFillGithub color="white" /> Github
@@ -28,6 +29,7 @@ const Footer = () => {
           <a
             href="http://www.linkedin.com/in/eugene-h-7928bb63"
             target="_blank"
+            rel="noreferrer"
             className="Footer_social_link"
           >
             <AiFillLinkedin color="white" /> Linkedin

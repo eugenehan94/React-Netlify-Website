@@ -8,7 +8,8 @@ import "./css/accordionProject.css";
 import { NavbarMenuContext } from "../App";
 const AccordionProject = () => {
   const [number, setNumber] = useState();
-  const [data, setData] = useState(question);
+  // const [data, setData] = useState(question);
+  const data = question;
   const { openMenu } = useContext(NavbarMenuContext);
 
   useEffect(() => {

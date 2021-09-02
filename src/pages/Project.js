@@ -42,6 +42,7 @@ const Project = () => {
                 <a
                   href="https://github.com/eugenehan94/React-Resume-Project"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FaGithub /> to Github
                 </a>
@@ -70,6 +71,7 @@ const Project = () => {
                 <a
                   href="https://github.com/eugenehan94/React-Diary-Project"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FaGithub /> to Github
                 </a>
@@ -90,6 +92,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/React-McDonalds-Menu-Project"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
@@ -113,6 +116,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/React-Banking-Accordion-Project"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
@@ -130,6 +134,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/react-webpage-project"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
@@ -150,6 +155,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/React-Reviews-Slideshow-Project"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
@@ -172,6 +178,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/React-Github-User-List-Project"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
@@ -192,6 +199,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/React-Counter-Project"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
@@ -219,6 +227,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/Shootout-Prediction-Game"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
@@ -242,6 +251,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/Card-Matching-Game"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
@@ -271,6 +281,7 @@ const Project = () => {
               <a
                 href="https://github.com/eugenehan94/CustomerFile"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub /> to Github
               </a>
