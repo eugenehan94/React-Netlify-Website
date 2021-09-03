@@ -26,16 +26,14 @@ const Project = () => {
       <h2 className="Project-heading">React js</h2>
       <div className="Project-underline"></div>
       <div className="Project-container">
-        <div className="Project-item" style={{ position: "relative" }}>
+        <div className="Project-item">
           <h1>Resume Project</h1>
           <p>
             A virtual resume showing my previous work and volunteer experiences.
           </p>
-
           <Link to="/ResumeProject">
             <button className="Project-to-project-btn">Resume Project</button>
           </Link>
-
           <div
             style={{
               textAlign: "center",
