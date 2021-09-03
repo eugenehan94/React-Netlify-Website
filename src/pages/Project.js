@@ -26,28 +26,30 @@ const Project = () => {
       <h2 className="Project-heading">React js</h2>
       <div className="Project-underline"></div>
       <div className="Project-container">
-        <div className="Project-item">
+        <div className="Project-item" style={{ position: "relative" }}>
           <h1>Resume Project</h1>
           <p>
             A virtual resume showing my previous work and volunteer experiences.
           </p>
 
-          <div className="Project-btn-wrapper">
-            <Link to="/ResumeProject">
-              <button className="Project-to-project-btn">Resume Project</button>
-            </Link>
+          <Link to="/ResumeProject">
+            <button className="Project-to-project-btn">Resume Project</button>
+          </Link>
 
-            <div style={{ textAlign: "center" }}>
-              <button className="Project-github-icon">
-                <a
-                  href="https://github.com/eugenehan94/React-Resume-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaGithub /> to Github
-                </a>
-              </button>
-            </div>
+          <div
+            style={{
+              textAlign: "center",
+            }}
+          >
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/React-Resume-Project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
           </div>
         </div>
 
@@ -62,21 +64,25 @@ const Project = () => {
             Clone the original code from Github and run the JSON server to
             interact with the API.
           </p>
-          <div className="Project-btn-wrapper">
-            <Link to="/DiaryProject">
-              <button className="Project-to-project-btn"> Diary Project</button>
-            </Link>
-            <div style={{ textAlign: "center" }}>
-              <button className="Project-github-icon">
-                <a
-                  href="https://github.com/eugenehan94/React-Diary-Project"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaGithub /> to Github
-                </a>
-              </button>
-            </div>
+
+          <Link to="/DiaryProject">
+            <button className="Project-to-project-btn"> Diary Project</button>
+          </Link>
+
+          <div
+            style={{
+              textAlign: "center",
+            }}
+          >
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/React-Diary-Project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
           </div>
         </div>
         <div className="Project-item">
