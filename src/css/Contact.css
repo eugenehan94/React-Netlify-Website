@@ -30,6 +30,27 @@
   text-decoration: underline;
   font-style: italic;
 }
+.Contact-home-btn-wrapper:hover {
+  transform-origin: center;
+  animation: projectHomeBtnShake 0.5s linear infinite;
+}
+@keyframes projectHomeBtnShake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .Contact_btn {
   color: rgb(255, 255, 255);
   font-size: 28px;

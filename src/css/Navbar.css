@@ -63,7 +63,6 @@
 }
 .Nav_List_Container li {
   display: inline;
-
   font-size: 1.9rem;
   margin-right: 1.5rem;
 }
@@ -75,6 +74,7 @@
 .Nav_List_Container li a:hover {
   color: rgb(255, 255, 255);
 }
+
 /* Ipads and tablets */
 @media screen and (max-width: 768px) {
   .Nav_Hamburger_Icon {

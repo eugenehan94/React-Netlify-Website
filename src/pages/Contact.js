@@ -46,7 +46,7 @@ const Contact = () => {
             <AiFillGithub /> Github
           </a>
 
-          <div>
+          <div className="Contact-home-btn-wrapper">
             <Link to="/">
               <button className="Contact_btn">Return Home</button>
             </Link>

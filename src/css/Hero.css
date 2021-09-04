@@ -25,6 +25,28 @@
 .Hero_button_container {
   margin: 2rem 0;
 }
+.Hero_button_container:hover {
+  transform-origin: center;
+  animation: projectButtonShake 0.5s linear infinite;
+}
+@keyframes projectButtonShake {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .Hero_button {
   color: rgb(255, 255, 88);
   font-size: 28px;
