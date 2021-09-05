@@ -31,9 +31,11 @@ const Project = () => {
           <p>
             A virtual resume showing my previous work and volunteer experiences.
           </p>
-          <Link to="/ResumeProject">
-            <button className="Project-to-project-btn">Resume Project</button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/ResumeProject">
+              <button className="Project-to-project-btn">Resume Project</button>
+            </Link>
+          </div>
           <div
             style={{
               textAlign: "center",
@@ -62,11 +64,11 @@ const Project = () => {
             Clone the original code from Github and run the JSON server to
             interact with the API.
           </p>
-
-          <Link to="/DiaryProject">
-            <button className="Project-to-project-btn"> Diary Project</button>
-          </Link>
-
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/DiaryProject">
+              <button className="Project-to-project-btn"> Diary Project</button>
+            </Link>
+          </div>
           <div
             style={{
               textAlign: "center",
@@ -86,11 +88,14 @@ const Project = () => {
         <div className="Project-item">
           <h1>Mcdonalds Menu Replica</h1>
           <p> A replica of Mcdonalds' menu, promotion and family page</p>
-          <Link to="/McdonaldsProject">
-            <button className="Project-to-project-btn">
-              Mcdonald Menu Project
-            </button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/McdonaldsProject">
+              <button className="Project-to-project-btn">
+                Mcdonald Menu Project
+              </button>
+            </Link>
+          </div>
+
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
@@ -110,11 +115,13 @@ const Project = () => {
             website
           </p>
           <p>The original program reads the data from the REST API</p>
-          <Link to="/AccordionProject">
-            <button className="Project-to-project-btn">
-              Accordion Project
-            </button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/AccordionProject">
+              <button className="Project-to-project-btn">
+                Accordion Project
+              </button>
+            </Link>
+          </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
@@ -130,9 +137,13 @@ const Project = () => {
         <div className="Project-item">
           <h1>Webpage Project</h1>
           <p>A webpage I created using React js</p>
-          <Link to="/WebsiteProject">
-            <button className="Project-to-project-btn">Website Project</button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/WebsiteProject">
+              <button className="Project-to-project-btn">
+                Website Project
+              </button>
+            </Link>
+          </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
@@ -149,11 +160,14 @@ const Project = () => {
           <h1>Slideshow Project</h1>
           <p>A slide show of people's name, picture and comment</p>
           <p>The data is read from a REST API in the original.</p>
-          <Link to="/SlideshowProject">
-            <button className="Project-to-project-btn">
-              Slideshow Project
-            </button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/SlideshowProject">
+              <button className="Project-to-project-btn">
+                Slideshow Project
+              </button>
+            </Link>
+          </div>
+
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
@@ -172,11 +186,13 @@ const Project = () => {
             A project showing multiple Github Users. The information is fetched
             for an API provided by Github
           </p>
-          <Link to="/GithubUserProject">
-            <button className="Project-to-project-btn">
-              Github User Project
-            </button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/GithubUserProject">
+              <button className="Project-to-project-btn">
+                Github User Project
+              </button>
+            </Link>
+          </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
@@ -195,9 +211,13 @@ const Project = () => {
             A counter with different options, like add and subtract 100, random
             number, etc.
           </p>
-          <Link to="/CounterProject">
-            <button className="Project-to-project-btn">Counter Project</button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/CounterProject">
+              <button className="Project-to-project-btn">
+                Counter Project
+              </button>
+            </Link>
+          </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
@@ -220,12 +240,13 @@ const Project = () => {
             A 2D soccer/football shootout game created with Vanilla Javascript,
             CSS and HTML.
           </p>
-
-          <Link to="/ShootoutGame">
-            <button className="Project-to-project-btn">
-              Shootout Prediction Game
-            </button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/ShootoutGame">
+              <button className="Project-to-project-btn">
+                Shootout Prediction Game
+              </button>
+            </Link>
+          </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
@@ -244,12 +265,13 @@ const Project = () => {
             A 2D 2 player card matching game created with Vanilla Javascript,
             CSS and HTML.
           </p>
-
-          <Link to="/CardMatchGame">
-            <button className="Project-to-project-btn">
-              Card Matching Game
-            </button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/CardMatchGame">
+              <button className="Project-to-project-btn">
+                Card Matching Game
+              </button>
+            </Link>
+          </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
@@ -274,12 +296,13 @@ const Project = () => {
             handling new and existing customer/client files. Using mySQL as the
             database
           </p>
-
-          <Link to="/JavaCustomerFileProject">
-            <button className="Project-to-project-btn">
-              Customer CRUD Project
-            </button>
-          </Link>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/JavaCustomerFileProject">
+              <button className="Project-to-project-btn">
+                Customer CRUD Project
+              </button>
+            </Link>
+          </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
               <a
