@@ -4,7 +4,12 @@
   font-size: 48px;
   margin-bottom: 1rem;
 }
+.Diary-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 .Diary-image {
-  max-width: 100%;
+  max-width: 90%;
   object-fit: scale-down;
 }

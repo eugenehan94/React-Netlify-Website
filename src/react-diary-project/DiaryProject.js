@@ -30,11 +30,13 @@ const DiaryProject = () => {
           className="Diary-image"
         ></img>
       </div>
-      <img
-        src={addingEntries}
-        alt="Adding Entries Page"
-        className="Diary-image"
-      ></img>
+      <div className="Diary-image-container">
+        <img
+          src={addingEntries}
+          alt="Adding Entries Page"
+          className="Diary-image"
+        ></img>
+      </div>
       <Footer />
     </div>
   );
