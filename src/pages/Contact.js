@@ -4,11 +4,9 @@ import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-
 import { Link } from "react-router-dom";
 import "../css/Contact.css";
 import { IconContext } from "react-icons";
-
 import { NavbarMenuContext } from "../App";
 
 const Contact = () => {

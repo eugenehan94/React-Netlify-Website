@@ -4,7 +4,6 @@ import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
 //Imports the useContext provided in the App.js
 import { NavbarMenuContext } from "../App";
-
 import "../css/About.css";
 
 const About = () => {
