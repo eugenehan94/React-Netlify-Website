@@ -27,6 +27,40 @@ const Project = () => {
       <div className="Project-underline"></div>
       <div className="Project-container">
         <div className="Project-item">
+          <h1>Ecommerce Project</h1>
+          <p>
+            An ecommerce website I developed using React redux, router and
+            hooks. Performs HTTP request from API provided by FakeStoreAPI
+          </p>
+          <div className="Project-btn-animation-wrapper">
+            <a
+              href="https://eugenehan94.github.io/react-redux-estore-project/#/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="Project-to-project-btn">
+                Ecommerce Project
+              </button>
+            </a>
+          </div>
+          <div
+            style={{
+              textAlign: "center",
+            }}
+          >
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/react-redux-estore-project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <div className="Project-item">
           <h1>Resume Project</h1>
           <p>
             A virtual resume showing my previous work and volunteer experiences.
