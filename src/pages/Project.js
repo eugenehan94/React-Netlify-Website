@@ -61,6 +61,37 @@ const Project = () => {
         </div>
 
         <div className="Project-item">
+          <h1>Light/Dark Theme</h1>
+          <p>A light/dark theme project created using styled components.</p>
+          <div className="Project-btn-animation-wrapper">
+            <a
+              href="https://eugenehan94.github.io/React-light-dark-theme-project/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="Project-to-project-btn">
+                Ecommerce Project
+              </button>
+            </a>
+          </div>
+          <div
+            style={{
+              textAlign: "center",
+            }}
+          >
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/React-light-dark-theme-project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <div className="Project-item">
           <h1>Resume Project</h1>
           <p>
             A virtual resume showing my previous work and volunteer experiences.
