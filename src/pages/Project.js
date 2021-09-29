@@ -70,7 +70,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Ecommerce Project
+                Light/Dark Theme
               </button>
             </a>
           </div>

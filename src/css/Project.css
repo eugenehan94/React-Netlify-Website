@@ -34,6 +34,7 @@
   display: grid;
   grid-template-rows: auto 1fr;
   /* position: relative; */
+  transition: 0.3 ease-in-out all;
 }
 .Project-item:hover {
   border: 1px solid rgba(255, 255, 255, 0.7);
