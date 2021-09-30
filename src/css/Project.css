@@ -37,8 +37,8 @@
   transition: 0.3 ease-in-out all;
 }
 .Project-item:hover {
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 5px 15px rgb(255 255 255 / 10%);
+  /* border: 1px solid rgba(255, 255, 255, 0.7); */
+  /* box-shadow: 0 5px 15px rgb(255 255 255 / 10%); */
 }
 .Project-item h1 {
   font-size: 40px;

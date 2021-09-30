@@ -30,7 +30,7 @@ const About = () => {
           multiple Dwite programming competitions,
         </p>
         <p className="About_desc">
-          during that time, I also picked up HTML, CSS and Spring
+          during that time, I also picked up HTML, CSS and Spring.
         </p>
         <p className="About_desc">
           During my university year, I started using JavaScript and eventually
