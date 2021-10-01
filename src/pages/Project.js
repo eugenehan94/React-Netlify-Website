@@ -154,11 +154,17 @@ const Project = () => {
           <h1>Mcdonalds Menu Replica</h1>
           <p> A replica of Mcdonalds' menu, promotion and family page</p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/McdonaldsProject">
+            {/* <Link to="/McdonaldsProject"> */}
+            <a
+              href="https://eugenehan94.github.io/React-McDonalds-Menu-Project/#/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">
                 Mcdonald Menu Project
               </button>
-            </Link>
+            </a>
+            {/* </Link> */}
           </div>
 
           <div style={{ textAlign: "center" }}>

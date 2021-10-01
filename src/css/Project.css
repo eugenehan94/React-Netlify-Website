@@ -73,12 +73,12 @@
   border-radius: 2px;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: rgb(255, 255, 88);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   cursor: pointer;
 }
 .Project-to-project-btn:hover {
-  background-color: rgb(12, 104, 104);
+  background-color: rgb(10, 85, 85);
 }
 .Project-github-icon {
   border: none;

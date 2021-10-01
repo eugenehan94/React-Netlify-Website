@@ -10,9 +10,7 @@ import GithubUserProject from "./react-github-user-project/GithubUserProject";
 import WebsiteProject from "./react-website-project/WebsiteProject";
 import SlideshowProject from "./react-review-slideshow-project/SlideshowProject";
 import AccordionProject from "./react-banking-accordion-project/accordionProject";
-import McdonaldsProject from "./react-mcdonalds-menu-project/McdonaldsMenu";
-import Promotions from "./react-mcdonalds-menu-project/components/Promotions";
-import Family from "./react-mcdonalds-menu-project/components/Family";
+
 import DiaryProject from "./react-diary-project/DiaryProject";
 import ResumeProject from "./react-resume-project/Resume";
 import ShootoutGame from "./js-shootout-game/ShootoutGame";
@@ -58,18 +56,7 @@ function App() {
           <Route path="/AccordionProject">
             <AccordionProject />
           </Route>
-          <Route path="/McdonaldsProject">
-            <McdonaldsProject />
-          </Route>
-          <Route path="/promotion">
-            <Promotions />
-          </Route>
-          <Route path="/family">
-            <Family />
-          </Route>
-          <Route path="/menu">
-            <McdonaldsProject />
-          </Route>
+
           <Route path="/DiaryProject">
             <DiaryProject />
           </Route>
