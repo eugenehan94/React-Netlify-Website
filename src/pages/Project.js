@@ -191,11 +191,15 @@ const Project = () => {
           </p>
           <p>The original program reads the data from the REST API</p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/AccordionProject">
+            <a
+              href="https://eugenehan94.github.io/React-Banking-Accordion-Project/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">
                 Accordion Project
               </button>
-            </Link>
+            </a>
           </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">

@@ -9,7 +9,6 @@ import CounterProject from "./react-counter-project/CounterProject";
 import GithubUserProject from "./react-github-user-project/GithubUserProject";
 import WebsiteProject from "./react-website-project/WebsiteProject";
 import SlideshowProject from "./react-review-slideshow-project/SlideshowProject";
-import AccordionProject from "./react-banking-accordion-project/accordionProject";
 
 import DiaryProject from "./react-diary-project/DiaryProject";
 
@@ -52,9 +51,6 @@ function App() {
           </Route>
           <Route path="/SlideshowProject">
             <SlideshowProject />
-          </Route>
-          <Route path="/AccordionProject">
-            <AccordionProject />
           </Route>
 
           <Route path="/DiaryProject">
