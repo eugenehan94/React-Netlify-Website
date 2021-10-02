@@ -97,9 +97,13 @@ const Project = () => {
             A virtual resume showing my previous work and volunteer experiences.
           </p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/ResumeProject">
+            <a
+              href="https://eugenehan94.github.io/React-Resume-Project/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">Resume Project</button>
-            </Link>
+            </a>
           </div>
           <div
             style={{

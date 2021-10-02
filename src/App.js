@@ -12,7 +12,7 @@ import SlideshowProject from "./react-review-slideshow-project/SlideshowProject"
 import AccordionProject from "./react-banking-accordion-project/accordionProject";
 
 import DiaryProject from "./react-diary-project/DiaryProject";
-import ResumeProject from "./react-resume-project/Resume";
+
 import ShootoutGame from "./js-shootout-game/ShootoutGame";
 import CardMatchGame from "./js-card-match-game/CardMatchGame";
 import JavaCustomerFileProject from "./java-customer-file-project/CustomerFileProject";
@@ -60,9 +60,7 @@ function App() {
           <Route path="/DiaryProject">
             <DiaryProject />
           </Route>
-          <Route path="/ResumeProject">
-            <ResumeProject />
-          </Route>
+
           <Route path="/ShootoutGame">
             <ShootoutGame />
           </Route>
