@@ -15,7 +15,11 @@ import "../css/Stacks.css";
 const Stacks = () => {
   return (
     <div className="Stacks-container">
-      <h1 className="Stacks-title">Stacks</h1>
+      <h1 className="Stacks-title">Technologies</h1>
+      <h2>
+        I've worked with a range of technologies in the development world. From
+        front-end to back-end
+      </h2>
       <div>
         {/* <h4 className="Stacks-heading">Front End</h4> */}
         <IconContext.Provider value={{ className: "Stacks-icons" }}>
