@@ -5,10 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
-import CounterProject from "./react-counter-project/CounterProject";
-import GithubUserProject from "./react-github-user-project/GithubUserProject";
+
 import WebsiteProject from "./react-website-project/WebsiteProject";
-import SlideshowProject from "./react-review-slideshow-project/SlideshowProject";
 
 import DiaryProject from "./react-diary-project/DiaryProject";
 
@@ -40,17 +38,9 @@ function App() {
           <Route path="/Contact">
             <Contact />
           </Route>
-          <Route path="/CounterProject">
-            <CounterProject />
-          </Route>
-          <Route path="/GithubUserProject">
-            <GithubUserProject />
-          </Route>
+
           <Route path="/WebsiteProject">
             <WebsiteProject />
-          </Route>
-          <Route path="/SlideshowProject">
-            <SlideshowProject />
           </Route>
 
           <Route path="/DiaryProject">

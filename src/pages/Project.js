@@ -213,38 +213,21 @@ const Project = () => {
             </button>
           </div>
         </div>
-        <div className="Project-item">
-          <h1>Webpage Project</h1>
-          <p>A webpage I created using React js</p>
-          <div className="Project-btn-animation-wrapper">
-            <Link to="/WebsiteProject">
-              <button className="Project-to-project-btn">
-                Website Project
-              </button>
-            </Link>
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <button className="Project-github-icon">
-              <a
-                href="https://github.com/eugenehan94/react-webpage-project"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub /> to Github
-              </a>
-            </button>
-          </div>
-        </div>
+
         <div className="Project-item">
           <h1>Slideshow Project</h1>
           <p>A slide show of people's name, picture and comment</p>
           <p>The data is read from a REST API in the original.</p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/SlideshowProject">
+            <a
+              href="https://eugenehan94.github.io/React-Reviews-Slideshow-Project/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">
                 Slideshow Project
               </button>
-            </Link>
+            </a>
           </div>
 
           <div style={{ textAlign: "center" }}>
@@ -266,11 +249,15 @@ const Project = () => {
             for an API provided by Github
           </p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/GithubUserProject">
+            <a
+              href="https://eugenehan94.github.io/React-Github-User-List-Project/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">
                 Github User Project
               </button>
-            </Link>
+            </a>
           </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
@@ -291,11 +278,15 @@ const Project = () => {
             number, etc.
           </p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/CounterProject">
+            <a
+              href="https://eugenehan94.github.io/React-Counter-Project/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">
                 Counter Project
               </button>
-            </Link>
+            </a>
           </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
@@ -355,6 +346,28 @@ const Project = () => {
             <button className="Project-github-icon">
               <a
                 href="https://github.com/eugenehan94/Card-Matching-Game"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="Project-item">
+          <h1>Webpage Project</h1>
+          <p>A webpage I created using HTML, CSS and vanilla Javascript</p>
+          <div className="Project-btn-animation-wrapper">
+            <Link to="/WebsiteProject">
+              <button className="Project-to-project-btn">
+                Website Project
+              </button>
+            </Link>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/react-webpage-project"
                 target="_blank"
                 rel="noreferrer"
               >
