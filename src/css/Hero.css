@@ -7,16 +7,34 @@
   padding: 0 3rem;
   flex: 1;
 }
+
 .Hero_Title_Container {
   margin-top: 4rem;
   margin-bottom: 2rem;
+  animation: heroTextSlide 1s linear;
 }
+
+@keyframes heroTextSlide {
+  from {
+    opacity: 0;
+    transform: translate(0, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .Hero_Title {
   color: rgb(255, 255, 88);
   font-size: 65px;
   font-weight: 800;
   line-height: 72px;
 }
+.Hero_desc_container {
+  animation: heroTextSlide 1s linear;
+}
+
 .Hero_desc {
   color: rgb(255, 255, 88);
   font-size: 24px;
@@ -25,7 +43,18 @@
 .Hero_button_container {
   margin: 2rem 0;
 }
-.Hero_button_container:hover {
+
+.Hero_button {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  background-color: rgb(0, 128, 0);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 4rem;
+  cursor: pointer;
+}
+
+.Hero_button:hover {
   transform-origin: center;
   animation: projectButtonShake 0.5s linear infinite;
 }
@@ -47,15 +76,6 @@
   }
 }
 
-.Hero_button {
-  color: rgb(255, 255, 88);
-  font-size: 28px;
-  background-color: rgb(0, 128, 0);
-  border: none;
-  border-radius: 20px;
-  padding: 0.5rem 4rem;
-  cursor: pointer;
-}
 .Hero_Right_Container {
   display: flex;
   flex: 1;

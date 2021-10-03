@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import Stacks from "../components/Stacks";
 import "../css/Home.css";
 import { NavbarMenuContext } from "../App";
 
@@ -21,6 +22,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
+      <Stacks />
       <Footer />
     </div>
   );
