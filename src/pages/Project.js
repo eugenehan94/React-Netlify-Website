@@ -160,7 +160,7 @@ const Project = () => {
           <div className="Project-btn-animation-wrapper">
             {/* <Link to="/McdonaldsProject"> */}
             <a
-              href="https://eugenehan94.github.io/React-McDonalds-Menu-Project/#/"
+              href="https://eugenehan94.github.io/React-McDonalds-Menu-Project"
               target="_blank"
               rel="noreferrer"
             >
@@ -183,6 +183,37 @@ const Project = () => {
             </button>
           </div>
         </div>
+
+        <div className="Project-item">
+          <h1>A Banking Webpage</h1>
+          <p> A webpage I created using React js</p>
+          <div className="Project-btn-animation-wrapper">
+            {/* <Link to="/McdonaldsProject"> */}
+            <a
+              href="https://eugenehan94.github.io/react-webpage-project/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="Project-to-project-btn">
+                Banking Webpage
+              </button>
+            </a>
+            {/* </Link> */}
+          </div>
+
+          <div style={{ textAlign: "center" }}>
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/React-McDonalds-Menu-Project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub /> to Github
+              </a>
+            </button>
+          </div>
+        </div>
+
         <div className="Project-item">
           <h1>Accordion Project</h1>
           <p>
@@ -311,11 +342,15 @@ const Project = () => {
             CSS and HTML.
           </p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/ShootoutGame">
+            <a
+              href="https://eugenehan94.github.io/Shootout-Prediction-Game/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">
                 Shootout Prediction Game
               </button>
-            </Link>
+            </a>
           </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
@@ -336,11 +371,15 @@ const Project = () => {
             CSS and HTML.
           </p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/CardMatchGame">
+            <a
+              href="https://eugenehan94.github.io/Card-Matching-Game/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">
                 Card Matching Game
               </button>
-            </Link>
+            </a>
           </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
@@ -358,11 +397,15 @@ const Project = () => {
           <h1>Webpage Project</h1>
           <p>A webpage I created using HTML, CSS and vanilla Javascript</p>
           <div className="Project-btn-animation-wrapper">
-            <Link to="/WebsiteProject">
+            <a
+              href="https://eugenehan94.github.io/Banking-Website-Replica/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="Project-to-project-btn">
                 Website Project
               </button>
-            </Link>
+            </a>
           </div>
           <div style={{ textAlign: "center" }}>
             <button className="Project-github-icon">
