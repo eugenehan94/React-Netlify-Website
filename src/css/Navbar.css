@@ -38,6 +38,7 @@
 }
 .Nav_Hamburger_Icon:hover {
   animation: Hamburger_Icon 0.5s linear infinite;
+  cursor: pointer;
 }
 @keyframes Hamburger_Icon {
   0% {

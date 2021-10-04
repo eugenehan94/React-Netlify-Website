@@ -17,8 +17,7 @@ const Stacks = () => {
     <div className="Stacks-container">
       <h1 className="Stacks-title">Technologies</h1>
       <h2>
-        I've worked with a range of technologies in the development world. From
-        front-end to back-end
+        I've worked with a range of technologies in the development world.
       </h2>
       <div>
         {/* <h4 className="Stacks-heading">Front End</h4> */}

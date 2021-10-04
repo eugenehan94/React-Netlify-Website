@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
+import Timeline from "../components/Timeline";
 //Imports the useContext provided in the App.js
 import { NavbarMenuContext } from "../App";
 import "../css/About.css";
@@ -48,6 +49,7 @@ const About = () => {
           things or in the gym.
         </p>
       </div>
+      <Timeline />
       <Footer />
     </div>
   );
