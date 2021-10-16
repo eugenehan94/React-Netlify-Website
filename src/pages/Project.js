@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
 import { Link } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaEye } from "react-icons/fa";
 import Footer from "../components/Footer";
 import "../css/Project.css";
 import { NavbarMenuContext } from "../App";
@@ -39,7 +39,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Ecommerce Project
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -54,12 +54,77 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
         </div>
-
+        <div className="Project-item">
+          <h1>Material UI Bootcamp</h1>
+          <p>
+            A bootcamp webpage created with React Js and Material UI framework.
+          </p>
+          <div className="Project-btn-animation-wrapper">
+            <a
+              href="https://eugenehan94.github.io/React-Material-UI-Bootcamp-Website-Project/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="Project-to-project-btn">
+                <FaEye style={{ background: "transparent" }} /> View Project
+              </button>
+            </a>
+          </div>
+          <div
+            style={{
+              textAlign: "center",
+            }}
+          >
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/React-Material-UI-Bootcamp-Website-Project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub /> Source Code
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="Project-item">
+          <h1>Anime Random Quotes</h1>
+          <p>
+            A Project I created using React and Material UI. Performs HTTP
+            request from API provided by Animechan and Jikan.
+          </p>
+          <div className="Project-btn-animation-wrapper">
+            <a
+              href="https://eugenehan94.github.io/React-Anime-Random-Quotes-Project/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="Project-to-project-btn">
+                {" "}
+                <FaEye style={{ background: "transparent" }} /> View Project
+              </button>
+            </a>
+          </div>
+          <div
+            style={{
+              textAlign: "center",
+            }}
+          >
+            <button className="Project-github-icon">
+              <a
+                href="https://github.com/eugenehan94/React-Anime-Random-Quotes-Project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub /> Source Code
+              </a>
+            </button>
+          </div>
+        </div>
         <div className="Project-item">
           <h1>Light/Dark Theme</h1>
           <p>A light/dark theme project created using styled components.</p>
@@ -70,7 +135,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Light/Dark Theme
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -85,7 +150,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -102,7 +167,10 @@ const Project = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="Project-to-project-btn">Resume Project</button>
+              <button className="Project-to-project-btn">
+                {" "}
+                <FaEye style={{ background: "transparent" }} /> View Project
+              </button>
             </a>
           </div>
           <div
@@ -116,7 +184,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -135,7 +203,10 @@ const Project = () => {
           </p>
           <div className="Project-btn-animation-wrapper">
             <Link to="/DiaryProject">
-              <button className="Project-to-project-btn"> Diary Project</button>
+              <button className="Project-to-project-btn">
+                {" "}
+                <FaEye style={{ background: "transparent" }} /> View Project
+              </button>
             </Link>
           </div>
           <div
@@ -149,7 +220,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -165,7 +236,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Mcdonald Menu Project
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
             {/* </Link> */}
@@ -178,7 +249,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -195,7 +266,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Banking Webpage
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
             {/* </Link> */}
@@ -208,7 +279,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -228,7 +299,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Accordion Project
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -239,7 +310,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -256,7 +327,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Slideshow Project
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -268,7 +339,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -286,7 +357,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Github User Project
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -297,7 +368,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -315,7 +386,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Counter Project
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -326,7 +397,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -348,7 +419,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Shootout Prediction Game
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -359,7 +430,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -377,7 +448,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Card Matching Game
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -388,7 +459,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -403,7 +474,7 @@ const Project = () => {
               rel="noreferrer"
             >
               <button className="Project-to-project-btn">
-                Website Project
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </a>
           </div>
@@ -414,7 +485,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
@@ -434,7 +505,7 @@ const Project = () => {
           <div className="Project-btn-animation-wrapper">
             <Link to="/JavaCustomerFileProject">
               <button className="Project-to-project-btn">
-                Customer CRUD Project
+                <FaEye style={{ background: "transparent" }} /> View Project
               </button>
             </Link>
           </div>
@@ -445,7 +516,7 @@ const Project = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> to Github
+                <FaGithub /> Source Code
               </a>
             </button>
           </div>
