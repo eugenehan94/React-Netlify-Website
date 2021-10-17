@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 /*React component imports */
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 /*Css and React icons*/
 import "../css/Contact.css";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -65,7 +65,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

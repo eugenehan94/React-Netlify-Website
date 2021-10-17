@@ -1,17 +1,20 @@
 :root {
   /* Font color */
-  --font-color: rgb(255, 255, 88);
+  --font-color: rgb(255, 255, 255);
   /* Hover color */
   --hover-color: rgb(255, 255, 255);
   /*Navbar icon size */
   --icon-size: 2.5rem;
+
+  --button-color: #1976d2;
+  --button-color-hover: rgb(17, 82, 147);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: rgb(17, 12, 32);
+  background: #161616;
   font-family: Arial, Helvetica, sans-serif;
 }
 

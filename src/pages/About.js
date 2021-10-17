@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 /*React component imports*/
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Timeline from "../components/Timeline";
 
 //Imports the useContext provided in the App.js
@@ -53,7 +53,7 @@ const About = () => {
         </p>
       </div>
       <Timeline />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

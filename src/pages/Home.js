@@ -3,7 +3,7 @@ import React, { useEffect, useContext } from "react";
 /*Component imports */
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 
 /* Css import */
@@ -27,7 +27,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

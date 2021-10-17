@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import addingEntries from "./screenShot/AddingEntries.jpg";
 import homePage from "./screenShot/HomePage.jpg";
 import { NavbarMenuContext } from "../App";
@@ -37,7 +37,7 @@ const DiaryProject = () => {
           className="Diary-image"
         ></img>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -28,63 +28,74 @@
 }
 .Project-item {
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
-  padding: 1rem;
+
   display: grid;
   grid-template-rows: auto 1fr;
-  /* position: relative; */
-  transition: 0.3 ease-in-out all;
+  text-align: center;
 }
-
+.Project-item:hover {
+  transform: scale(1.02);
+}
 .Project-item h1 {
-  font-size: 38px;
+  font-size: 2rem;
 }
 .Project-item p {
-  font-size: 18px;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  padding: 0.5rem 1.5rem;
 }
-/* .Project-btn-wrapper {
-  position: absolute;
-  bottom: 0;
-} */
-
-.Project-btn-animation-wrapper:hover {
-  animation: test 0.8s linear infinite;
+.Project-item-content {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
 }
-@keyframes test {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(2px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .Project-to-project-btn {
-  background-color: rgb(0, 128, 0);
-  border: none;
-  width: 100%;
-  border-radius: 2px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  background-color: var(--button-color);
+  border: 0.1rem solid #fff;
+  border-radius: 50%;
+  padding: 0 0.6rem;
+  transform: translateY(-50%);
+  margin: 0 auto;
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 3rem;
   cursor: pointer;
 }
 .Project-to-project-btn:hover {
-  background-color: rgb(10, 85, 85);
+  background-color: var(--button-color-hover);
+}
+.Project-stack-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Project-stack {
+  background: #1976d2;
+  margin: 0.2rem 0.2rem;
+  border-radius: 0.375rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.Project-stack p {
+  background: transparent;
+  padding: 0.2rem;
+  letter-spacing: 0.2rem;
+}
+.Project-github-wrapper {
+  background-color: rgb(17, 82, 147);
+  padding: 0.5rem 0;
 }
 .Project-github-icon {
   border: none;
+  background: transparent;
 }
 .Project-github-icon a {
   color: var(--font-color);
   border: none;
   font-size: 18px;
   text-decoration: none;
+  background: transparent;
 }
 .Project-github-icon a:hover {
   font-style: italic;

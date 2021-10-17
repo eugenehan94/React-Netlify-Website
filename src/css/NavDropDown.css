@@ -14,7 +14,7 @@
   padding: 1rem;
 }
 .NavDrop_close_icon {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   font-size: 2.5rem;
 }
 .NavDrop_close_icon:hover {
@@ -43,7 +43,7 @@
 }
 .NavDrop_list_wrapper li a {
   text-decoration: none;
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   font-size: 48px;
 }
 .NavDrop_list_wrapper li a:hover {

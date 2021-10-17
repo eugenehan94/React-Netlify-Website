@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import ClientSearchVideo from "./video/JavaProjectClientSearch.mp4";
 import ClientNewVideo from "./video/JavaProjectNewClient.mp4";
 import { NavbarMenuContext } from "../App";
@@ -35,7 +35,7 @@ const CustomerFileProject = () => {
           <source src={ClientSearchVideo} type="video/mp4" />
         </video>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
