@@ -1,6 +1,6 @@
 Link to website: https://eugenehan.netlify.app
 
-https://github.com/eugenehan94/React-Netlify-Website/blob/master/src/java-customer-file-project/video/JavaProjectNewClient.mp4
+JavaProjectNewClient.mp4
 -------------------------------------------------------------------------------
 # Getting Started with Create React App
 
