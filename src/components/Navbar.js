@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
+/*React router imports */
 import { Link } from "react-router-dom";
+/*React icon imports */
 import { IconContext } from "react-icons";
 import { FaHome } from "react-icons/fa";
 import { BiMenu } from "react-icons/bi";
-
+/* CSS imports */
 import "../css/Navbar.css";
-
+/* useContext imports */
 import { NavbarMenuContext } from "../App";
 
 const Navbar = () => {

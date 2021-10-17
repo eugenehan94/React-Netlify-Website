@@ -1,10 +1,15 @@
 import React, { useEffect, useContext } from "react";
+
+/*Component imports */
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 
+/* Css import */
 import "../css/Home.css";
+
+/* useContext hook */
 import { NavbarMenuContext } from "../App";
 
 const Home = () => {
@@ -22,7 +27,6 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-
       <Footer />
     </div>
   );

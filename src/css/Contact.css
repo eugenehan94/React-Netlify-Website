@@ -20,19 +20,19 @@
   }
 }
 .Contact_title {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   font-size: 65px;
   font-weight: 800;
   line-height: 72px;
 }
 .Contact_desc {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   font-size: 24px;
   line-height: 40px;
   margin-top: 1rem;
 }
 .Contact-linkedin-link {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   text-decoration: none;
   font-size: 24px;
   margin: 0.5rem;

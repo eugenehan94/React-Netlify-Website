@@ -1,5 +1,4 @@
 .Hero_Container {
-  /* height: 564px; */
   display: flex;
   margin-bottom: 5rem;
 }
@@ -26,7 +25,7 @@
 }
 
 .Hero_Title {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   font-size: 65px;
   font-weight: 800;
   line-height: 72px;
@@ -36,7 +35,7 @@
 }
 
 .Hero_desc {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   font-size: 24px;
   line-height: 40px;
 }

@@ -32,13 +32,6 @@ const ReactProjects = [
     githubLink: "https://github.com/eugenehan94/React-light-dark-theme-project",
   },
   {
-    title: "Resume Project",
-    description:
-      " A virtual resume showing my previous work and volunteer experiences.",
-    projectLink: "https://eugenehan94.github.io/React-Resume-Project/",
-    githubLink: "https://github.com/eugenehan94/React-Resume-Project",
-  },
-  {
     title: "Mcdonalds Menu Replica",
     description: " A replica of Mcdonalds' menu, promotion and family page",
     projectLink: "https://eugenehan94.github.io/React-McDonalds-Menu-Project",
@@ -50,6 +43,14 @@ const ReactProjects = [
     projectLink: "https://eugenehan94.github.io/react-webpage-project/",
     githubLink: "https://github.com/eugenehan94/react-webpage-project",
   },
+  {
+    title: "Resume Project",
+    description:
+      " A virtual resume showing my previous work and volunteer experiences.",
+    projectLink: "https://eugenehan94.github.io/React-Resume-Project/",
+    githubLink: "https://github.com/eugenehan94/React-Resume-Project",
+  },
+
   {
     title: "Accordion Project",
     description:

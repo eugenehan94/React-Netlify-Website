@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "../css/Hero.css";
+
 const Hero = () => {
   return (
     <div className="Hero_Container">
@@ -24,7 +24,6 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-
       <div className="Hero_Right_Container">
         <div className="Hero-square-animation">
           <div></div>

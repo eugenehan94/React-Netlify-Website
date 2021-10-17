@@ -1,12 +1,16 @@
 import React, { useContext } from "react";
+/*React component imports */
 import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
 import Footer from "../components/Footer";
+/*Css and React icons*/
+import "../css/Contact.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import "../css/Contact.css";
 import { IconContext } from "react-icons";
+/*React router imports */
+import { Link } from "react-router-dom";
+/*useContext imports */
 import { NavbarMenuContext } from "../App";
 
 const Contact = () => {

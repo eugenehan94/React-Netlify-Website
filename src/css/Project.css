@@ -1,5 +1,5 @@
 .Project-title {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   text-align: center;
   font-size: 48px;
 }
@@ -9,17 +9,17 @@
   margin-top: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(255, 255, 88);
+  background-color: var(--font-color);
 }
 .Project-heading {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   text-align: center;
   font-size: 40px;
   margin-top: 1.5rem;
 }
 
 .Project-container {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
@@ -81,7 +81,7 @@
   border: none;
 }
 .Project-github-icon a {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   border: none;
   font-size: 18px;
   text-decoration: none;

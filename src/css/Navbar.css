@@ -1,17 +1,16 @@
 .Nav_Container {
   display: flex;
   justify-content: space-between;
-
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .Nav_Home_Icon {
-  color: rgb(255, 255, 88);
-  font-size: 2.5rem;
+  color: var(--font-color);
+  font-size: var(--icon-size);
 }
 
 .Nav_Home_Icon:hover {
-  color: rgb(255, 255, 255);
+  color: var(--hover-color);
   animation: Home_Icon 0.5s linear infinite;
 }
 @keyframes Home_Icon {
@@ -33,8 +32,8 @@
 }
 .Nav_Hamburger_Icon {
   display: none;
-  color: rgb(255, 255, 88);
-  font-size: 2.5rem;
+  color: var(--font-color);
+  font-size: var(--icon-size);
 }
 .Nav_Hamburger_Icon:hover {
   animation: Hamburger_Icon 0.5s linear infinite;
@@ -69,15 +68,20 @@
 }
 
 .Nav_List_Container li a {
-  color: rgb(255, 255, 88);
+  color: var(--font-color);
   text-decoration: none;
 }
 .Nav_List_Container li a:hover {
-  color: rgb(255, 255, 255);
+  color: var(--hover-color);
 }
 
 /* Ipads and tablets */
 @media screen and (max-width: 768px) {
+  .Nav_Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
   .Nav_Hamburger_Icon {
     display: inline-block;
   }
