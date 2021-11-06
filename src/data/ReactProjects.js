@@ -10,7 +10,19 @@ import SlideshowProject from "../data/images/SlideshowProject.jpg";
 import GithubUserProject from "../data/images/GithubUserProject.jpg";
 import CounterProject from "../data/images/CounterProject.jpg";
 import DiaryProjectHomePage from "../data/images/DiaryProjectHomePage.jpg";
+import TranslatorWebsiteProject from "../data/images/TranslatorWebsiteProject.jpg";
 const ReactProjects = [
+  {
+    picture: TranslatorWebsiteProject,
+    title: "Translator Website",
+    description:
+      " An translation website I developed, API provided by LibreTranslate at https://libretranslate.de/docs/",
+    stacks: ["React Hooks", "React Router", "Material UI v5"],
+    projectLink:
+      "https://eugenehan94.github.io/React-Translator-Website-Project/#/",
+    githubLink:
+      "https://github.com/eugenehan94/React-Translator-Website-Project",
+  },
   {
     picture: FakeECommerce,
     title: "Ecommerce Project",
@@ -25,7 +37,7 @@ const ReactProjects = [
     title: "Material UI Bootcamp",
     description:
       "  A bootcamp webpage created with React Js and Material UI framework.",
-    stacks: ["React Hooks", "Material UI"],
+    stacks: ["React Hooks", "Material UI v4"],
     projectLink:
       "https://eugenehan94.github.io/React-Material-UI-Bootcamp-Website-Project/",
     githubLink:
