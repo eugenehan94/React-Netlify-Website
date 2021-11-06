@@ -9,6 +9,7 @@ import AccordionProject from "../data/images/AccordionProject.jpg";
 import SlideshowProject from "../data/images/SlideshowProject.jpg";
 import GithubUserProject from "../data/images/GithubUserProject.jpg";
 import CounterProject from "../data/images/CounterProject.jpg";
+import DiaryProjectHomePage from "../data/images/DiaryProjectHomePage.jpg";
 const ReactProjects = [
   {
     picture: FakeECommerce,
@@ -49,6 +50,14 @@ const ReactProjects = [
     projectLink:
       "https://eugenehan94.github.io/React-light-dark-theme-project/",
     githubLink: "https://github.com/eugenehan94/React-light-dark-theme-project",
+  },
+  {
+    picture: DiaryProjectHomePage,
+    title: "Diary Project",
+    description: "A light/dark theme project created using styled components.",
+    stacks: ["React Hooks", "Fetch API", "JSON Server"],
+    projectLink: "/DiaryProject",
+    githubLink: "https://github.com/eugenehan94/React-Diary-Project",
   },
   {
     picture: McDonaldsReplica,
