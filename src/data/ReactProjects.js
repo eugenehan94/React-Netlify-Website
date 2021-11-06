@@ -54,9 +54,9 @@ const ReactProjects = [
   {
     picture: DiaryProjectHomePage,
     title: "Diary Project",
-    description: "A light/dark theme project created using styled components.",
+    description: "A CRUD project where uses put how they are feeling",
     stacks: ["React Hooks", "Fetch API", "JSON Server"],
-    projectLink: "/DiaryProject",
+    projectLink: "https://github.com/eugenehan94/React-Diary-Project",
     githubLink: "https://github.com/eugenehan94/React-Diary-Project",
   },
   {

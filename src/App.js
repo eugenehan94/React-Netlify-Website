@@ -6,8 +6,6 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 
-import DiaryProject from "./react-diary-project/DiaryProject";
-
 import JavaCustomerFileProject from "./java-customer-file-project/CustomerFileProject";
 // useContext for the state and toggle function of the Navigation bar
 export const NavbarMenuContext = React.createContext();
@@ -33,10 +31,6 @@ function App() {
           </Route>
           <Route path="/Contact">
             <Contact />
-          </Route>
-
-          <Route path="/DiaryProject">
-            <DiaryProject />
           </Route>
 
           <Route path="/JavaCustomerFileProject">
