@@ -11,7 +11,19 @@ import GithubUserProject from "../data/images/GithubUserProject.jpg";
 import CounterProject from "../data/images/CounterProject.jpg";
 import DiaryProjectHomePage from "../data/images/DiaryProjectHomePage.jpg";
 import TranslatorWebsiteProject from "../data/images/TranslatorWebsiteProject.jpg";
+import MaterialUIBankRegistration from "../data/images/MaterialUIBankRegistration.jpg";
 const ReactProjects = [
+  {
+    picture: MaterialUIBankRegistration,
+    title: "Bank Registration Form",
+    description:
+      "A bank registration form replica developed with React, Material UI and Formik",
+    stacks: ["React Hooks", "React Router", "Formik", "Material UI v4"],
+    projectLink:
+      "https://eugenehan94.github.io/React-Banking-Registration-MatUI-Formik/#/",
+    githubLink:
+      "https://github.com/eugenehan94/React-Banking-Registration-MatUI-Formik",
+  },
   {
     picture: TranslatorWebsiteProject,
     title: "Translator Website",
