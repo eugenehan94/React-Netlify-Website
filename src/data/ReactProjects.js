@@ -12,7 +12,23 @@ import CounterProject from "../data/images/CounterProject.jpg";
 import DiaryProjectHomePage from "../data/images/DiaryProjectHomePage.jpg";
 import TranslatorWebsiteProject from "../data/images/TranslatorWebsiteProject.jpg";
 import MaterialUIBankRegistration from "../data/images/MaterialUIBankRegistration.jpg";
+import AnimeWebsiteProject from "../data/images/AnimeWebsiteProject.jpg";
 const ReactProjects = [
+  {
+    picture: AnimeWebsiteProject,
+    title: "Anime/Manga Website Project",
+    description:
+      "A database displaying various Anime and Manga, and could be sorted into categories.",
+    stacks: [
+      "React Hooks",
+      "React Router",
+      "React Redux",
+      "Material UI v5",
+      "Immer",
+    ],
+    projectLink: "https://eugenehan94.github.io/React-Anime-Website-Project/",
+    githubLink: "https://github.com/eugenehan94/React-Anime-Website-Project",
+  },
   {
     picture: MaterialUIBankRegistration,
     title: "Bank Registration Form",
