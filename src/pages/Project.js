@@ -25,7 +25,7 @@ const Project = () => {
   }
 
   return (
-    <div className="Project-wrapper">
+    <div>
       <Navbar />
       <h1 className="Project-title">Projects</h1>
       <div className="Project-underline"></div>

@@ -18,7 +18,7 @@ const ReactProjects = [
     picture: AnimeWebsiteProject,
     title: "Anime/Manga Website Project",
     description:
-      "A database displaying various Anime and Manga, and could be sorted into categories.",
+      "Various collection of Anime and Manga, sorted by categories.",
     stacks: [
       "React Hooks",
       "React Router",
