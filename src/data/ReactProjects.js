@@ -13,12 +13,28 @@ import DiaryProjectHomePage from "../data/images/DiaryProjectHomePage.jpg";
 import TranslatorWebsiteProject from "../data/images/TranslatorWebsiteProject.jpg";
 import MaterialUIBankRegistration from "../data/images/MaterialUIBankRegistration.jpg";
 import AnimeWebsiteProject from "../data/images/AnimeWebsiteProject.jpg";
+import ChineseRadicalLookUp from "../data/images/ChineseRadicalLookUp.jpg"
 const ReactProjects = [
+  {
+    picture: ChineseRadicalLookUp,
+    title: "Chinese Radical Look Up",
+    description: "Finding Chinese characters based on radicals",
+    stacks: [
+      "React Router",
+      "React Redux ToolKit",
+      "Material UI v5",
+      "Styled Component",
+      "Immer",
+    ],
+    projectLink:
+      "https://github.com/eugenehan94/React-Chinese-Radical-Search-Project",
+    githubLink:
+      "https://github.com/eugenehan94/React-Chinese-Radical-Search-Project",
+  },
   {
     picture: AnimeWebsiteProject,
     title: "Anime/Manga Website Project",
-    description:
-      "Various collection of Anime and Manga, sorted by categories.",
+    description: "Various collection of Anime and Manga, sorted by categories.",
     stacks: [
       "React Hooks",
       "React Router",
