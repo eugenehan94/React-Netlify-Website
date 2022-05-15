@@ -14,7 +14,53 @@ import TranslatorWebsiteProject from "../data/images/TranslatorWebsiteProject.jp
 import MaterialUIBankRegistration from "../data/images/MaterialUIBankRegistration.jpg";
 import AnimeWebsiteProject from "../data/images/AnimeWebsiteProject.jpg";
 import ChineseRadicalLookUp from "../data/images/ChineseRadicalLookUp.jpg"
+import RickAndMortyProject from "../data/images/RickAndMortyProject.jpg";
+import SpaceXProject from "../data/images/SpaceXProject.jpg"
 const ReactProjects = [
+  {
+    picture: SpaceXProject,
+    title: "Space X Database",
+    description: "A collection of Space X vehicles",
+    stacks: [
+      "React Router",
+      "GraphQL",
+      "Material UI v5",
+      "Immer",
+    ],
+    projectLink:
+      "https://eugenehan94.github.io/React-GraphQL-SpaceX-App/",
+    githubLink:
+      "https://github.com/eugenehan94/React-GraphQL-SpaceX-App",
+  },
+  {
+    picture: AnimeWebsiteProject,
+    title: "Anime/Manga Website Project",
+    description: "Various collection of Anime and Manga, sorted by categories.",
+    stacks: [
+      "React Hooks",
+      "React Router",
+      "React Redux",
+      "Material UI v5",
+      "Immer",
+    ],
+    projectLink: "https://eugenehan94.github.io/React-Anime-Website-Project/",
+    githubLink: "https://github.com/eugenehan94/React-Anime-Website-Project",
+  },
+  {
+    picture: RickAndMortyProject,
+    title: "Rick And Morty Database",
+    description: "A Database of characters and locations from the hit series Rick And Morty",
+    stacks: [
+      "React Router",
+      "GraphQL",
+      "Material UI v5",
+      "Immer",
+    ],
+    projectLink:
+      "https://eugenehan94.github.io/React-GraphQL-Rick-And-Morty/",
+    githubLink:
+      "https://github.com/eugenehan94/React-GraphQL-Rick-And-Morty",
+  },
   {
     picture: ChineseRadicalLookUp,
     title: "Chinese Radical Look Up",
@@ -31,20 +77,7 @@ const ReactProjects = [
     githubLink:
       "https://github.com/eugenehan94/React-Chinese-Radical-Search-Project",
   },
-  {
-    picture: AnimeWebsiteProject,
-    title: "Anime/Manga Website Project",
-    description: "Various collection of Anime and Manga, sorted by categories.",
-    stacks: [
-      "React Hooks",
-      "React Router",
-      "React Redux",
-      "Material UI v5",
-      "Immer",
-    ],
-    projectLink: "https://eugenehan94.github.io/React-Anime-Website-Project/",
-    githubLink: "https://github.com/eugenehan94/React-Anime-Website-Project",
-  },
+
   {
     picture: MaterialUIBankRegistration,
     title: "Bank Registration Form",
