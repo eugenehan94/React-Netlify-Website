@@ -6,8 +6,11 @@ import NavDropDown from "../components/NavDropDown";
 // import Footer from "../components/Footer";
 // import Hero from "../components/Hero";
 import Hero from "../components/home/hero";
-import AboutMe from "../components/home/aboutMe"
-import Contact from "../components/home/contact"
+import AboutMe from "../components/home/aboutMe";
+import Projects from "../components/home/projects";
+import OtherProjects from "../components/home/otherProjects";
+import Contact from "../components/home/contact";
+import Footer from "../components/footer/footer";
 /* Css import */
 import "../css/Home.css";
 
@@ -31,9 +34,12 @@ const Home = () => {
     <div>
       <Navbar />
       <Box sx={{ marginLeft: "7rem", marginRight: "7rem", paddingTop: "2rem" }}>
-      <Hero />
-      <AboutMe />
-      <Contact/>
+        <Hero />
+        <AboutMe />
+        <Projects />
+        <OtherProjects />
+        <Contact />
+        <Footer />
       </Box>
       {/* <Footer /> */}
     </div>
