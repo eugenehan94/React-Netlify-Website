@@ -50,7 +50,7 @@ const Project = () => {
                     <a
                       href={project.projectLink}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       style={{ background: "transparent", color: "white" }}
                     >
                       <FaEye style={{ background: "transparent" }} />
@@ -73,7 +73,7 @@ const Project = () => {
                     <a
                       href={project.githubLink}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       <FaGithub style={{ background: "transparent" }} /> Source
                       Code
@@ -105,7 +105,7 @@ const Project = () => {
                     <a
                       href={project.projectLink}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       style={{ background: "transparent", color: "white" }}
                     >
                       <FaEye style={{ background: "transparent" }} />
@@ -128,7 +128,7 @@ const Project = () => {
                     <a
                       href={project.githubLink}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       <FaGithub style={{ background: "transparent" }} /> Source
                       Code
@@ -160,7 +160,7 @@ const Project = () => {
                     <a
                       href={project.projectLink}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       style={{ background: "transparent", color: "white" }}
                     >
                       <FaEye style={{ background: "transparent" }} />
@@ -183,7 +183,7 @@ const Project = () => {
                     <a
                       href={project.githubLink}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       <FaGithub style={{ background: "transparent" }} /> Source
                       Code
@@ -237,7 +237,7 @@ const Project = () => {
                 <a
                   href="https://github.com/eugenehan94/CustomerFile"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <FaGithub style={{ background: "transparent" }} /> Source Code
                 </a>

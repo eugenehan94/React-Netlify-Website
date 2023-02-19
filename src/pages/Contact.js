@@ -34,7 +34,7 @@ const Contact = () => {
             className="Contact-linkedin-link"
             href="http://www.linkedin.com/in/eugene-h-7928bb63"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <AiFillLinkedin /> Linkedin
           </a>
@@ -42,7 +42,7 @@ const Contact = () => {
           <a
             href="https://github.com/eugenehan94"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="Contact-linkedin-link"
           >
             <AiFillGithub /> Github

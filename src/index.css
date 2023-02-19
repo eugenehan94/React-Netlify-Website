@@ -1,8 +1,8 @@
 :root {
   /* Font color */
-  --font-color: rgb(255, 255, 255);
+  --font-color: rgb(0, 0, 0);
   /* Hover color */
-  --hover-color: rgb(255, 255, 255);
+  --hover-color: rgb(0, 0, 0);
   /*Navbar icon size */
   --icon-size: 2.5rem;
 
@@ -10,7 +10,7 @@
   --button-color-hover: rgb(17, 82, 147);
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,4 +21,4 @@
 html body {
   height: 100%;
   width: 100%;
-}
+} */
