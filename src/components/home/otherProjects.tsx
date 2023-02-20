@@ -1,22 +1,22 @@
 import React from "react";
-import {
-  Box,
-  // Button,
-  Chip,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Grid,
-  Typography,
-} from "@mui/material";
-
+// Material UI Components
+import { Box, Chip, Typography } from "@mui/material";
+// Material UI Icons
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
+// Project Data
+import mernProjects from "../../data/mernProjectsV2";
+import javascriptProjects from "../../data/javascriptProjectsV2";
+import reactProjects from "../../data/reactProjectsV2";
+import javaProjects from "../../data/javaProjectsV2";
 import AnimeWebsiteProject from "../../data/images/AnimeWebsiteProject.jpg";
 
+const openInNewTab = (link: string) => {
+  window.open(link, "_blank", "noopener noreferrer");
+};
+
 const OtherProjects = () => {
+  console.log("mernProjects", mernProjects);
   return (
     <Box sx={{ padding: "3rem 0" }}>
       <Typography
@@ -27,88 +27,453 @@ const OtherProjects = () => {
       >
         Other Projects
       </Typography>
-      <Grid container spacing={1}>
-        <Grid item xs={4}>
-          <Card variant="outlined">
-            <CardMedia
-              component="img"
-              alt="anime website"
-              image={AnimeWebsiteProject}
-            />
+      {/* Material UI Grid will keep Grid items all same height if one extends */}
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "50px",
+          gridAutoRows: "column",
+        }}
+      >
+        {/* Render MERN projects */}
+        {mernProjects.map((mernProject, index) => {
+          const {
+            description,
+            githubLink,
+            picture,
+            projectLink,
+            stacks,
+            title,
+          } = mernProject;
+          return (
             <Box
-              component="div"
+              key={index}
               sx={{
-                width: "50px",
-                height: "50px",
-                backgroundColor: "#1976d2",
-                border: "0.2rem solid #ffffff",
-                borderRadius: "50%",
-                padding: "0 0.6rem",
-                transform: "translateY(-50%)",
-                margin: "0 auto",
-                fontSize: "3rem",
-                '&: hover': {
-                  cursor: "pointer"
-                }
+                border: "1px solid #3e50606b",
+                borderRadius: "3px",
+                overflow: "hidden",
+                display: "grid",
+                gridTemplateRows: "auto 1fr",
+                textAlign: "center",
+                "&: hover": {
+                  transform: "scale(1.01)",
+                },
               }}
             >
+              <Box>
+                <img src={picture} alt={title} style={{ width: "100%" }} />
+              </Box>
+
               <Box
-                component="div"
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexWrap: "wrap",
-                  height: "100%",
-                  width: "100%",
-                }}
+                sx={{ display: "grid", gridTemplateRows: "auto auto 1fr auto" }}
               >
-                <VisibilityIcon fontSize="large" sx={{ color: "#fff" }} />
+                <Box
+                  component="div"
+                  sx={{
+                    width: "50px",
+                    height: "50px",
+                    backgroundColor: "#1976d2",
+                    border: "0.2rem solid #ffffff",
+                    borderRadius: "50%",
+                    padding: "0 0.6rem",
+                    transform: "translateY(-50%)",
+                    margin: "0 auto",
+                    fontSize: "3rem",
+                    "&: hover": {
+                      cursor: "pointer",
+                    },
+                  }}
+                  onClick={() => {
+                    openInNewTab(projectLink);
+                  }}
+                >
+                  <Box
+                    component="div"
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexWrap: "wrap",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  >
+                    <VisibilityIcon fontSize="large" sx={{ color: "#fff" }} />
+                  </Box>
+                </Box>
+                <Typography component="h4" variant="h4">
+                  {title}
+                </Typography>
+                <Typography gutterBottom sx={{ color: "#3e5060" }}>
+                  {description}
+                </Typography>
+                <Box>
+                  {stacks.map((stack) => (
+                    <Chip
+                      label={stack}
+                      color="primary"
+                      sx={{ marginRight: "0.2rem", marginBottom: "0.1rem" }}
+                    />
+                  ))}
+                </Box>
+
+                <Box
+                  sx={{
+                    backgroundColor: "primary.main",
+                    padding: "0.5rem 0",
+                    "&: hover": {
+                      cursor: "pointer",
+                      color: "#fff",
+                    },
+                  }}
+                  onClick={() => {
+                    openInNewTab(githubLink);
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <GitHubIcon sx={{ marginRight: "0.3rem" }} /> Source Code
+                  </Typography>
+                </Box>
               </Box>
             </Box>
-            <CardContent>
-              <Typography
-                component="h3"
-                variant="h4"
-                align="center"
-                gutterBottom
-              >
-                Anime/Manga Website Project
-              </Typography>
-              <Typography variant="body1" gutterBottom>
-                Various collection of Anime and Manga, sorted by categories.
-              </Typography>
-              <Chip label="React" color="primary" />
-            </CardContent>
-            <CardActions
+          );
+        })}
+        {/* Render Javascript projects */}
+        {javascriptProjects.map((javascriptProject, index) => {
+          const {
+            description,
+            githubLink,
+            picture,
+            projectLink,
+            stacks,
+            title,
+          } = javascriptProject;
+          return (
+            <Box
+              key={index}
               sx={{
-                backgroundColor: "primary.main",
-                display: "flex",
-                justifyContent: "center",
-                '&:hover': {
-                  color: "white",
-                  cursor: "pointer"
-                }
+                border: "1px solid #3e50606b",
+                borderRadius: "3px",
+                overflow: "hidden",
+                display: "grid",
+                gridTemplateRows: "auto 1fr",
+                textAlign: "center",
+                "&: hover": {
+                  transform: "scale(1.01)",
+                },
               }}
             >
-              <Typography
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
+              <Box>
+                <img src={picture} alt={title} style={{ width: "100%" }} />
+              </Box>
+
+              <Box
+                sx={{ display: "grid", gridTemplateRows: "auto auto 1fr auto" }}
               >
-                <GitHubIcon sx={{ marginRight: "0.3rem" }} /> Source Code
-              </Typography>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={4}>
-          Test
-        </Grid>
-        <Grid item xs={4}>
-          Test
-        </Grid>
-      </Grid>
+                <Box
+                  component="div"
+                  sx={{
+                    width: "50px",
+                    height: "50px",
+                    backgroundColor: "#1976d2",
+                    border: "0.2rem solid #ffffff",
+                    borderRadius: "50%",
+                    padding: "0 0.6rem",
+                    transform: "translateY(-50%)",
+                    margin: "0 auto",
+                    fontSize: "3rem",
+                    "&: hover": {
+                      cursor: "pointer",
+                    },
+                  }}
+                  onClick={() => {
+                    openInNewTab(projectLink);
+                  }}
+                >
+                  <Box
+                    component="div"
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexWrap: "wrap",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  >
+                    <VisibilityIcon fontSize="large" sx={{ color: "#fff" }} />
+                  </Box>
+                </Box>
+                <Typography component="h4" variant="h4">
+                  {title}
+                </Typography>
+                <Typography gutterBottom sx={{ color: "#3e5060" }}>
+                  {description}
+                </Typography>
+                <Box>
+                  {stacks.map((stack) => (
+                    <Chip
+                      label={stack}
+                      color="primary"
+                      sx={{ marginRight: "0.2rem", marginBottom: "0.1rem" }}
+                    />
+                  ))}
+                </Box>
+
+                <Box
+                  sx={{
+                    backgroundColor: "primary.main",
+                    padding: "0.5rem 0",
+                    "&: hover": {
+                      cursor: "pointer",
+                      color: "#fff",
+                    },
+                  }}
+                  onClick={() => {
+                    openInNewTab(githubLink);
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <GitHubIcon sx={{ marginRight: "0.3rem" }} /> Source Code
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          );
+        })}
+        {/* Render React projects */}
+        {reactProjects.map((reactProject, index) => {
+          const {
+            description,
+            githubLink,
+            picture,
+            projectLink,
+            stacks,
+            title,
+          } = reactProject;
+          return (
+            <Box
+              key={index}
+              sx={{
+                border: "1px solid #3e50606b",
+                borderRadius: "3px",
+                overflow: "hidden",
+                display: "grid",
+                gridTemplateRows: "auto 1fr",
+                textAlign: "center",
+                "&: hover": {
+                  transform: "scale(1.01)",
+                },
+              }}
+            >
+              <Box>
+                <img src={picture} alt={title} style={{ width: "100%" }} />
+              </Box>
+
+              <Box
+                sx={{ display: "grid", gridTemplateRows: "auto auto 1fr auto" }}
+              >
+                <Box
+                  component="div"
+                  sx={{
+                    width: "50px",
+                    height: "50px",
+                    backgroundColor: "#1976d2",
+                    border: "0.2rem solid #ffffff",
+                    borderRadius: "50%",
+                    padding: "0 0.6rem",
+                    transform: "translateY(-50%)",
+                    margin: "0 auto",
+                    fontSize: "3rem",
+                    "&: hover": {
+                      cursor: "pointer",
+                    },
+                  }}
+                  onClick={() => {
+                    openInNewTab(projectLink);
+                  }}
+                >
+                  <Box
+                    component="div"
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexWrap: "wrap",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  >
+                    <VisibilityIcon fontSize="large" sx={{ color: "#fff" }} />
+                  </Box>
+                </Box>
+                <Typography component="h4" variant="h4">
+                  {title}
+                </Typography>
+                <Typography gutterBottom sx={{ color: "#3e5060" }}>
+                  {description}
+                </Typography>
+                <Box>
+                  {stacks.map((stack) => (
+                    <Chip
+                      label={stack}
+                      color="primary"
+                      sx={{ marginRight: "0.2rem", marginBottom: "0.1rem" }}
+                    />
+                  ))}
+                </Box>
+
+                <Box
+                  sx={{
+                    backgroundColor: "primary.main",
+                    padding: "0.5rem 0",
+                    "&: hover": {
+                      cursor: "pointer",
+                      color: "#fff",
+                    },
+                  }}
+                  onClick={() => {
+                    openInNewTab(githubLink);
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <GitHubIcon sx={{ marginRight: "0.3rem" }} /> Source Code
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          );
+        })}
+        {/* Render Java projects */}
+        {javaProjects.map((javaProject, index) => {
+          const {
+            description,
+            githubLink,
+            picture,
+            projectLink,
+            stacks,
+            title,
+          } = javaProject;
+          return (
+            <Box
+              key={index}
+              sx={{
+                border: "1px solid #3e50606b",
+                borderRadius: "3px",
+                overflow: "hidden",
+                display: "grid",
+                gridTemplateRows: "auto 1fr",
+                textAlign: "center",
+                "&: hover": {
+                  transform: "scale(1.01)",
+                },
+              }}
+            >
+              <Box>
+                <img src={picture} alt={title} style={{ width: "100%" }} />
+              </Box>
+
+              <Box
+                sx={{ display: "grid", gridTemplateRows: "auto auto 1fr auto" }}
+              >
+                <Box
+                  component="div"
+                  sx={{
+                    width: "50px",
+                    height: "50px",
+                    backgroundColor: "#1976d2",
+                    border: "0.2rem solid #ffffff",
+                    borderRadius: "50%",
+                    padding: "0 0.6rem",
+                    transform: "translateY(-50%)",
+                    margin: "0 auto",
+                    fontSize: "3rem",
+                    "&: hover": {
+                      cursor: "pointer",
+                    },
+                  }}
+                  onClick={() => {
+                    openInNewTab(projectLink);
+                  }}
+                >
+                  <Box
+                    component="div"
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexWrap: "wrap",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  >
+                    <VisibilityIcon fontSize="large" sx={{ color: "#fff" }} />
+                  </Box>
+                </Box>
+                <Typography component="h4" variant="h4">
+                  {title}
+                </Typography>
+                <Typography gutterBottom sx={{ color: "#3e5060" }}>
+                  {description}
+                </Typography>
+                <Box>
+                  {stacks.map((stack) => (
+                    <Chip
+                      label={stack}
+                      color="primary"
+                      sx={{ marginRight: "0.2rem", marginBottom: "0.1rem" }}
+                    />
+                  ))}
+                </Box>
+
+                <Box
+                  sx={{
+                    backgroundColor: "primary.main",
+                    padding: "0.5rem 0",
+                    "&: hover": {
+                      cursor: "pointer",
+                      color: "#fff",
+                    },
+                  }}
+                  onClick={() => {
+                    openInNewTab(githubLink);
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <GitHubIcon sx={{ marginRight: "0.3rem" }} /> Source Code
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          );
+        })}
+      </Box>
+
       {/* <Button>View More</Button> */}
     </Box>
   );

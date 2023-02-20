@@ -11,8 +11,6 @@ import Projects from "../components/home/projects";
 import OtherProjects from "../components/home/otherProjects";
 import Contact from "../components/home/contact";
 import Footer from "../components/footer/footer";
-/* Css import */
-import "../css/Home.css";
 
 /* useContext hook */
 import { NavbarMenuContext } from "../App";

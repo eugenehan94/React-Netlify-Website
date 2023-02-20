@@ -9,7 +9,8 @@ const JavascriptProjects = [
       " A 2D soccer/football shootout game created with Vanilla Javascript, CSS and HTML.",
     stacks: ["HTML", "CSS", "Javascript"],
     projectLink: "https://eugenehan94.github.io/Shootout-Prediction-Game/",
-    githubLink: "https://github.com/eugenehan94/Shootout-Prediction-Game",
+    githubLink:
+      "https://github.com/eugenehan94/Shootout-Prediction-Game#link-to-game-httpseugenehan94githubioshootout-prediction-game",
   },
   {
     picture: JSCardMatch,
@@ -18,7 +19,8 @@ const JavascriptProjects = [
       " A 2D 2 player card matching game created with Vanilla Javascript, CSS and HTML.",
     stacks: ["HTML", "CSS", "Javascript"],
     projectLink: "https://eugenehan94.github.io/Card-Matching-Game/",
-    githubLink: "https://github.com/eugenehan94/Card-Matching-Game",
+    githubLink:
+      "https://github.com/eugenehan94/Card-Matching-Game#card-matching-game",
   },
   {
     picture: JSBankingWebpage,
@@ -26,7 +28,8 @@ const JavascriptProjects = [
     description: " A webpage I created using HTML, CSS and vanilla Javascript",
     stacks: ["HTML", "CSS", "Javascript"],
     projectLink: "https://eugenehan94.github.io/Banking-Website-Replica/",
-    githubLink: "https://github.com/eugenehan94/react-webpage-project",
+    githubLink:
+      "https://github.com/eugenehan94/react-webpage-project#react-webpage-project",
   },
 ];
 
