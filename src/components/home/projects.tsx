@@ -22,7 +22,7 @@ const Projects = () => {
   };
 
   return (
-    <Box sx={{ padding: "3rem 0" }}>
+    <Box sx={{ padding: "3rem 0" }} id="works">
       <Typography component="h2" variant="h3" sx={{ paddingBottom: "2.5rem" }}>
         Projects I've Built{" "}
         <span

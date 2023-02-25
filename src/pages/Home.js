@@ -1,10 +1,11 @@
 import React, { useEffect, useContext } from "react";
 
 /*Component imports */
-import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
 // import Footer from "../components/Footer";
 // import Hero from "../components/Hero";
+import Navbar from "../components/navbar/navbar";
+import LeftFixedInfo from "../components/_shared/leftFixedInfo";
 import Hero from "../components/home/hero";
 import AboutMe from "../components/home/aboutMe";
 import Projects from "../components/home/projects";
@@ -16,6 +17,7 @@ import Footer from "../components/footer/footer";
 import { NavbarMenuContext } from "../App";
 
 import { Box } from "@mui/material";
+import ScrollToTop from "../components/_shared/scrollToTop";
 
 const Home = () => {
   const { openMenu } = useContext(NavbarMenuContext);
@@ -31,7 +33,15 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <Box sx={{ marginLeft: "7rem", marginRight: "7rem", paddingTop: "2rem" }}>
+      <ScrollToTop />
+      <LeftFixedInfo />
+      <Box
+        sx={{
+          marginLeft: { xs: "1.25rem", md: "7rem" },
+          marginRight: { xs: "1.25rem", md: "7rem" },
+          paddingTop: "2rem",
+        }}
+      >
         <Hero />
         <AboutMe />
         <Projects />

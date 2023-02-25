@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 const AboutMe = () => {
   return (
-    <Box sx={{ padding: "3rem 0" }}>
+    <Box sx={{ padding: "3rem 0" }} id="aboutMe">
       <Typography component="h2" variant="h3" sx={{paddingBottom: "2.5rem"}}>
         About Me{" "}
         <span
@@ -19,7 +19,7 @@ const AboutMe = () => {
         />
       </Typography>
       <Grid container spacing={5}>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <Typography gutterBottom align="justify" sx={{ color: "#3e5060" }}>
             Hello! My name is Eugene and I enjoy creating things that live on
             the internet. My interest in web development started back in 2009 in
@@ -33,7 +33,7 @@ const AboutMe = () => {
             to businesses.
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <Typography gutterBottom sx={{ color: "#3e5060" }}>
             Here are a few technologies I have used:
           </Typography>

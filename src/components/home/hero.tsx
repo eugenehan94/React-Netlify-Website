@@ -1,12 +1,9 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 
-import LeftFixedInfo from "../leftFixedInfo";
-
 const Hero = () => {
   return (
     <Box sx={{ padding: "3rem 0" }}>
-      <LeftFixedInfo />
       <Box>
         <Typography
           component="h1"
@@ -33,7 +30,7 @@ const Hero = () => {
           I build things for the web.
         </Typography>
         <Grid container>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Typography align="justify" sx={{ color: "#3e5060" }}>
               I am a frontend developer specializing in building the frontend of
               websites and web applications that leads to success. Currently, I

@@ -16,7 +16,6 @@ const openInNewTab = (link: string) => {
 };
 
 const OtherProjects = () => {
-  console.log("mernProjects", mernProjects);
   return (
     <Box sx={{ padding: "3rem 0" }}>
       <Typography
