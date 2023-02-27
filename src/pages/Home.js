@@ -37,8 +37,8 @@ const Home = () => {
       <LeftFixedInfo />
       <Box
         sx={{
-          marginLeft: { xs: "1.25rem", md: "7rem" },
-          marginRight: { xs: "1.25rem", md: "7rem" },
+          marginLeft: { xs: "1rem", md: "7rem" },
+          marginRight: { xs: "1rem", md: "7rem" },
           paddingTop: "2rem",
         }}
       >

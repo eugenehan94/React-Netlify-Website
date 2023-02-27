@@ -30,8 +30,14 @@ const OtherProjects = () => {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "50px",
+          gridTemplateColumns: {
+            xs: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+            lg: "repeat(4, 1fr)",
+            xl: "repeat(5, 1fr)"
+          },
+          gap: {xs: "10px", md: "30px"},
           gridAutoRows: "column",
         }}
       >

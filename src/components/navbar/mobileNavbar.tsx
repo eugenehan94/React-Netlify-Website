@@ -18,51 +18,85 @@ const MobileNavbar = () => {
         }}
         sx={{ borderColor: "#e0e3e7" }}
       >
-        <DragHandleIcon />
+        {openMenu ? <CloseIcon /> : <DragHandleIcon />}
       </Button>
 
-      <Drawer anchor="top" open={openMenu}>
-        <Box sx={{ padding: "1.25rem" }}>
-          <List>
-            <ListItem>
-              <CloseIcon />
-            </ListItem>
+      {openMenu ? (
+        <Box
+          sx={{
+            position: "absolute",
+            top: "5rem",
+            left: "0.5rem",
+            zIndex: "99",
+            backgroundColor: "#fff",
+            width: "97%",
+            borderTop: "1px solid #6f7e8c55",
+          }}
+        >
+          <List sx={{ padding: "1rem" }}>
             <ListItem
               onClick={() => {
                 const anchor = document.querySelector("#aboutMe");
                 anchor!.scrollIntoView({
                   behavior: "smooth",
-                  block: "center",
                 });
+                handleClose();
+              }}
+              sx={{
+                borderRadius: "10px",
+                "&:hover": {
+                  backgroundColor: "#e7ebf0",
+                  cursor: "pointer",
+                },
               }}
             >
-              <Typography>About</Typography>
+              <Typography sx={{ color: "#3e5060", fontWeight: "700" }}>
+                About
+              </Typography>
             </ListItem>
             <ListItem
               onClick={() => {
                 const anchor = document.querySelector("#works");
                 anchor!.scrollIntoView({
                   behavior: "smooth",
-                  block: "center",
                 });
+                handleClose();
+              }}
+              sx={{
+                borderRadius: "10px",
+                "&:hover": {
+                  backgroundColor: "#e7ebf0",
+                  cursor: "pointer",
+                },
               }}
             >
-              <Typography>Works</Typography>
+              <Typography sx={{ color: "#3e5060", fontWeight: "700" }}>
+                Works
+              </Typography>
             </ListItem>
             <ListItem
               onClick={() => {
                 const anchor = document.querySelector("#contact");
                 anchor!.scrollIntoView({
                   behavior: "smooth",
-                  block: "center",
                 });
+                handleClose();
+              }}
+              sx={{
+                borderRadius: "10px",
+                "&:hover": {
+                  backgroundColor: "#e7ebf0",
+                  cursor: "pointer",
+                },
               }}
             >
-              <Typography>Contact</Typography>
+              <Typography sx={{ color: "#3e5060", fontWeight: "700" }}>
+                Contact
+              </Typography>
             </ListItem>
           </List>
         </Box>
-      </Drawer>
+      ) : null}
     </Box>
   );
 };
