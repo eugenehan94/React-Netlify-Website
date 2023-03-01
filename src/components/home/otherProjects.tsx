@@ -9,10 +9,128 @@ import mernProjects from "../../data/mernProjectsV2";
 import javascriptProjects from "../../data/javascriptProjectsV2";
 import reactProjects from "../../data/reactProjectsV2";
 import javaProjects from "../../data/javaProjectsV2";
-import AnimeWebsiteProject from "../../data/images/AnimeWebsiteProject.jpg";
 
 const openInNewTab = (link: string) => {
   window.open(link, "_blank", "noopener noreferrer");
+};
+
+interface CardProps {
+  picture: string;
+  title: string;
+  description: string;
+  stacks: string[];
+  projectLink: string;
+  githubLink: string;
+  index: number;
+}
+
+const Card = (props: CardProps) => {
+  const {
+    picture,
+    title,
+    description,
+    stacks,
+    projectLink,
+    githubLink,
+    index,
+  } = props;
+  return (
+    <Box
+      key={index}
+      sx={{
+        border: "1px solid #3e50606b",
+        borderRadius: "3px",
+        overflow: "hidden",
+        display: "grid",
+        gridTemplateRows: "auto 1fr",
+        textAlign: "center",
+        "&: hover": {
+          transform: "scale(1.01)",
+        },
+      }}
+    >
+      TEST
+      <Box>
+        <img src={picture} alt={title} style={{ width: "100%" }} />
+      </Box>
+      <Box sx={{ display: "grid", gridTemplateRows: "auto auto 1fr auto" }}>
+        <Box
+          component="div"
+          sx={{
+            width: "50px",
+            height: "50px",
+            backgroundColor: "#1976d2",
+            border: "0.2rem solid #ffffff",
+            borderRadius: "50%",
+            padding: "0 0.6rem",
+            transform: "translateY(-50%)",
+            margin: "0 auto",
+            fontSize: "3rem",
+            "&: hover": {
+              cursor: "pointer",
+            },
+          }}
+          onClick={() => {
+            openInNewTab(projectLink);
+          }}
+        >
+          <Box
+            component="div"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              height: "100%",
+              width: "100%",
+            }}
+          >
+            <VisibilityIcon fontSize="large" sx={{ color: "#fff" }} />
+          </Box>
+        </Box>
+        <Typography component="h4" variant="h4">
+          {title}
+        </Typography>
+        <Typography gutterBottom sx={{ color: "#3e5060" }}>
+          {description}
+        </Typography>
+        <Box>
+          {stacks.map((stack, index) => (
+            <Chip
+              key={index}
+              label={stack}
+              color="primary"
+              sx={{ marginRight: "0.2rem", marginBottom: "0.1rem" }}
+            />
+          ))}
+        </Box>
+
+        <Box
+          sx={{
+            backgroundColor: "primary.main",
+            padding: "0.5rem 0",
+            "&: hover": {
+              cursor: "pointer",
+              color: "#fff",
+            },
+          }}
+          onClick={() => {
+            openInNewTab(githubLink);
+          }}
+        >
+          <Typography
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <GitHubIcon sx={{ marginRight: "0.3rem" }} /> Source Code
+          </Typography>
+        </Box>
+      </Box>
+    </Box>
+  );
 };
 
 const OtherProjects = () => {
@@ -35,12 +153,15 @@ const OtherProjects = () => {
             sm: "repeat(2, 1fr)",
             md: "repeat(3, 1fr)",
             lg: "repeat(4, 1fr)",
-            xl: "repeat(5, 1fr)"
+            xl: "repeat(5, 1fr)",
           },
-          gap: {xs: "10px", md: "30px"},
+          gap: { xs: "10px", md: "30px" },
           gridAutoRows: "column",
         }}
       >
+        {mernProjects.map((mernProject, index) => (
+          <Card {...mernProject} index={index} />
+        ))}
         {/* Render MERN projects */}
         {mernProjects.map((mernProject, index) => {
           const {

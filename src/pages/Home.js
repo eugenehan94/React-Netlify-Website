@@ -1,35 +1,18 @@
-import React, { useEffect, useContext } from "react";
-
+import React from "react";
 /*Component imports */
-import NavDropDown from "../components/NavDropDown";
-// import Footer from "../components/Footer";
-// import Hero from "../components/Hero";
-import Navbar from "../components/navbar/navbar";
+import Navbar from "../components/navbar/index";
+import ScrollToTop from "../components/_shared/scrollToTop";
 import LeftFixedInfo from "../components/_shared/leftFixedInfo";
 import Hero from "../components/home/hero";
 import AboutMe from "../components/home/aboutMe";
-import Projects from "../components/home/projects";
+import FeaturedProject from "../components/featuredProject";
 import OtherProjects from "../components/home/otherProjects";
 import Contact from "../components/home/contact";
 import Footer from "../components/footer/footer";
-
-/* useContext hook */
-import { NavbarMenuContext } from "../App";
-
+// Material UI Components
 import { Box } from "@mui/material";
-import ScrollToTop from "../components/_shared/scrollToTop";
 
 const Home = () => {
-  const { openMenu } = useContext(NavbarMenuContext);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  if (openMenu) {
-    return <NavDropDown />;
-  }
-
   return (
     <div>
       <Navbar />
@@ -44,12 +27,11 @@ const Home = () => {
       >
         <Hero />
         <AboutMe />
-        <Projects />
+        <FeaturedProject />
         <OtherProjects />
         <Contact />
         <Footer />
       </Box>
-      {/* <Footer /> */}
     </div>
   );
 };

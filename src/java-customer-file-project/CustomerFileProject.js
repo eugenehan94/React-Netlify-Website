@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import NavDropDown from "../components/NavDropDown";
 // import Footer from "../components/Footer";
 import ClientSearchVideo from "./video/JavaProjectClientSearch.mp4";
@@ -12,9 +12,9 @@ const CustomerFileProject = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  if (openMenu) {
-    return <NavDropDown />;
-  }
+  // if (openMenu) {
+  //   return <NavDropDown />;
+  // }
   return (
     <div>
       <Navbar />
