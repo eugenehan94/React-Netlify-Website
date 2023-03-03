@@ -163,7 +163,7 @@ const OtherProjects = () => {
           <Card {...mernProject} index={index} />
         ))}
         {/* Render MERN projects */}
-        {mernProjects.map((mernProject, index) => {
+        {/* {mernProjects.map((mernProject, index) => {
           const {
             description,
             githubLink,
@@ -270,9 +270,12 @@ const OtherProjects = () => {
               </Box>
             </Box>
           );
-        })}
+        })} */}
+        {javascriptProjects.map((javascriptProject, index) => (
+          <Card {...javascriptProject} index={index} />
+        ))}
         {/* Render Javascript projects */}
-        {javascriptProjects.map((javascriptProject, index) => {
+        {/* {javascriptProjects.map((javascriptProject, index) => {
           const {
             description,
             githubLink,
@@ -379,9 +382,12 @@ const OtherProjects = () => {
               </Box>
             </Box>
           );
-        })}
+        })} */}
+        {reactProjects.map((reactProject, index) => (
+          <Card {...reactProject} index={index} />
+        ))}
         {/* Render React projects */}
-        {reactProjects.map((reactProject, index) => {
+        {/* {reactProjects.map((reactProject, index) => {
           const {
             description,
             githubLink,
@@ -488,9 +494,12 @@ const OtherProjects = () => {
               </Box>
             </Box>
           );
-        })}
+        })} */}
+        {javaProjects.map((javaProject, index) => (
+          <Card {...javaProject} index={index} />
+        ))}
         {/* Render Java projects */}
-        {javaProjects.map((javaProject, index) => {
+        {/* {javaProjects.map((javaProject, index) => {
           const {
             description,
             githubLink,
@@ -597,7 +606,7 @@ const OtherProjects = () => {
               </Box>
             </Box>
           );
-        })}
+        })} */}
       </Box>
 
       {/* <Button>View More</Button> */}
