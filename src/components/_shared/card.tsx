@@ -13,6 +13,7 @@ interface CardProps {
   projectLink: string;
   githubLink: string;
   index: number;
+  key: number;
 }
 
 const openInNewTab = (link: string) => {
@@ -89,9 +90,9 @@ const Card = (props: CardProps) => {
           {description}
         </Typography>
         <Box>
-          {stacks.map((stack, index) => (
+          {stacks.map((stack, i) => (
             <Chip
-              key={index}
+              key={i}
               label={stack}
               color="primary"
               sx={{ marginRight: "0.2rem", marginBottom: "0.1rem" }}
