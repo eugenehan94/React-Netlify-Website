@@ -4,17 +4,32 @@ import { Box, Link, Stack, useTheme, useMediaQuery } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
+import { useInView } from "react-intersection-observer";
+
 const LeftFixedInfo = () => {
   const theme = useTheme();
   const isMedium = useMediaQuery(theme.breakpoints.up("md"));
+  const { ref, inView, entry } = useInView({ triggerOnce: true });
   return (
     <Box>
       {isMedium ? (
         <Box
+          ref={ref}
           sx={{
             position: "fixed",
             left: "40px",
             bottom: "0px",
+            animation: inView ? "linkTranslateX 1s linear" : "",
+            "@keyframes linkTranslateX": {
+              "0%": {
+                transform: "translateX(-100px)",
+                opacity: 0,
+              },
+              "100%": {
+                transform: "translateX(0)",
+                opacity: 1,
+              },
+            },
           }}
         >
           <Stack

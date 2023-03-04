@@ -3,8 +3,13 @@ import { Box, Grid, Typography } from "@mui/material";
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 const AboutMe = () => {
   return (
-    <Box sx={{ padding: "3rem 0" }} id="aboutMe">
-      <Typography component="h2" variant="h3" sx={{paddingBottom: "2.5rem"}}>
+    <Box
+      sx={{
+        padding: "3rem 0",
+      }}
+      id="aboutMe"
+    >
+      <Typography component="h2" variant="h3" sx={{ paddingBottom: "2.5rem" }}>
         About Me{" "}
         <span
           style={{
