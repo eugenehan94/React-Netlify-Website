@@ -1,33 +1,37 @@
-import React, { useEffect, useContext } from "react";
-
+import React from "react";
 /*Component imports */
-import Navbar from "../components/Navbar";
-import NavDropDown from "../components/NavDropDown";
-// import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-
-/* Css import */
-import "../css/Home.css";
-
-/* useContext hook */
-import { NavbarMenuContext } from "../App";
+import Navbar from "../components/navbar/index";
+import ScrollToTop from "../components/_shared/scrollToTop";
+import LeftFixedInfo from "../components/_shared/leftFixedInfo";
+import Hero from "../components/home/hero";
+import AboutMe from "../components/home/aboutMe";
+import FeaturedProject from "../components/featuredProject";
+import OtherProjects from "../components/home/otherProjects";
+import Contact from "../components/home/contact";
+import Footer from "../components/footer/footer";
+// Material UI Components
+import { Box } from "@mui/material";
 
 const Home = () => {
-  const { openMenu } = useContext(NavbarMenuContext);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  if (openMenu) {
-    return <NavDropDown />;
-  }
-
   return (
     <div>
       <Navbar />
-      <Hero />
-      {/* <Footer /> */}
+      <ScrollToTop />
+      <LeftFixedInfo />
+      <Box
+        sx={{
+          marginLeft: { xs: "1rem", md: "7rem" },
+          marginRight: { xs: "1rem", md: "7rem" },
+          paddingTop: "2rem",
+        }}
+      >
+        <Hero />
+        <AboutMe />
+        <FeaturedProject />
+        <OtherProjects />
+        <Contact />
+        <Footer />
+      </Box>
     </div>
   );
 };
