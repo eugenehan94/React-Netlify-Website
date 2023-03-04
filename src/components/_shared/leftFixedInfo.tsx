@@ -10,6 +10,7 @@ const LeftFixedInfo = () => {
   const theme = useTheme();
   const isMedium = useMediaQuery(theme.breakpoints.up("md"));
   const { ref, inView, entry } = useInView({ triggerOnce: true });
+  
   return (
     <Box>
       {isMedium ? (
