@@ -1,5 +1,5 @@
 import React from "react";
-
+import OpenInNewTab from "../_shared/openInNewTab";
 import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
 // Material UI Icons
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -17,10 +17,6 @@ const FeaturedProjectDesktop = () => {
     title,
   } = featureProject;
 
-  const openInNewTab = (link: string) => {
-    window.open(link, "_blank", "noopener noreferrer");
-  };
-
   return (
     <Grid container>
       <Grid item xs={6}>
@@ -36,7 +32,7 @@ const FeaturedProjectDesktop = () => {
           }}
           src={picture}
           alt="Anime Website Display Picture"
-          onClick={() => openInNewTab(projectLink)}
+          onClick={() => OpenInNewTab(projectLink)}
         />
       </Grid>
       <Grid item xs={6}>
@@ -81,11 +77,11 @@ const FeaturedProjectDesktop = () => {
             </Box>
             <Stack direction="row" spacing={2}>
               <GitHubIcon
-                onClick={() => openInNewTab(githubLink)}
+                onClick={() => OpenInNewTab(githubLink)}
                 sx={{ "&: hover": { cursor: "pointer" } }}
               />
               <LaunchIcon
-                onClick={() => openInNewTab(projectLink)}
+                onClick={() => OpenInNewTab(projectLink)}
                 sx={{ "&: hover": { cursor: "pointer" } }}
               />
             </Stack>

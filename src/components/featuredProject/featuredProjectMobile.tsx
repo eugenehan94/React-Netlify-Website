@@ -1,4 +1,5 @@
 import React from "react";
+import OpenInNewTab from "../_shared/openInNewTab";
 // Material UI Components
 import {
   Box,
@@ -25,10 +26,6 @@ const FeaturedProjectMobile = () => {
     stacks,
     title,
   } = featureProject;
-
-  const openInNewTab = (link: string) => {
-    window.open(link, "_blank", "noopener noreferrer");
-  };
 
   return (
     <Card
@@ -58,7 +55,7 @@ const FeaturedProjectMobile = () => {
         component="img"
         src={picture}
         alt="Anime Website Display Picture"
-        onClick={() => openInNewTab(projectLink)}
+        onClick={() => OpenInNewTab(projectLink)}
         sx={{
           width: "100%",
           height: "100%",
@@ -91,11 +88,11 @@ const FeaturedProjectMobile = () => {
           spacing={2}
         >
           <GitHubIcon
-            onClick={() => openInNewTab(githubLink)}
+            onClick={() => OpenInNewTab(githubLink)}
             sx={{ "&: hover": { cursor: "pointer" } }}
           />
           <LaunchIcon
-            onClick={() => openInNewTab(projectLink)}
+            onClick={() => OpenInNewTab(projectLink)}
             sx={{ "&: hover": { cursor: "pointer" } }}
           />
         </Stack>

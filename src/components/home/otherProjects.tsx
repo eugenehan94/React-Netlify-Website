@@ -8,10 +8,6 @@ import javascriptProjects from "../../data/javascriptProjectsV2";
 import reactProjects from "../../data/reactProjectsV2";
 import javaProjects from "../../data/javaProjectsV2";
 
-const openInNewTab = (link: string) => {
-  window.open(link, "_blank", "noopener noreferrer");
-};
-
 const OtherProjects = () => {
   return (
     <Box sx={{ padding: "3rem 0" }}>
@@ -40,19 +36,19 @@ const OtherProjects = () => {
       >
         {/* Render MERN projects */}
         {mernProjects.map((mernProject, index) => (
-          <Card {...mernProject} index={index} />
+          <Card {...mernProject} index={index} key={index} />
         ))}
         {/* Render Javascript projects */}
         {javascriptProjects.map((javascriptProject, index) => (
-          <Card {...javascriptProject} index={index} />
+          <Card {...javascriptProject} index={index} key={index} />
         ))}
         {/* Render React projects */}
         {reactProjects.map((reactProject, index) => (
-          <Card {...reactProject} index={index} />
+          <Card {...reactProject} index={index} key={index} />
         ))}
         {/* Render Java projects */}
         {javaProjects.map((javaProject, index) => (
-          <Card {...javaProject} index={index} />
+          <Card {...javaProject} index={index} key={index} />
         ))}
       </Box>
     </Box>
