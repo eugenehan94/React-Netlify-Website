@@ -12,10 +12,10 @@ import Footer from "../components/footer/footer";
 // Material UI Components
 import { Box } from "@mui/material";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <div>
-      <Navbar />
+    <Box>
+      <Navbar {...props}/>
       <ScrollToTop />
       <LeftFixedInfo />
       <Box
@@ -32,7 +32,7 @@ const Home = () => {
         <Contact />
         <Footer />
       </Box>
-    </div>
+    </Box>
   );
 };
 
