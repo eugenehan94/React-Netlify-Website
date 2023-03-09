@@ -2,10 +2,15 @@ import React from "react";
 
 import MatHomeIcon from "@mui/icons-material/Home";
 
-const HomeIcon = () => {
+interface HomeIconProps {
+  setLoading: Function;
+}
+const HomeIcon = (props: HomeIconProps) => {
+  const { setLoading } = props;
   return (
     <MatHomeIcon
       fontSize="large"
+      onClick={() => setLoading(true)}
       sx={{
         color: "#0072e5",
         "&:hover": {
