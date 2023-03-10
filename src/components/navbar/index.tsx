@@ -2,7 +2,7 @@ import React from "react";
 import HomeIcon from "./homeIcon";
 import Desktop from "./desktopNavbar";
 import MobileNavbar from "./mobileNavbar";
-
+// Material UI Components
 import { Box, Grid, useTheme, useMediaQuery } from "@mui/material";
 
 interface NavbarProps {

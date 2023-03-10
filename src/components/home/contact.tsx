@@ -1,4 +1,5 @@
 import React from "react";
+// Material UI Components
 import { Box, Link, Typography } from "@mui/material";
 
 const Contact = () => {

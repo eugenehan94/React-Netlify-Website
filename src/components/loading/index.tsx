@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
+// Material UI Components
 import { Box } from "@mui/material";
-
+// Diamond Side
 import DiamondTopLeft from "./diamondTopLeft";
 import DiamondTopRight from "./diamondTopRight";
 import DiamondBottomLeft from "./diamondBottomLeft";
 import DiamondBottomRight from "./diamondBottomRight";
+// The Letter E
 import LetterETop from "./letterETop";
 import LetterEBottom from "./letterEBottom";
+
 import { useInView } from "react-intersection-observer";
 
 interface LoadingProps {

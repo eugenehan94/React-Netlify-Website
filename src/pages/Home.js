@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "../components/navbar/index";
 import ScrollToTop from "../components/_shared/scrollToTop";
 import LeftFixedInfo from "../components/_shared/leftFixedInfo";
-// import Hero from "../components/home/hero";
 import Hero from "../components/hero/index";
 import AboutMe from "../components/home/aboutMe";
 import FeaturedProject from "../components/featuredProject";

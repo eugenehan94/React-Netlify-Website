@@ -1,6 +1,9 @@
 import React from "react";
+// Material UI Components
 import { Box, Grid, Typography } from "@mui/material";
+// Material UI Icons
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
+
 const AboutMe = () => {
   return (
     <Box
@@ -40,9 +43,9 @@ const AboutMe = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography gutterBottom sx={{ color: "#3e5060" }}>
-            Here are a few technologies I have used:
+            Here are a few frontend technologies I have used:
           </Typography>
-          <Grid container>
+          <Grid container sx={{marginBottom: "0.4rem"}}>
             <Grid item xs={6}>
               <Typography
                 sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
@@ -87,6 +90,22 @@ const AboutMe = () => {
                 Typescript
               </Typography>
             </Grid>
+            <Grid item xs={6}>
+              <Typography
+                sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
+              >
+                <ChevronRightOutlinedIcon
+                  fontSize="small"
+                  sx={{ color: "#0072e5" }}
+                />
+                GraphQL
+              </Typography>
+            </Grid>
+          </Grid>
+          <Typography gutterBottom sx={{ color: "#3e5060" }}>
+            Here are a few backend technologies I have used:
+          </Typography>
+          <Grid container>
             <Grid item xs={6}>
               <Typography
                 sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}

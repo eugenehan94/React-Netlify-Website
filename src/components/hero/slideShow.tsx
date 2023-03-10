@@ -1,8 +1,9 @@
 import React from "react";
 import slideShowSlides from "./slideShowSlides";
 import OpenInNewTab from "../_shared/openInNewTab";
-
+// Material UI Components
 import { Box, Typography } from "@mui/material";
+// Material UI Icons
 import LaunchIcon from "@mui/icons-material/Launch";
 
 const SlideShow = () => {

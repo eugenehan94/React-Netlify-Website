@@ -1,4 +1,5 @@
 import React from "react";
+// Material UI Components
 import { Box, Typography } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 

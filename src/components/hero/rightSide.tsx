@@ -1,5 +1,6 @@
 import React from "react";
 import SlideShow from "./slideShow";
+// Material UI Components
 import { Box } from "@mui/material";
 
 const RightSide = () => {

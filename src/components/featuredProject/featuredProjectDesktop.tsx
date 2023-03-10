@@ -1,5 +1,6 @@
 import React from "react";
 import OpenInNewTab from "../_shared/openInNewTab";
+// Material UI Components
 import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
 // Material UI Icons
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -20,20 +21,54 @@ const FeaturedProjectDesktop = () => {
   return (
     <Grid container>
       <Grid item xs={6}>
-        <Box
-          component="img"
-          sx={{
-            width: "100%",
-            height: "100%",
-            borderRadius: "5px",
-            "&: hover": {
-              cursor: "pointer",
-            },
-          }}
-          src={picture}
-          alt="Anime Website Display Picture"
-          onClick={() => OpenInNewTab(projectLink)}
-        />
+        <Box sx={{ position: "relative" }}>
+          <Box
+            onClick={() => {
+              OpenInNewTab(projectLink);
+            }}
+            sx={{
+              position: "absolute",
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(61, 71, 82, 0.55)",
+              opacity: 0,
+              "&: hover": { opacity: 1, cursor: "pointer" },
+            }}
+          >
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Typography
+                align="center"
+                sx={{ color: "#fff", fontWeight: "bold" }}
+              >
+                Go to site <LaunchIcon />
+              </Typography>
+            </Box>
+          </Box>
+          <Box
+            component="img"
+            sx={{
+              width: "100%",
+              height: "100%",
+              borderRadius: "5px",
+              "&: hover": {
+                cursor: "pointer",
+              },
+            }}
+            src={picture}
+            alt="Anime Website Display Picture"
+            onClick={() => OpenInNewTab(projectLink)}
+          />
+        </Box>
       </Grid>
       <Grid item xs={6}>
         <Typography

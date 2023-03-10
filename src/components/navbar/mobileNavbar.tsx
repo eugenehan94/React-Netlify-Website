@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+// Material UI Components
 import { Box, Button, List, ListItem, Typography } from "@mui/material";
+// Material UI Icons
 import CloseIcon from "@mui/icons-material/Close";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
+
 const MobileNavbar = () => {
   const [openMenu, setMenu] = useState(false);
 
