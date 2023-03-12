@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/navbar/index";
 import ScrollToTop from "../components/_shared/scrollToTop";
 import LeftFixedInfo from "../components/_shared/leftFixedInfo";
-import Hero from "../components/home/hero";
+import Hero from "../components/hero/index";
 import AboutMe from "../components/home/aboutMe";
 import FeaturedProject from "../components/featuredProject";
 import OtherProjects from "../components/home/otherProjects";
@@ -12,10 +12,10 @@ import Footer from "../components/footer/footer";
 // Material UI Components
 import { Box } from "@mui/material";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <div>
-      <Navbar />
+    <Box>
+      <Navbar {...props} />
       <ScrollToTop />
       <LeftFixedInfo />
       <Box
@@ -32,7 +32,7 @@ const Home = () => {
         <Contact />
         <Footer />
       </Box>
-    </div>
+    </Box>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
+// Material UI Components
 import { Box, Link, Stack, useTheme, useMediaQuery } from "@mui/material";
-
+// Material UI Icons
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 

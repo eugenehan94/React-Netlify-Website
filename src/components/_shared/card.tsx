@@ -1,4 +1,5 @@
 import React from "react";
+import OpenInNewTab from "./openInNewTab";
 // Material UI Components
 import { Box, Chip, Typography } from "@mui/material";
 // Material UI Icons
@@ -15,10 +16,6 @@ interface CardProps {
   index: number;
   key: number;
 }
-
-const openInNewTab = (link: string) => {
-  window.open(link, "_blank", "noopener noreferrer");
-};
 
 const Card = (props: CardProps) => {
   const {
@@ -66,7 +63,7 @@ const Card = (props: CardProps) => {
             },
           }}
           onClick={() => {
-            openInNewTab(projectLink);
+            OpenInNewTab(projectLink);
           }}
         >
           <Box
@@ -110,7 +107,7 @@ const Card = (props: CardProps) => {
             },
           }}
           onClick={() => {
-            openInNewTab(githubLink);
+            OpenInNewTab(githubLink);
           }}
         >
           <Typography
