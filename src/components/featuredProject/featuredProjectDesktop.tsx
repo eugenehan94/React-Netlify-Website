@@ -87,7 +87,7 @@ const FeaturedProjectDesktop = () => {
             backgroundColor: "#001e3c",
             color: "white",
             width: "100%",
-            height: "50%",
+            height: "75%",
             transform: "translateX(-40px)",
             borderRadius: "5px",
             padding: "2rem",
