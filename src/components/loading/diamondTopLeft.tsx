@@ -13,7 +13,7 @@ const DiamondTopLeft = (props: DiamondTopLeftProps) => {
       sx={{
         position: "absolute",
         top: "-43px",
-        left: "-70px",
+        left: "-80px",
         width: "100px",
         height: "30px",
         borderWidth: "10px 0 0px 0px",

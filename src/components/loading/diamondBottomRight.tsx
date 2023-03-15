@@ -12,8 +12,8 @@ const DiamondBottomRight = (props: DiamondBottomRight) => {
     <Box
       sx={{
         position: "absolute",
-        top: "0",
-        left: "-26px",
+        top: "8px",
+        left: "-30px",
         width: "100px",
         height: "30px",
         borderWidth: "0px 0 10px 0px",
