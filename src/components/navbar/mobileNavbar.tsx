@@ -1,15 +1,33 @@
 import React, { useState } from "react";
+import { ColorModeContext } from "../../App";
 // Material UI Components
-import { Box, Button, List, ListItem, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Divider,
+  List,
+  ListItem,
+  Switch,
+  Stack,
+  Typography,
+} from "@mui/material";
 // Material UI Icons
 import CloseIcon from "@mui/icons-material/Close";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 
 const MobileNavbar = () => {
   const [openMenu, setMenu] = useState(false);
-
+  const colorMode = React.useContext(ColorModeContext);
   const handleClose = () => {
     setMenu(false);
+  };
+
+  const handleChange = () => {
+    if (colorMode.mode === "light") {
+      colorMode.toggleColorMode("dark");
+    } else {
+      colorMode.toggleColorMode("light");
+    }
   };
 
   return (
@@ -96,6 +114,20 @@ const MobileNavbar = () => {
               <Typography sx={{ color: "#3e5060", fontWeight: "700" }}>
                 Contact
               </Typography>
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <Stack direction="row" alignItems="center">
+                <Typography sx={{ color: "#3e5060", fontWeight: "700" }}>
+                  Dark Mode
+                </Typography>
+                <Switch
+                  checked={colorMode.mode === "dark" ? true : false}
+                  onChange={handleChange}
+                  // Since label is not used - must include inputProps with aria-label, as per docs
+                  inputProps={{ 'aria-label': 'Dark Mode Switch' }}
+                />
+              </Stack>
             </ListItem>
           </List>
         </Box>
