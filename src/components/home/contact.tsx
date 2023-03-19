@@ -1,8 +1,9 @@
 import React from "react";
 // Material UI Components
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Link, Typography, useTheme } from "@mui/material";
 
 const Contact = () => {
+  const theme = useTheme();
   return (
     <Box
       id="contact"
@@ -19,7 +20,7 @@ const Contact = () => {
         Contact Me
       </Typography>
       <Box sx={{ padding: { xs: "0", md: "0 10rem" } }}>
-        <Typography align="center" sx={{ color: "#3e5060" }}>
+        <Typography align="center" color="text.secondary">
           I am always looking for the next challenge where I can contribute,
           learn and grow. Please feel free to contact me on{" "}
           <Link
