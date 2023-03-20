@@ -1,10 +1,11 @@
 import React from "react";
 // Material UI Components
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, useTheme } from "@mui/material";
 // Material UI Icons
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 
 const AboutMe = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
@@ -18,7 +19,8 @@ const AboutMe = () => {
           style={{
             // display: inline-block required so width will have affect
             display: "inline-block",
-            backgroundColor: "black",
+            // backgroundColor: "black",
+            backgroundColor: theme.palette.mode === "light" ? "black" : "#fff",
             width: "300px",
             height: "1px",
             position: "relative",
@@ -28,27 +30,28 @@ const AboutMe = () => {
       </Typography>
       <Grid container spacing={5}>
         <Grid item xs={12} md={6}>
-          <Typography gutterBottom align="justify" sx={{ color: "#3e5060" }}>
+          <Typography gutterBottom align="justify" color="text.secondary">
             Hello! My name is Eugene and I enjoy creating things that live on
             the internet. My interest in web development started back in 2009 in
             highschool. I took my first computer science course where it was
             mainly Java, but had moments of HTML and CSS. This lead me to
             further pursue Javascript and then React and Angular.
           </Typography>
-          <Typography gutterBottom align="justify" sx={{ color: "#3e5060" }}>
+          <Typography gutterBottom align="justify" color="text.secondary">
             Fast-foward to today, I had the privilage of creating countless
             projects, contribute to opening source, and contribute my expertise
             to businesses.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Typography gutterBottom sx={{ color: "#3e5060" }}>
+          <Typography gutterBottom color="text.secondary">
             Here are a few frontend technologies I have used:
           </Typography>
-          <Grid container sx={{marginBottom: "0.4rem"}}>
+          <Grid container sx={{ marginBottom: "0.4rem" }}>
             <Grid item xs={6}>
               <Typography
-                sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
+                color="text.secondary"
+                sx={{ display: "flex", alignItems: "center" }}
               >
                 <ChevronRightOutlinedIcon
                   fontSize="small"
@@ -59,7 +62,8 @@ const AboutMe = () => {
             </Grid>
             <Grid item xs={6}>
               <Typography
-                sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
+                color="text.secondary"
+                sx={{ display: "flex", alignItems: "center" }}
               >
                 <ChevronRightOutlinedIcon
                   fontSize="small"
@@ -70,7 +74,8 @@ const AboutMe = () => {
             </Grid>
             <Grid item xs={6}>
               <Typography
-                sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
+                color="text.secondary"
+                sx={{ display: "flex", alignItems: "center" }}
               >
                 <ChevronRightOutlinedIcon
                   fontSize="small"
@@ -81,7 +86,8 @@ const AboutMe = () => {
             </Grid>
             <Grid item xs={6}>
               <Typography
-                sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
+                color="text.secondary"
+                sx={{ display: "flex", alignItems: "center" }}
               >
                 <ChevronRightOutlinedIcon
                   fontSize="small"
@@ -92,7 +98,8 @@ const AboutMe = () => {
             </Grid>
             <Grid item xs={6}>
               <Typography
-                sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
+                color="text.secondary"
+                sx={{ display: "flex", alignItems: "center" }}
               >
                 <ChevronRightOutlinedIcon
                   fontSize="small"
@@ -102,13 +109,14 @@ const AboutMe = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Typography gutterBottom sx={{ color: "#3e5060" }}>
+          <Typography gutterBottom color="text.secondary">
             Here are a few backend technologies I have used:
           </Typography>
           <Grid container>
             <Grid item xs={6}>
               <Typography
-                sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
+                color="text.secondary"
+                sx={{ display: "flex", alignItems: "center" }}
               >
                 <ChevronRightOutlinedIcon
                   fontSize="small"
@@ -119,7 +127,8 @@ const AboutMe = () => {
             </Grid>
             <Grid item xs={6}>
               <Typography
-                sx={{ display: "flex", alignItems: "center", color: "#3e5060" }}
+                color="text.secondary"
+                sx={{ display: "flex", alignItems: "center" }}
               >
                 <ChevronRightOutlinedIcon
                   fontSize="small"
