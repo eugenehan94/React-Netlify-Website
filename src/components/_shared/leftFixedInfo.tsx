@@ -11,7 +11,7 @@ const LeftFixedInfo = () => {
   const theme = useTheme();
   const isMedium = useMediaQuery(theme.breakpoints.up("md"));
   const { ref, inView, entry } = useInView({ triggerOnce: true });
-  
+
   return (
     <Box>
       {isMedium ? (
@@ -68,7 +68,12 @@ const LeftFixedInfo = () => {
               />
             </Link>
             <Box
-              sx={{ backgroundColor: "#1a2027", width: "1px", height: "100px" }}
+              sx={{
+                backgroundColor:
+                  theme.palette.mode === "light" ? "#1a2027" : "#fff",
+                width: "1px",
+                height: "100px",
+              }}
             ></Box>
           </Stack>
         </Box>
