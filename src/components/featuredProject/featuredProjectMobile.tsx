@@ -10,6 +10,7 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
+  useTheme,
 } from "@mui/material";
 // Material UI Icons
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -18,6 +19,7 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import featureProject from "../../data/featureProject";
 
 const FeaturedProjectMobile = () => {
+  const theme = useTheme();
   const {
     description,
     githubLink,
@@ -66,7 +68,8 @@ const FeaturedProjectMobile = () => {
       />
       <CardContent
         sx={{
-          backgroundColor: "#001e3c",
+          backgroundColor:
+            theme.palette.mode === "light" ? "#001e3c" : "#0a1929",
           color: "#fff",
         }}
       >
@@ -75,9 +78,9 @@ const FeaturedProjectMobile = () => {
           {stacks.map((stack, index) => (
             <Chip
               label={stack}
-              color="primary"
+              // color="primary"
               key={index}
-              sx={{ margin: "0.8rem 0.2rem" }}
+              sx={{ margin: "0.8rem 0.2rem", backgroundColor: "#1976d2" }}
             />
           ))}
         </Box>
