@@ -1,7 +1,7 @@
 import React from "react";
 import OpenInNewTab from "../_shared/openInNewTab";
 // Material UI Components
-import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
+import { Box, Chip, Grid, Stack, Typography, useTheme } from "@mui/material";
 // Material UI Icons
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
@@ -9,6 +9,7 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import featureProject from "../../data/featureProject";
 
 const FeaturedProjectDesktop = () => {
+  const theme = useTheme();
   const {
     description,
     githubLink,
@@ -84,7 +85,8 @@ const FeaturedProjectDesktop = () => {
         <Box
           component="div"
           sx={{
-            backgroundColor: "#001e3c",
+            backgroundColor:
+              theme.palette.mode === "light" ? "#001e3c" : "#0a1929",
             color: "white",
             width: "100%",
             height: "75%",
@@ -104,9 +106,14 @@ const FeaturedProjectDesktop = () => {
               {stacks.map((stack, index) => (
                 <Chip
                   label={stack}
-                  color="primary"
+                  // color="primary"
                   key={index}
-                  sx={{ marginRight: "0.3rem", marginBottom: "0.1rem" }}
+                  sx={{
+                    marginRight: "0.3rem",
+                    marginBottom: "0.1rem",
+                    backgroundColor: "#1976d2",
+                    color: "#fff"
+                  }}
                 />
               ))}
             </Box>
