@@ -15,7 +15,7 @@ const LetterEBottom = (props: LetterEBottomProps) => {
         top: "5px",
         left: "-20px",
         width: "30px",
-        height: "20px",
+        height: "30px",
         borderWidth: "0px 0 10px 10px",
         borderStyle: "solid",
         borderColor: "#0072e5",

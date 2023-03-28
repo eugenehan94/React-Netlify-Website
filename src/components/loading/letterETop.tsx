@@ -15,7 +15,7 @@ const LetterETop = (props: LetterETopProps) => {
         top: "-35px",
         left: "-20px",
         width: "30px",
-        height: "20px",
+        height: "40px",
         borderWidth: "10px 0 10px 10px",
         borderStyle: "solid",
         borderColor: "#0072e5",

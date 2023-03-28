@@ -83,7 +83,7 @@ const Card = (props: CardProps) => {
         <Typography component="h4" variant="h4">
           {title}
         </Typography>
-        <Typography gutterBottom sx={{ color: "#3e5060" }}>
+        <Typography gutterBottom color="text.secondary">
           {description}
         </Typography>
         <Box>
@@ -91,15 +91,18 @@ const Card = (props: CardProps) => {
             <Chip
               key={i}
               label={stack}
-              color="primary"
-              sx={{ marginRight: "0.2rem", marginBottom: "0.1rem" }}
+              sx={{
+                marginRight: "0.2rem",
+                marginBottom: "0.1rem",
+                backgroundColor: "#1976d2",
+              }}
             />
           ))}
         </Box>
 
         <Box
           sx={{
-            backgroundColor: "primary.main",
+            backgroundColor: "#1976d2",
             padding: "0.5rem 0",
             "&: hover": {
               cursor: "pointer",

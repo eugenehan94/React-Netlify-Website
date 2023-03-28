@@ -35,7 +35,7 @@ const LeftSide = () => {
         variant="h2"
         gutterBottom
         sx={{
-          color: "#0a1929",
+          // color: "#0a1929",
           animation: inView ? "textTranslateX 1s linear" : "",
         }}
       >
@@ -46,7 +46,7 @@ const LeftSide = () => {
         variant="h3"
         gutterBottom
         sx={{
-          color: "#0a1929",
+          // color: "#0a1929",
           animation: inView ? "textTranslateX 1s linear" : "",
         }}
       >
@@ -54,8 +54,8 @@ const LeftSide = () => {
       </Typography>
       <Typography
         align="justify"
+        color="text.secondary"
         sx={{
-          color: "#3e5060",
           animation: inView ? "textTranslateX 1s linear" : "",
         }}
       >

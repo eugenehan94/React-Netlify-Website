@@ -1,4 +1,5 @@
 import React from "react";
+import Settings from "../settings";
 // Material UI Components
 import { Box, Stack, Typography } from "@mui/material";
 import { useInView } from "react-intersection-observer";
@@ -67,6 +68,15 @@ const DesktopNavbar = () => {
         }}
       >
         <Typography>Contact</Typography>
+      </Box>
+      <Box
+        onClick={() => {}}
+        sx={{
+          "&:hover": { cursor: "pointer" },
+          animation: inView ? "textTranslateY 0.8s linear" : "",
+        }}
+      >
+        <Settings />
       </Box>
     </Stack>
   );
