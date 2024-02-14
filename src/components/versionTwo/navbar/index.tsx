@@ -5,18 +5,14 @@ import MobileNavbar from "./mobileNavbar";
 // Material UI Components
 import { Box, Grid, useTheme, useMediaQuery } from "@mui/material";
 
-interface NavbarProps {
-  setLoading: Function
-}
-
-const Navbar = (props: NavbarProps) => {
+const Navbar = (props: any) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box sx={{ padding: "1rem 2rem" }}>
       <Grid container justifyContent="space-between" alignItems="center">
         <Grid item>
-          <HomeIcon {...props}/>
+          <HomeIcon {...props} />
         </Grid>
         <Grid item>{isMobile ? <MobileNavbar /> : <Desktop />}</Grid>
       </Grid>

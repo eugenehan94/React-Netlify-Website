@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ColorModeContext } from "../../../App";
+// import { ColorModeContext } from "../../../App";
 // Material UI Components
 import {
   Box,
@@ -17,17 +17,17 @@ import DragHandleIcon from "@mui/icons-material/DragHandle";
 
 const MobileNavbar = () => {
   const [openMenu, setMenu] = useState(false);
-  const colorMode = React.useContext(ColorModeContext);
+  // const colorMode = React.useContext(ColorModeContext);
   const handleClose = () => {
     setMenu(false);
   };
 
   const handleChange = () => {
-    if (colorMode.mode === "light") {
-      colorMode.toggleColorMode("dark");
-    } else {
-      colorMode.toggleColorMode("light");
-    }
+    // if (colorMode.mode === "light") {
+    //   colorMode.toggleColorMode("dark");
+    // } else {
+    //   colorMode.toggleColorMode("light");
+    // }
   };
 
   return (
@@ -122,7 +122,7 @@ const MobileNavbar = () => {
                   Dark Mode
                 </Typography>
                 <Switch
-                  checked={colorMode.mode === "dark" ? true : false}
+                  // checked={colorMode.mode === "dark" ? true : false}
                   onChange={handleChange}
                   // Since label is not used - must include inputProps with aria-label, as per docs
                   inputProps={{ "aria-label": "Dark Mode Switch" }}

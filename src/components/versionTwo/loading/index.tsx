@@ -12,20 +12,20 @@ import LetterEBottom from "./letterEBottom";
 
 import { useInView } from "react-intersection-observer";
 
-interface LoadingProps {
-  setLoading: Function;
-}
+// interface LoadingProps {
+//   setLoading: Function;
+// }
 
-const Loading = (props: LoadingProps) => {
+const Loading = (props: any) => {
   const { ref, inView, entry } = useInView({ triggerOnce: true });
-  const { setLoading } = props;
+  // const { setLoading } = props;
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1100);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1100);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <Box

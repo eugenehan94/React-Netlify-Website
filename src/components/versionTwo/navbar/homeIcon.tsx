@@ -6,11 +6,11 @@ interface HomeIconProps {
   setLoading: Function;
 }
 const HomeIcon = (props: HomeIconProps) => {
-  const { setLoading } = props;
+  // const { setLoading } = props;
   return (
     <MatHomeIcon
       fontSize="large"
-      onClick={() => setLoading(true)}
+      // onClick={() => setLoading(true)}
       sx={{
         color: "#0072e5",
         "&:hover": {

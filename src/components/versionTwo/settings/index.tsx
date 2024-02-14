@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ColorModeContext } from "../../../App";
+// import { ColorModeContext } from "../../../App";
 // Material UI Components
 import { Box, Button, Divider, Drawer, Stack, Typography } from "@mui/material";
 // Material UI Icon
@@ -10,7 +10,7 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const Settings = () => {
   const [state, setState] = useState(false);
-  const colorMode = React.useContext(ColorModeContext);
+  // const colorMode = React.useContext(ColorModeContext);
   return (
     <Box>
       <SettingsOutlinedIcon onClick={() => setState(true)} />
@@ -41,14 +41,14 @@ const Settings = () => {
           <Typography sx={{ padding: "10px 0" }}>Mode</Typography>
           <Stack direction="row" spacing={1}>
             <Button
-              variant={colorMode.mode === "light" ? "contained" : "outlined"}
-              onClick={() => colorMode.toggleColorMode("light")}
+            // variant={colorMode.mode === "light" ? "contained" : "outlined"}
+            // onClick={() => colorMode.toggleColorMode("light")}
             >
               <LightModeIcon /> Light
             </Button>
             <Button
-              variant={colorMode.mode === "dark" ? "contained" : "outlined"}
-              onClick={() => colorMode.toggleColorMode("dark")}
+            // variant={colorMode.mode === "dark" ? "contained" : "outlined"}
+            // onClick={() => colorMode.toggleColorMode("dark")}
             >
               <DarkModeOutlinedIcon /> Dark
             </Button>
