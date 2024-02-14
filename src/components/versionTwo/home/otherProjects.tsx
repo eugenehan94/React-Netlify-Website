@@ -3,10 +3,10 @@ import Card from "../_shared/card";
 // Material UI Components
 import { Box, Typography } from "@mui/material";
 // Project Data
-import mernProjects from "../../data/mernProjectsV2";
-import javascriptProjects from "../../data/javascriptProjectsV2";
-import reactProjects from "../../data/reactProjectsV2";
-import javaProjects from "../../data/javaProjectsV2";
+import mernProjects from "../../../data/mernProjectsV2";
+import javascriptProjects from "../../../data/javascriptProjectsV2";
+import reactProjects from "../../../data/reactProjectsV2";
+import javaProjects from "../../../data/javaProjectsV2";
 
 const OtherProjects = () => {
   return (

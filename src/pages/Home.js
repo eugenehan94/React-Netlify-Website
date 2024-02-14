@@ -1,14 +1,14 @@
 import React from "react";
 /*Component imports */
-import Navbar from "../components/navbar/index";
-import ScrollToTop from "../components/_shared/scrollToTop";
-import LeftFixedInfo from "../components/_shared/leftFixedInfo";
-import Hero from "../components/hero/index";
-import AboutMe from "../components/home/aboutMe";
-import FeaturedProject from "../components/featuredProject";
-import OtherProjects from "../components/home/otherProjects";
-import Contact from "../components/home/contact";
-import Footer from "../components/footer/footer";
+import Navbar from "../components/versionTwo/navbar/index";
+import ScrollToTop from "../components/versionTwo/_shared/scrollToTop";
+import LeftFixedInfo from "../components/versionTwo/_shared/leftFixedInfo";
+import Hero from "../components/versionTwo/hero/index";
+import AboutMe from "../components/versionTwo/home/aboutMe";
+import FeaturedProject from "../components/versionTwo/featuredProject";
+import OtherProjects from "../components/versionTwo/home/otherProjects";
+import Contact from "../components/versionTwo/home/contact";
+import Footer from "../components/versionTwo/footer/footer";
 // Material UI Components
 import { Box } from "@mui/material";
 

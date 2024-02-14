@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ColorModeContext } from "../../App";
+import { ColorModeContext } from "../../../App";
 // Material UI Components
 import {
   Box,
@@ -125,7 +125,7 @@ const MobileNavbar = () => {
                   checked={colorMode.mode === "dark" ? true : false}
                   onChange={handleChange}
                   // Since label is not used - must include inputProps with aria-label, as per docs
-                  inputProps={{ 'aria-label': 'Dark Mode Switch' }}
+                  inputProps={{ "aria-label": "Dark Mode Switch" }}
                 />
               </Stack>
             </ListItem>

@@ -16,18 +16,12 @@ import {
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 // Project Data
-import featureProject from "../../data/featureProject";
+import featureProject from "../../../data/featureProject";
 
 const FeaturedProjectMobile = () => {
   const theme = useTheme();
-  const {
-    description,
-    githubLink,
-    picture,
-    projectLink,
-    stacks,
-    title,
-  } = featureProject;
+  const { description, githubLink, picture, projectLink, stacks, title } =
+    featureProject;
 
   return (
     <Card

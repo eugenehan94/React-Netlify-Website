@@ -6,18 +6,12 @@ import { Box, Chip, Grid, Stack, Typography, useTheme } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 // Project Data
-import featureProject from "../../data/featureProject";
+import featureProject from "../../../data/featureProject";
 
 const FeaturedProjectDesktop = () => {
   const theme = useTheme();
-  const {
-    description,
-    githubLink,
-    picture,
-    projectLink,
-    stacks,
-    title,
-  } = featureProject;
+  const { description, githubLink, picture, projectLink, stacks, title } =
+    featureProject;
 
   return (
     <Grid container>
@@ -112,7 +106,7 @@ const FeaturedProjectDesktop = () => {
                     marginRight: "0.3rem",
                     marginBottom: "0.1rem",
                     backgroundColor: "#1976d2",
-                    color: "#fff"
+                    color: "#fff",
                   }}
                 />
               ))}

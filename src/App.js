@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Loading from "./components/loading";
+import Loading from "./components/versionTwo/loading";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 import CssBaseline from "@mui/material/CssBaseline";
@@ -80,16 +80,16 @@ function App() {
 
   const theme = React.useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
 
-  if (loading) {
-    return (
-      <ColorModeContext.Provider value={colorMode}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Loading setLoading={setLoading} />
-        </ThemeProvider>
-      </ColorModeContext.Provider>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <ColorModeContext.Provider value={colorMode}>
+  //       <ThemeProvider theme={theme}>
+  //         <CssBaseline />
+  //         <Loading setLoading={setLoading} />
+  //       </ThemeProvider>
+  //     </ColorModeContext.Provider>
+  //   );
+  // }
 
   return (
     <ColorModeContext.Provider value={colorMode}>
