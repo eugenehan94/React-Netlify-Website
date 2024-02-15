@@ -5,7 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 // Page imports
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
-
+import Contact from "./pages/Contact";
 function App() {
   return (
     <>
@@ -17,6 +17,9 @@ function App() {
           </Route>
           <Route path="/my-portfolio">
             <Portfolio />
+          </Route>
+          <Route path="/contact-me">
+            <Contact />
           </Route>
         </Switch>
       </Router>
