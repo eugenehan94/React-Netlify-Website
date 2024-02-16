@@ -9,9 +9,15 @@ const StyledAppBar = styled(AppBar)(() => ({
 
 const StyledMenuOutlinedIcon = styled(MenuOutlinedIcon)(() => ({
   cursor: "pointer",
+  color: "#94a6b8",
 }));
 
-const AppBarComponent = (props) => {
+interface AppBarComponentTypes {
+  openDrawer: boolean;
+  setOpenDrawer: Function;
+}
+
+const AppBarComponent = (props: AppBarComponentTypes) => {
   const { openDrawer, setOpenDrawer } = props;
   return (
     <StyledAppBar>

@@ -21,3 +21,49 @@
   background-position: 100% 100%;
   background-size: 100% 2px;
 }
+
+/* When scrolling to section - account for fixed navbar */
+:target {
+  scroll-margin-top: 4rem;
+}
+
+/* contentOverlay.tsx */
+.imageWrapper {
+  width: 15vw;
+  display: inline-block;
+}
+.imageWrapper img {
+  width: 15vw;
+  display: inline-block;
+  width: "100%";
+}
+.textSpan {
+  font-size: 15vw;
+}
+.textSpan.middle {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .imageWrapper {
+    width: 10vw;
+  }
+  .imageWrapper img {
+    width: 10vw;
+  }
+  .textSpan {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .imageWrapper {
+    width: 5vw;
+  }
+  .imageWrapper img {
+    width: 5vw;
+  }
+  .textSpan {
+    font-size: 5vw;
+  }
+}

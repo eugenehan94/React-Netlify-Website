@@ -18,7 +18,11 @@ import WhatIAmBestAt from "../components/whatIAmBestAt";
 import MyProfessionalJourney from "../components/myProfessionalJourney";
 import MyEducation from "../components/myEducation";
 // Material UI Components
-import { Box } from "@mui/material";
+import { Box, Divider, styled } from "@mui/material";
+
+const StyledDivider = styled(Divider)(() => ({
+  borderColor: "rgba(54, 64, 73, 1)",
+}));
 
 const Home = () => {
   return (
@@ -26,8 +30,11 @@ const Home = () => {
       <Navbar />
       <Hero />
       <AboutMe />
+      <StyledDivider aria-hidden="true" />
       <WhatIAmBestAt />
+      <StyledDivider aria-hidden="true" />
       <MyProfessionalJourney />
+      <StyledDivider aria-hidden="true" />
       <MyEducation />
       {/* <Navbar2 {...props} />
       <ScrollToTop />

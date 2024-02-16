@@ -4,7 +4,7 @@ import { styled } from "@mui/material";
 import MatHomeIcon from "@mui/icons-material/Home";
 
 const StyledMatHomeIcon = styled(MatHomeIcon)(() => ({
-  color: "#ffffff",
+  color: "#94a6b8",
   "&:hover": {
     cursor: "pointer",
     animation: "Home_Icon 0.5s linear infinite",

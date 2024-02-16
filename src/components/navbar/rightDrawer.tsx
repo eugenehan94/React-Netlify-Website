@@ -15,7 +15,12 @@ const StyledCloseOutlinedIcon = styled(CloseOutlinedIcon)(() => ({
   color: "#ffffff",
 }));
 
-const RightDrawer = (props) => {
+interface RightDrawerTypes {
+  openDrawer: boolean;
+  setOpenDrawer: Function;
+}
+
+const RightDrawer = (props: RightDrawerTypes) => {
   const { openDrawer, setOpenDrawer } = props;
   return (
     <StyledDrawer variant="temporary" open={openDrawer} anchor="right">
@@ -35,6 +40,7 @@ const RightDrawer = (props) => {
             <Grid item>
               <NavLink
                 to="/"
+                exact={true}
                 className="routerLink"
                 activeClassName="routerLinkActive"
               >

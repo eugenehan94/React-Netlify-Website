@@ -1,8 +1,12 @@
+import Navbar from "../components/navbar";
+import { Box, Divider, styled } from "@mui/material";
+
 const Portfolio = () => {
   return (
-    <div>
+    <Box>
+      <Navbar />
       <h3>Portfolio</h3>
-    </div>
+    </Box>
   );
 };
 
