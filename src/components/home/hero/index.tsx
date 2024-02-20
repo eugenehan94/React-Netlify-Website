@@ -10,6 +10,7 @@ const StyledContainer = styled(Box)(() => ({
   margin: "0",
   position: "relative",
   overflow: "hidden",
+  background: " #0072e5",
 }));
 
 const Hero = () => {

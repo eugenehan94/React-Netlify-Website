@@ -1,11 +1,14 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/home/navbar";
 import { Box, Divider, styled } from "@mui/material";
 
+import Hero from "../components/portfolio/hero";
+import Projects from "../components/portfolio/projects";
 const Portfolio = () => {
   return (
     <Box>
       <Navbar />
-      <h3>Portfolio</h3>
+      <Hero />
+      <Projects />
     </Box>
   );
 };

@@ -8,7 +8,7 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import bgrsLogoColor from "../../data/images/BgrsLogoColor.png";
+import bgrsLogoColor from "../../../data/images/BgrsLogoColor.png";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 const StyledContainer = styled(Box)(({ theme }) => ({

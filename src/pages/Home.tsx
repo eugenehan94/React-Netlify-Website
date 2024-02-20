@@ -11,12 +11,12 @@ import Contact from "../components/versionTwo/home/contact";
 import Footer from "../components/versionTwo/footer/footer";
 
 // Component imports - Version 3
-import Navbar from "../components/navbar";
-import Hero from "../components/hero";
-import AboutMe from "../components/aboutMe";
-import WhatIAmBestAt from "../components/whatIAmBestAt";
-import MyProfessionalJourney from "../components/myProfessionalJourney";
-import MyEducation from "../components/myEducation";
+import Navbar from "../components/home/navbar";
+import Hero from "../components/home/hero";
+import AboutMe from "../components/home/aboutMe";
+import WhatIAmBestAt from "../components/home/whatIAmBestAt";
+import MyProfessionalJourney from "../components/home/myProfessionalJourney";
+import MyEducation from "../components/home/myEducation";
 // Material UI Components
 import { Box, Divider, styled } from "@mui/material";
 

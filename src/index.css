@@ -67,3 +67,20 @@
     font-size: 5vw;
   }
 }
+
+.cardImageWrapper {
+  width: 10vw;
+  display: inline-block;
+}
+.cardImageWrapper img {
+  width: 10vw;
+  display: inline-block;
+  width: "100%";
+}
+
+.cardTextSpan {
+  font-size: 10vw;
+}
+.cardTextSpan.middle {
+  margin-right: 10px;
+}

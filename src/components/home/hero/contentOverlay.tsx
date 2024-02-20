@@ -1,6 +1,6 @@
 import { Box, Link, Typography } from "@mui/material";
-import handWaveIcon from "../../data/svg/handWaveIcon.svg";
-import scrollIcon from "../../data/svg/scrollIcon.svg";
+import handWaveIcon from "../../../data/svg/handWaveIcon.svg";
+import scrollIcon from "../../../data/svg/scrollIcon.svg";
 
 const ContentOverlay = () => {
   return (

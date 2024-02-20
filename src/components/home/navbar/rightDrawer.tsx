@@ -53,7 +53,7 @@ const RightDrawer = (props: RightDrawerTypes) => {
                 className="routerLink"
                 activeClassName="routerLinkActive"
               >
-                Portfolio
+                My Portfolio
               </NavLink>
             </Grid>
             <Grid item>

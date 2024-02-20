@@ -2,15 +2,7 @@ import { Box } from "@mui/material";
 
 const HeroAnimation = () => {
   return (
-    <Box
-      sx={{
-        height: "100%",
-        width: "100%",
-        background: " #0072e5",
-        backgroundSize: "200% 200%",
-        overflow: "hidden",
-      }}
-    >
+    <>
       {/* Blobs */}
       <Box
         sx={{
@@ -19,9 +11,9 @@ const HeroAnimation = () => {
           backgroundColor: "#090e10",
           zIndex: "5",
           width: "100%",
-          height: "300px",
-          left: "-1px",
-          bottom: "-15%",
+          height: "200px",
+          left: "0",
+          bottom: "0",
           overflow: "hidden",
           border: "none",
           animation:
@@ -36,12 +28,10 @@ const HeroAnimation = () => {
           },
           "@keyframes blob-one": {
             "0% 100%": {
-              // transform: "translatey(0)",
-              height: "100px",
+              height: "50px",
             },
             "50%": {
-              // transform: "translatey(-20%)",
-              height: "280px",
+              height: "100px",
             },
           },
         }}
@@ -71,17 +61,15 @@ const HeroAnimation = () => {
           },
           "@keyframes blob-two": {
             "0%, 100%": {
-              // transform: "translatey(-100%)",
-              height: "100px",
+              height: "50px",
             },
             "50%": {
-              // transform: "translatey(0)",
-              height: "280px",
+              height: "100px",
             },
           },
         }}
       ></Box>
-    </Box>
+    </>
   );
 };
 
