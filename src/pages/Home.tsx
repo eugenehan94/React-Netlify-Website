@@ -11,7 +11,7 @@ import Contact from "../components/versionTwo/home/contact";
 import Footer from "../components/versionTwo/footer/footer";
 
 // Component imports - Version 3
-import Navbar from "../components/home/navbar";
+import Navbar from "../components/_shared/navbar";
 import Hero from "../components/home/hero";
 import AboutMe from "../components/home/aboutMe";
 import WhatIAmBestAt from "../components/home/whatIAmBestAt";

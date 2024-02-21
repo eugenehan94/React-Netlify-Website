@@ -11,6 +11,7 @@ import {
 import bgrsLogoColor from "../../../data/images/BgrsLogoColor.png";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
+import { Link } from "react-router-dom";
 const StyledContainer = styled(Box)(({ theme }) => ({
   backgroundColor: "#090e10",
   padding: "3rem 1rem",
@@ -123,7 +124,12 @@ const MyProfessionalJourney = () => {
                   color: "#ffffff",
                 }}
                 onClick={() => setIsLearnMoreOpen(!isLearnMoreOpen)}
-                tabIndex={1}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter") {
+                    setIsLearnMoreOpen(!isLearnMoreOpen);
+                  }
+                }}
+                tabIndex={0}
               >
                 <Grid item>
                   <StyledCardParagraphyTypography
@@ -189,9 +195,17 @@ const MyProfessionalJourney = () => {
       </Grid>
 
       <Box sx={{ margin: "2rem 0" }}>
-        <Button variant="contained" fullWidth startIcon="📖" disableElevation>
-          View My Portfolio
-        </Button>
+        <Link to="/my-portfolio" aria-label="Link to my portfolio page">
+          <Button
+            variant="contained"
+            fullWidth
+            startIcon="📖"
+            disableElevation
+            tabIndex={-1}
+          >
+            View My Portfolio
+          </Button>
+        </Link>
       </Box>
     </StyledContainer>
   );

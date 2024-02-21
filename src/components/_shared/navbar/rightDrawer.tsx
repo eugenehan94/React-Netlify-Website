@@ -26,7 +26,16 @@ const RightDrawer = (props: RightDrawerTypes) => {
     <StyledDrawer variant="temporary" open={openDrawer} anchor="right">
       <Grid container justifyContent="flex-end">
         <Grid item>
-          <StyledCloseOutlinedIcon onClick={() => setOpenDrawer(!openDrawer)} />
+          <StyledCloseOutlinedIcon
+            tabIndex={0}
+            onClick={() => setOpenDrawer(!openDrawer)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                setOpenDrawer(!openDrawer);
+              }
+            }}
+            aria-label="Close navigation menu"
+          />
         </Grid>
       </Grid>
       <Box sx={{ height: "100%", padding: "0 2rem" }}>
@@ -40,9 +49,10 @@ const RightDrawer = (props: RightDrawerTypes) => {
             <Grid item>
               <NavLink
                 to="/"
-                exact={true}
-                className="routerLink"
-                activeClassName="routerLinkActive"
+                end={true}
+                className={({ isActive }) =>
+                  "routerLink " + (isActive ? "routerLinkActive" : "")
+                }
               >
                 Home
               </NavLink>
@@ -50,8 +60,9 @@ const RightDrawer = (props: RightDrawerTypes) => {
             <Grid item>
               <NavLink
                 to="/my-portfolio"
-                className="routerLink"
-                activeClassName="routerLinkActive"
+                className={({ isActive }) =>
+                  "routerLink " + (isActive ? "routerLinkActive" : "")
+                }
               >
                 My Portfolio
               </NavLink>
@@ -59,8 +70,9 @@ const RightDrawer = (props: RightDrawerTypes) => {
             <Grid item>
               <NavLink
                 to="/contact-me"
-                className="routerLink"
-                activeClassName="routerLinkActive"
+                className={({ isActive }) =>
+                  "routerLink " + (isActive ? "routerLinkActive" : "")
+                }
               >
                 Contact Me
               </NavLink>

@@ -102,7 +102,7 @@ const MyEducation = () => {
                   href="https://www.journalofdairyscience.org/article/S0022-0302(16)30549-5/fulltext"
                   target="_blank"
                   rel="noreferrer"
-                  ariaLabel="link to scientific paper, opens in new tab"
+                  aria-label="link to scientific paper, opens in new tab"
                   color="primary"
                 >
                   scientific paper
