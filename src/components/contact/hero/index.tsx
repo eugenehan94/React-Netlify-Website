@@ -1,7 +1,17 @@
 import { Box, Card, styled } from "@mui/material";
 
-import HeroAnimation from "./heroAnimation";
-import ContentOverlay from "./contentOverlay";
+import BlobAnimation from "../../_shared/blobAnimation";
+import CardContentOverlay from "../../_shared/cardContentOverlay";
+
+import PhoneIcon from "../../../data/svg/phoneIcon.svg";
+
+const StyledCard = styled(Card)(() => ({
+  position: "relative",
+  background: " #0072e5",
+  height: "500px",
+  zIndex: "10",
+}));
+
 const StyledContainer = styled(Box)(() => ({
   backgroundColor: "#090e10",
   height: "500px",
@@ -10,19 +20,19 @@ const StyledContainer = styled(Box)(() => ({
 }));
 
 const Hero = () => {
+  let backgroundColor = "#090e10";
+  let firstText = "Contact";
+  let secondText = "Me";
   return (
     <StyledContainer>
-      <Card
-        sx={{
-          position: "relative",
-          background: " #0072e5",
-          height: "500px",
-          zIndex: "10",
-        }}
-      >
-        <HeroAnimation />
-        <ContentOverlay />
-      </Card>
+      <StyledCard>
+        <BlobAnimation backgroundColor={backgroundColor} />
+        <CardContentOverlay
+          firstText={firstText}
+          secondText={secondText}
+          image={PhoneIcon}
+        />
+      </StyledCard>
     </StyledContainer>
   );
 };

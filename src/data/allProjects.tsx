@@ -279,7 +279,7 @@ const AllProjects = [
     title: "Shootout Prediction Game",
     description:
       " A 2D soccer/football shootout game created with Vanilla Javascript, CSS and HTML.",
-    stacks: ["HTML", "CSS", "Javascript"],
+    stacks: ["Javascript"],
     libraries: [],
     projectLink: "https://eugenehan94.github.io/Shootout-Prediction-Game/",
     githubLink:
@@ -290,7 +290,7 @@ const AllProjects = [
     title: "Card Matching Game",
     description:
       " A 2D 2 player card matching game created with Vanilla Javascript, CSS and HTML.",
-    stacks: ["HTML", "CSS", "Javascript"],
+    stacks: ["Javascript"],
     libraries: [],
     projectLink: "https://eugenehan94.github.io/Card-Matching-Game/",
     githubLink:
@@ -300,7 +300,7 @@ const AllProjects = [
     picture: JSBankingWebpage,
     title: "Webpage Project",
     description: " A webpage I created using HTML, CSS and vanilla Javascript",
-    stacks: ["HTML", "CSS", "Javascript"],
+    stacks: ["Javascript"],
     libraries: [],
     projectLink: "https://eugenehan94.github.io/Banking-Website-Replica/",
     githubLink:
