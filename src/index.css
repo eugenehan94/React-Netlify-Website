@@ -1,0 +1,86 @@
+.routerLink {
+  color: #f600fc;
+  font-size: 28px;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: linear-gradient(#00eeac 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+
+.routerLink:hover {
+  color: #00eeac;
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+
+.routerLinkActive {
+  color: #00eeac;
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+
+/* When scrolling to section - account for fixed navbar */
+:target {
+  scroll-margin-top: 4rem;
+}
+
+/* contentOverlay.tsx */
+.imageWrapper {
+  width: 15vw;
+  display: inline-block;
+}
+.imageWrapper img {
+  width: 15vw;
+  display: inline-block;
+  width: "100%";
+}
+.textSpan {
+  font-size: 15vw;
+}
+.textSpan.middle {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .imageWrapper {
+    width: 10vw;
+  }
+  .imageWrapper img {
+    width: 10vw;
+  }
+  .textSpan {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .imageWrapper {
+    width: 5vw;
+  }
+  .imageWrapper img {
+    width: 5vw;
+  }
+  .textSpan {
+    font-size: 5vw;
+  }
+}
+
+.cardImageWrapper {
+  width: 10vw;
+  display: inline-block;
+}
+.cardImageWrapper img {
+  width: 10vw;
+  display: inline-block;
+  width: "100%";
+}
+
+.cardTextSpan {
+  font-size: 10vw;
+}
+.cardTextSpan.middle {
+  margin-right: 10px;
+}
