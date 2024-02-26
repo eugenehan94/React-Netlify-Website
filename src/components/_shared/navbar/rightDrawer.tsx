@@ -22,6 +22,22 @@ interface RightDrawerTypes {
 
 const RightDrawer = (props: RightDrawerTypes) => {
   const { openDrawer, setOpenDrawer } = props;
+
+  const navbarOptions = [
+    {
+      linkTo: "/",
+      linkName: "Home",
+    },
+    {
+      linkTo: "/my-portfolio",
+      linkName: "My Portfolio",
+    },
+    {
+      linkTo: "/contact-me",
+      linkName: "Contact Me",
+    },
+  ];
+
   return (
     <StyledDrawer variant="temporary" open={openDrawer} anchor="right">
       <Grid container justifyContent="flex-end">
@@ -46,37 +62,18 @@ const RightDrawer = (props: RightDrawerTypes) => {
           justifyContent="center"
         >
           <Grid container direction="column">
-            <Grid item>
-              <NavLink
-                to="/"
-                end={true}
-                className={({ isActive }) =>
-                  "routerLink " + (isActive ? "routerLinkActive" : "")
-                }
-              >
-                Home
-              </NavLink>
-            </Grid>
-            <Grid item>
-              <NavLink
-                to="/my-portfolio"
-                className={({ isActive }) =>
-                  "routerLink " + (isActive ? "routerLinkActive" : "")
-                }
-              >
-                My Portfolio
-              </NavLink>
-            </Grid>
-            <Grid item>
-              <NavLink
-                to="/contact-me"
-                className={({ isActive }) =>
-                  "routerLink " + (isActive ? "routerLinkActive" : "")
-                }
-              >
-                Contact Me
-              </NavLink>
-            </Grid>
+            {navbarOptions.map((navbarOption) => (
+              <Grid item>
+                <NavLink
+                  to={navbarOption.linkTo}
+                  className={({ isActive }) =>
+                    "routerLink " + (isActive ? "routerLinkActive" : "")
+                  }
+                >
+                  {navbarOption.linkName}
+                </NavLink>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Box>

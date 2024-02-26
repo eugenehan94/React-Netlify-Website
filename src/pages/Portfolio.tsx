@@ -1,5 +1,5 @@
 import Navbar from "../components/_shared/navbar";
-import { Box, Divider, styled } from "@mui/material";
+import { Box } from "@mui/material";
 
 import Hero from "../components/portfolio/hero";
 import Projects from "../components/portfolio/projects";

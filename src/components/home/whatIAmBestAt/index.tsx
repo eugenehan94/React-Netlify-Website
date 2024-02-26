@@ -10,6 +10,8 @@ import TerminalRoundedIcon from "@mui/icons-material/TerminalRounded";
 import GroupsRoundedIcon from "@mui/icons-material/GroupsRounded";
 import ChatBubbleOutlineRoundedIcon from "@mui/icons-material/ChatBubbleOutlineRounded";
 
+import TerminalRounded from "../../../data/svg/terminalRoundedIcon.svg";
+
 const StyledContainer = styled(Box)(({ theme }) => ({
   backgroundColor: "#090e10",
   padding: "3rem 1rem",
@@ -64,7 +66,12 @@ const WhatIAmBestAt = () => {
         <Grid item xs={12} lg={4}>
           <StyledCard>
             <CardContent>
-              <TerminalRoundedIcon sx={{ color: "#ffffff" }} fontSize="large" />
+              <img
+                src={TerminalRounded}
+                aria-hidden="true"
+                style={{ width: "35px", height: "35px" }}
+              />
+              {/* <TerminalRoundedIcon sx={{ color: "#ffffff" }} fontSize="large" /> */}
               <StyledCardTitleTypography color="secondary" gutterBottom>
                 Developing
               </StyledCardTitleTypography>

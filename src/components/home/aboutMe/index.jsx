@@ -1,5 +1,6 @@
 import { Box, Grid, Typography, styled } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
 const StyledContainer = styled(Box)(({ theme }) => ({
   position: "relative",
   zIndex: "10",
@@ -38,6 +39,45 @@ const StyledChevronRightIcon = styled(ChevronRightIcon)(({ theme }) => ({
 }));
 
 const AboutMe = () => {
+  const techStacks = [
+    {
+      stack: "JavaScript",
+    },
+    {
+      stack: "Angular",
+    },
+    {
+      stack: "React",
+    },
+    {
+      stack: "Typescript",
+    },
+    {
+      stack: "Node Js",
+    },
+    {
+      stack: "Java",
+    },
+    {
+      stack: "Git",
+    },
+    {
+      stack: "GraphQL",
+    },
+    {
+      stack: "Azure DevOps",
+    },
+    {
+      stack: "Archer",
+    },
+    {
+      stack: "MongoDB",
+    },
+    {
+      stack: "MySQL",
+    },
+  ];
+
   return (
     <StyledContainer id="about-me">
       <Grid container spacing={{ xs: 1, lg: 5 }}>
@@ -87,78 +127,14 @@ const AboutMe = () => {
                 🖥️Here are the technologies I have used:
               </StyledParagraphTypography>
               <Grid container>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    JavaScript
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    React
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    Angular
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    Typescript
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    Node js
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    Java
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    Git
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    GraphQL
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    Azure DevOps
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    Archer
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    MongoDB
-                  </StyledListTextTypography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <StyledListTextTypography>
-                    <StyledChevronRightIcon />
-                    MySQL
-                  </StyledListTextTypography>
-                </Grid>
+                {techStacks.map((stack) => (
+                  <Grid item xs={12} sm={6}>
+                    <StyledListTextTypography>
+                      <StyledChevronRightIcon />
+                      {stack.stack}
+                    </StyledListTextTypography>
+                  </Grid>
+                ))}
               </Grid>
             </Grid>
           </Grid>
