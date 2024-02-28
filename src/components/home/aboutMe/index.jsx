@@ -39,6 +39,20 @@ const StyledChevronRightIcon = styled(ChevronRightIcon)(({ theme }) => ({
 }));
 
 const AboutMe = () => {
+  const aboutMeDescriptionBlocks = [
+    {
+      block:
+        "👨🏻‍💻I am a developer with a passion for creating solutions that make a real difference. I worked at SIRVA/BGRS, where I put my skills to work in website development, custom web application and project management.",
+    },
+    {
+      block:
+        "🏫I hold a Bachelor of Science degree (who would have thought that I will be developing application and managing a team of amazing developers). The pursuit of knowledge did not stop there, though. I have gathered an assortment of achievements, like shiny badges of honor and certificates, to further my education and skills.",
+    },
+    {
+      block:
+        "👨🏼‍🔬Now, do not let my science degree fool you. While learning about the entire human body, explosive chemical reactions and the law of thermodynamics could have squashed my creativity, instead, they did quite the opposite. They sparked an even greater curiosity to explore the realm of technologies in unconventional ways.",
+    },
+  ];
   const techStacks = [
     {
       stack: "JavaScript",
@@ -86,34 +100,14 @@ const AboutMe = () => {
             <Grid item>
               <StyledTitleTypography>I'm Eugene,</StyledTitleTypography>
             </Grid>
-            <Grid item>
-              <StyledParagraphTypography align="justify">
-                👨🏻‍💻I am a developer with a passion for creating solutions that
-                make a real difference. I worked at SIRVA/BGRS, where I put my
-                skills to work in website development, custom web application
-                and project management.
-              </StyledParagraphTypography>
-            </Grid>
-            <Grid item>
-              <StyledParagraphTypography align="justify">
-                🏫I hold a Bachelor of Science degree (who would have thought
-                that I will be developing application and managing a team of
-                amazing developers). The pursuit of knowledge did not stop
-                there, though. I have gathered an assortment of achievements,
-                like shiny badges of honor and certificates, to further my
-                education and skills.
-              </StyledParagraphTypography>
-            </Grid>
-            <Grid item>
-              <StyledParagraphTypography align="justify">
-                👨🏼‍🔬Now, do not let my science degree fool you. While learning
-                about the entire human body, explosive chemical reactions and
-                the law of thermodynamics could have squashed my creativity,
-                instead, they did quite the opposite. They sparked an even
-                greater curiosity to explore the realm of technologies in
-                unconventional ways.
-              </StyledParagraphTypography>
-            </Grid>
+
+            {aboutMeDescriptionBlocks.map((block) => (
+              <Grid item>
+                <StyledParagraphTypography align="justify">
+                  {block.block}
+                </StyledParagraphTypography>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
 

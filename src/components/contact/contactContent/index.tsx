@@ -8,8 +8,10 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
+import LinkedinIcon from "../../../data/svg/linkedInIcon.svg";
+import GitHub from "../../../data/svg/githubIcon.svg";
+
 const StyledContainer = styled(Box)(({ theme }) => ({
   backgroundColor: "#090e10",
   padding: "3rem 1rem",
@@ -81,6 +83,28 @@ const StyledCardActions = styled(CardActions)(() => ({
   bottom: "0",
 }));
 const ContactContent = () => {
+  const tileContents = [
+    {
+      icon: LinkedinIcon,
+      iconAlt: "Linkedin",
+      title: "Linkedin",
+      description:
+        "I would love to talk about how we can work together. Feel free to connect.",
+      link: "https://www.linkedin.com/in/eugene-h-7928bb63",
+      buttonText: "Visit My Linkedin",
+      linkAriaLabel: "link to my linkedin, opens in new tab",
+    },
+    {
+      icon: GitHub,
+      iconAlt: "Git hub",
+      title: "GitHub",
+      description:
+        "Let us build something great together and make a difference.",
+      link: "https://github.com/eugenehan94",
+      buttonText: "Visit My GitHub",
+      linkAriaLabel: "link to my github, opens in new tab",
+    },
+  ];
   return (
     <StyledContainer>
       <StyledTypography>
@@ -91,55 +115,37 @@ const ContactContent = () => {
         Please feel free to contact me. I will try my best to get back to you."
       </StyledTypography>
       <Grid container spacing={3} sx={{ marginTop: "2rem" }}>
-        <Grid item xs={12} md={6} lg={4}>
-          <StyledCard>
-            <StyledCardTopBorder></StyledCardTopBorder>
-            <StyledCardContent>
-              <LinkedInIcon sx={{ color: "#94a6b8" }} fontSize="large" />
-              <StyledCardTitleTypography color="secondary">
-                Linkedin
-              </StyledCardTitleTypography>
-              <StyledCardParagraphyTypography>
-                I would love to talk about how we can work together. Feel free
-                to connect.
-              </StyledCardParagraphyTypography>
-            </StyledCardContent>
-            <StyledCardActions>
-              <Button
-                href="https://www.linkedin.com/in/eugene-h-7928bb63"
-                rel="noopener nonreferrer"
-                target="_blank"
-                aria-label="link to my linkedin, opens in new tab"
-              >
-                Visit My Linkedin
-              </Button>
-            </StyledCardActions>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
-          <StyledCard>
-            <StyledCardTopBorder></StyledCardTopBorder>
-            <StyledCardContent>
-              <GitHubIcon sx={{ color: "#94a6b8" }} fontSize="large" />
-              <StyledCardTitleTypography color="secondary">
-                Github
-              </StyledCardTitleTypography>
-              <StyledCardParagraphyTypography>
-                Let us build something great together and make a difference.
-              </StyledCardParagraphyTypography>
-            </StyledCardContent>
-            <StyledCardActions>
-              <Button
-                href="https://github.com/eugenehan94"
-                rel="noopener nonreferrer"
-                target="_blank"
-                aria-label="link to my github, opens in new tab"
-              >
-                Visit My Github
-              </Button>
-            </StyledCardActions>
-          </StyledCard>
-        </Grid>
+        {tileContents.map((tileContent) => (
+          <Grid item xs={12} md={6} lg={4}>
+            <StyledCard>
+              <StyledCardTopBorder></StyledCardTopBorder>
+              <StyledCardContent>
+                <img
+                  src={tileContent.icon}
+                  alt={tileContent.iconAlt}
+                  aria-hidden="true"
+                  style={{ width: "35px", height: "35px" }}
+                />
+                <StyledCardTitleTypography color="secondary">
+                  {tileContent.title}
+                </StyledCardTitleTypography>
+                <StyledCardParagraphyTypography>
+                  {tileContent.description}
+                </StyledCardParagraphyTypography>
+              </StyledCardContent>
+              <StyledCardActions>
+                <Button
+                  href={tileContent.link}
+                  rel="noopener nonreferrer"
+                  target="_blank"
+                  aria-label={tileContent.linkAriaLabel}
+                >
+                  {tileContent.buttonText}
+                </Button>
+              </StyledCardActions>
+            </StyledCard>
+          </Grid>
+        ))}
       </Grid>
     </StyledContainer>
   );

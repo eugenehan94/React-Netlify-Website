@@ -6,11 +6,10 @@ import {
   CardContent,
   styled,
 } from "@mui/material";
-import TerminalRoundedIcon from "@mui/icons-material/TerminalRounded";
-import GroupsRoundedIcon from "@mui/icons-material/GroupsRounded";
-import ChatBubbleOutlineRoundedIcon from "@mui/icons-material/ChatBubbleOutlineRounded";
 
-import TerminalRounded from "../../../data/svg/terminalRoundedIcon.svg";
+import TerminalRoundedIcon from "../../../data/svg/terminalRoundedIcon.svg";
+import GroupsRoundedIcon from "../../../data/svg/groupsRoundedIcon.svg";
+import ChatBubbleOutlineRoundedIcon from "../../../data/svg/chatBubbleOutlineRoundedIcon.svg";
 
 const StyledContainer = styled(Box)(({ theme }) => ({
   backgroundColor: "#090e10",
@@ -57,65 +56,56 @@ const StyledCardParagraphyTypography = styled(Typography)(() => ({
 }));
 
 const WhatIAmBestAt = () => {
+  const tileContents = [
+    {
+      iconSrc: TerminalRoundedIcon,
+      iconAlt: "computer terminal",
+      title: "Developing",
+      description:
+        "From frontend to backend development and problem-solving to testing. I strive to deliever working solutions that enhance user satisfaction and align with the client's brand identity.",
+    },
+    {
+      iconSrc: GroupsRoundedIcon,
+      iconAlt: "group of people",
+      title: "Teamwork",
+      description:
+        "From small to large projects with great objectives and challenges. I bring effective connection skills to unite talents and ensure goals are achieved.",
+    },
+    {
+      iconSrc: ChatBubbleOutlineRoundedIcon,
+      iconAlt: "chat bubble",
+      title: "Communication",
+      description:
+        "From science to technology and financial to business. I leverage my effective communication approach to optimized audience comprehension.",
+    },
+  ];
+
   return (
     <StyledContainer>
       <StyledTitleTypography textAlign="center">
         🌟What I Am Best At!
       </StyledTitleTypography>
       <Grid container spacing={5}>
-        <Grid item xs={12} lg={4}>
-          <StyledCard>
-            <CardContent>
-              <img
-                src={TerminalRounded}
-                aria-hidden="true"
-                style={{ width: "35px", height: "35px" }}
-              />
-              {/* <TerminalRoundedIcon sx={{ color: "#ffffff" }} fontSize="large" /> */}
-              <StyledCardTitleTypography color="secondary" gutterBottom>
-                Developing
-              </StyledCardTitleTypography>
-              <StyledCardParagraphyTypography>
-                From frontend to backend development and problem-solving to
-                testing. I strive to deliever working solutions that enhance
-                user satisfaction and align with the client's brand identity.
-              </StyledCardParagraphyTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={12} lg={4}>
-          <StyledCard>
-            <CardContent>
-              <GroupsRoundedIcon sx={{ color: "#ffffff" }} fontSize="large" />
-              <StyledCardTitleTypography color="secondary" gutterBottom>
-                Teamwork
-              </StyledCardTitleTypography>
-              <StyledCardParagraphyTypography>
-                From small to large projects with great objectives and
-                challenges. I bring effective connection skills to unite talents
-                and ensure goals are achieved.
-              </StyledCardParagraphyTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={12} lg={4}>
-          <StyledCard>
-            <CardContent>
-              <ChatBubbleOutlineRoundedIcon
-                sx={{ color: "#ffffff" }}
-                fontSize="large"
-              />
-              <StyledCardTitleTypography color="secondary" gutterBottom>
-                Communication
-              </StyledCardTitleTypography>
-              <StyledCardParagraphyTypography>
-                From science to technology and financial to business. I leverage
-                my effective communication approach to optimized audience
-                comprehension.
-              </StyledCardParagraphyTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
+        {tileContents.map((tileContent) => (
+          <Grid item xs={12} lg={4}>
+            <StyledCard>
+              <CardContent>
+                <img
+                  src={`${tileContent.iconSrc}`}
+                  alt={tileContent.iconAlt}
+                  aria-hidden="true"
+                  style={{ width: "35px", height: "35px" }}
+                />
+                <StyledCardTitleTypography color="secondary" gutterBottom>
+                  {tileContent.title}
+                </StyledCardTitleTypography>
+                <StyledCardParagraphyTypography>
+                  {tileContent.description}
+                </StyledCardParagraphyTypography>
+              </CardContent>
+            </StyledCard>
+          </Grid>
+        ))}
       </Grid>
     </StyledContainer>
   );

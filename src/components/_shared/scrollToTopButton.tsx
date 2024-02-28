@@ -1,5 +1,13 @@
-import { Box, Fade, Fab, useScrollTrigger } from "@mui/material";
+import { Box, Fade, Fab, useScrollTrigger, styled } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+
+const StyledFabContainer = styled(Box)(() => ({
+  position: "fixed",
+  bottom: 16,
+  right: 16,
+  zIndex: 99,
+}));
+
 const ScrollToTopButton = () => {
   const trigger = useScrollTrigger();
 
@@ -15,15 +23,11 @@ const ScrollToTopButton = () => {
 
   return (
     <Fade in={trigger}>
-      <Box
-        onClick={(e) => handleClick(e)}
-        role="presentation"
-        sx={{ position: "fixed", bottom: 16, right: 16, zIndex: 99 }}
-      >
+      <StyledFabContainer onClick={(e) => handleClick(e)} role="presentation">
         <Fab size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
         </Fab>
-      </Box>
+      </StyledFabContainer>
     </Fade>
   );
 };
