@@ -160,6 +160,7 @@ const Projects = () => {
               <img
                 src={project.picture}
                 style={{ width: "100%", height: "100%" }}
+                alt={project.title}
               />
             </Box>
             <Box sx={{ padding: "16px" }}>

@@ -21,10 +21,6 @@ interface AppBarComponentTypes {
 const AppBarComponent = (props: AppBarComponentTypes) => {
   const { openDrawer, setOpenDrawer } = props;
 
-  const handleClick = () => {
-    setOpenDrawer(!openDrawer);
-  };
-
   return (
     <StyledAppBar>
       <Toolbar>
