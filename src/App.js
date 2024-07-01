@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Certificates from "./pages/Certificates";
 import ScrollToTopOfPage from "./components/_shared/scrollToTopOfPage";
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/my-portfolio" element={<Portfolio />}></Route>
           <Route path="/contact-me" element={<Contact />}></Route>
+          <Route path="/certificates" element={<Certificates />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
