@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Card,
   CardContent,
   Grid,
@@ -7,6 +8,7 @@ import {
   Typography,
   styled,
 } from "@mui/material";
+import { Link as ReactRouterLink } from "react-router-dom";
 
 const StyledContainer = styled(Box)(({ theme }) => ({
   backgroundColor: "#090e10",
@@ -112,6 +114,22 @@ const MyEducation = () => {
           </StyledCard>
         </Grid>
       </Grid>
+      <Box sx={{ margin: "2rem 0" }}>
+        <ReactRouterLink
+          to="/certificates"
+          aria-label="Link to my certificates page"
+        >
+          <Button
+            variant="contained"
+            fullWidth
+            startIcon="📖"
+            disableElevation
+            tabIndex={-1}
+          >
+            View Certificates
+          </Button>
+        </ReactRouterLink>
+      </Box>
     </StyledContainer>
   );
 };
