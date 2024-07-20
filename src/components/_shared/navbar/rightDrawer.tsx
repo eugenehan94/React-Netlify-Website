@@ -69,6 +69,16 @@ const RightDrawer = (props: RightDrawerTypes) => {
             </Grid>
             <Grid item>
               <NavLink
+                to="/certificates"
+                className={({ isActive }) =>
+                  "routerLink " + (isActive ? "routerLinkActive" : "")
+                }
+              >
+                Certificates
+              </NavLink>
+            </Grid>
+            <Grid item>
+              <NavLink
                 to="/contact-me"
                 className={({ isActive }) =>
                   "routerLink " + (isActive ? "routerLinkActive" : "")

@@ -81,7 +81,7 @@ const WhatIAmBestAt = () => {
             <CardContent>
               <GroupsRoundedIcon sx={{ color: "#ffffff" }} fontSize="large" />
               <StyledCardTitleTypography color="secondary" gutterBottom>
-                Teamwork
+                Agile Team
               </StyledCardTitleTypography>
               <StyledCardParagraphyTypography>
                 From small to large projects with great objectives and

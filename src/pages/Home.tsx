@@ -5,6 +5,7 @@ import AboutMe from "../components/home/aboutMe";
 import WhatIAmBestAt from "../components/home/whatIAmBestAt";
 import MyProfessionalJourney from "../components/home/myProfessionalJourney";
 import MyEducation from "../components/home/myEducation";
+import ScrollToTop from "../components/_shared/scrollToTopButton";
 // Material UI Components
 import { Box, Divider, styled } from "@mui/material";
 
@@ -24,6 +25,7 @@ const Home = () => {
       <MyProfessionalJourney />
       <StyledDivider aria-hidden="true" />
       <MyEducation />
+      <ScrollToTop />
     </Box>
   );
 };
